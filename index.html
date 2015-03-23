@@ -1,0 +1,269 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ROOOF</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</head>
+<body>
+	<header>
+			<div class="wrap">
+				<div class="logo"><a href="index.html">ROOOF</a></div>
+				<nav>
+					<ul class="left">
+                    <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
+					<li><a href="evento.html">Busca un evento</a></li>
+					<li><a href="crea.html">Crea tu evento</a></li>
+					</ul>
+                    <ul class="right">
+                    <button class="log-in">Inicia sesión</button>
+                    <div class="pop-log">
+                      <span>✖</span>
+                      <h1>Inicia sesión</h1>
+                      <div class="reg-facebook">
+                        <img src="img/social-facebook.png">
+                        <a href="">Inicia sesión con facebook</a>
+                    </div>
+                      <div class="reg-twitter">
+                        <img src="img/social-twitter.png">
+                        <a href="">Inicia sesión con twitter</a>
+                    </div>
+                        <div class="reg-line-left"></div>
+                        <div class="zero">o</div>
+                            <div class="reg-line-right"></div>
+                      <h2>Inicia sesión con cuenta de correo</h2>
+                      <form class="reg">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email"><br>
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" name="password"><br>
+                        <p>¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
+                        <button href="sindex.html"id="send" class="registrarse1" type="submit">INICIAR SESIÓN</button>
+                      </form>
+                      <div class="inicia-sesion1">
+                        <p>¿Todavía no tienes tu cuenta en ROOOF? <a href="">Regístrate</a></p></div>
+                    </div>
+
+                    <script type="text/javascript">
+                         $(document).ready(function () {
+                             $("button.log-in").click(function () {
+                                 $(".pop-log").fadeIn(300);
+                                 positionPopup();
+                             });
+
+                             $(".pop-log > span").click(function () {
+                                 $(".pop-log").fadeOut(300);
+                             });
+                         });
+                    </script>
+                    <button class="registro">Regístrate</button>
+                    <div class="pop">
+                      <span>✖</span>
+                      <h1>Regístrate</h1>
+                      <div class="reg-facebook">
+                        <img src="img/social-facebook.png">
+                        <a href="">Regístrate con facebook</a>
+                    </div>
+                      <div class="reg-twitter">
+                        <img src="img/social-twitter.png">
+                        <a href="">Regístrate con twitter</a>
+                    </div>
+                        <div class="reg-line-left"></div>
+                        <div class="zero">o</div>
+                            <div class="reg-line-right"></div>
+                      <h2>Regístrate con cuenta de correo</h2>
+                      <form class="reg">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="palabra"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email"><br>
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" name="password"><br>
+                        <p>Al registrate aceptas las <a href="">condiciones legales</a>.</p>
+                        <button id="send" class="registrarse" type="submit">REGISTRARSE</button>
+                      </form>
+                      <div class="inicia-sesion">
+                        <p>¿Ya tienes una cuenta en ROOOF? <a href="">Inicia sesión</a></p></div>
+                    </div>
+                    <script type="text/javascript">
+                         $(document).ready(function () {
+                             $("button.registro").click(function () {
+                                 $(".pop").fadeIn(300);
+                                 positionPopup();
+                             });
+
+                             $(".pop > span").click(function () {
+                                 $(".pop").fadeOut(300);
+                             });
+                         });
+                    </script>
+                    </ul>
+				</nav>
+			</div>
+	</header>
+
+
+<div class="top-heading">
+    <div class="wrap">
+      <div class="top-heading_text">
+        <h1>ROOOF</h1>
+        <p>Conciertos, teatro y gastronomía en casas de Barcelona</p>
+        <div class="button__wrap"><a href="evento.html" class="button">BUSCAR EVENTOS</a></div>
+      </div>
+    </div>
+</div>
+
+<div class="wrap">
+
+<div class="sugerencias">
+    <div class="titulo">
+        <h2>NO TE ABURRAS EL FIN DE SEMANA</h2>
+        <p>en ROOOF tenemos planes para ti</p>
+    </div>
+
+        <ul class="evento">
+            <li class="uno evento-item">
+                <a href="cocodrila.html">
+                    <div class="vertical-center">
+                        <h3 class="evento-item_title">COCODRILA</h3>
+                        <p class="evento-item_tag">
+                            #ARTE
+                        <p>
+                    </div>
+                </a>
+            </li>
+            <li class="dos evento-item">
+                <a href="milky.html">
+                    <div class="vertical-center">
+                        <h3 class="evento-item_title">THE MILKY WAY EXPRESS</h3>
+                        <p class="evento-item_tag">
+                            #Arte #Gastromonía
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="tres evento-item">
+                <a href="solose.html">
+                    <div class="vertical-center">
+                        <h3 class="evento-item_title">SÓLO SÉ QUE NO SÉ NADA</h3>
+                        <p class="evento-item_tag">
+                            #TEATRO #PERPORMANCE
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="cuatro evento-item">
+                <a href="vietnamita.html">
+                    <div class="vertical-center">
+                        <h3 class="evento-item_title">VIETNAMESE FOOD EXPERIENCE</h3>
+                        <p class="evento-item_tag">
+                            #GASTRONOMÍA
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="cinco evento-item">
+                <a href="band.html">
+                    <div class="vertical-center">
+                        <h3 class="evento-item_title">A BAND APART</h3>
+                        <p class="evento-item_tag">
+                            #MÚSICA #COMEDIA
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="seis evento-item">
+                <a href="picnic.html">
+                    <div class="vertical-center">
+                        <h3 class="evento-item_title">PICNIC</h3>
+                        <p class="evento-item_tag">
+                            #ARTE #EXPO
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+</div>
+
+</div>
+<div class="push"></div>
+<div class="busca">
+  <div class="button__wrap"><a href="evento.html" class="button">BUSCAR EVENTOS</a></div>
+</div>
+<div class="asistir">
+    <div class="wrap">
+        <div class="titulo">
+            <h2>CÓMO ASISTIR A UN EVENTO</h2>
+            <p>Parece fácil y lo es</p>
+        </div>
+        <div class="icons">
+            <p>1</p>
+        </div>
+        <div class="icons">
+            <p>2</p>
+        </div>
+        <div class="icons">
+            <p>3</p>
+        </div>
+        <div class="push"></div>
+        <div class="icon-text">
+            <h3>Elige el plan</h3>
+            <p>Escoge el evento que más te guste. Música, gastronomía, teatro...</p>
+        </div>
+        <div class="icon-text">
+            <h3>Resérvalo</h3>
+            <p>Haz tu reserva y paga el día del evento en casa del artista.<br>Nosotros te enviaremos la dirección completa una vez que hayas reservado.</p>
+        </div>
+        <div class="icon-text">
+            <h3>Disfruta del evento</h3>
+            <p>Acude a tu cita y<br>¡Disfruta la experiencia!</p>
+        </div>
+    </div>
+</div>
+
+<div class="crea">
+    <h1>HAZTE CREADOR</h1>
+    <p>¿Tienes algo que mostrar? Con Rooof es muy fácil: tu pones el<br>talento, nosotros te llevamos el público a casa.</p>
+    <div class="bottom-abajo">
+      <div class="button__wrap"><a href="crea.html" class="button">CREA TU EVENTO</a></div>
+    </div>
+</div>
+<footer>
+    <div class="wrap">
+        <div class="logo-down">ROOOF</div>
+        <div class="link-down"><a href="mailto:hellorooof@gmail.com">contacta con nosotros</a></div>
+        <div class="social-network">
+            <a href="https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
+            <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

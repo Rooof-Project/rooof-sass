@@ -1,0 +1,233 @@
+@import '_variables';
+@import "_header";
+@import "_footer";
+
+.top-heading {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/rooof_header.jpg");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-heading_text {
+    text-align: center;
+    color: white;
+    position: absolute;
+        top: 60%;
+        left: 0;
+        right: 0;
+    transform: translateY(-50%);
+}
+
+.top-heading h1 {
+    line-height: 0rem;
+    font-size: 70px;
+}
+
+.top-heading p {
+    color: white;
+    font-size: 42px;
+    line-height: 1.1em;
+    margin: 0px auto;
+    max-width: 520px;
+    padding-bottom: 40px;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 1);
+    width: 50%;
+}
+
+
+.button__wrap {
+    text-align: center;
+}
+.button {
+    background: $c-main-pink;
+    border: solid 1px transparent;
+    color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 5px;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+.button:hover{
+    background: white;
+    border: solid 1px  $c-main-pink;
+    color:  $c-main-pink;
+}
+
+.sugerencias {
+    width: 100%;
+    background: white;
+}
+
+.titulo h2 {
+    font-size: 34px;
+    font-weight: 300;
+    color: #333;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.titulo p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $c-main-pink;
+    margin: 0px auto;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    padding-bottom: 60px;
+}
+
+.evento {
+    width: 100%;
+}
+
+.evento li {
+    background-origin: content-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    list-style: none;
+    margin: 1.5% 1.5% 0 0;
+    padding: 0;
+    width: 32.33%;
+    height: 250px;
+}
+
+.evento li.uno {
+    background: url("../img/destacado_evento_1.jpg");
+}
+
+.evento li.dos {
+    background: url("../img/destacado_evento_2.jpg");
+}
+
+.evento li.tres {
+    background: url("../img/destacado_evento_3.jpg");
+}
+
+.evento li.cuatro {
+    background: url("../img/destacado_evento_4.jpg");
+}
+
+.evento li.cinco {
+    background: url("../img/destacado_evento_5.jpg");
+}
+
+.evento li.seis {
+    background: url("../img/destacado_evento_6.jpg");
+}
+
+.evento {
+    margin: 0px;
+    padding: 0px;
+}
+
+.evento li.tres, .evento li.seis {
+    margin-right: 0px;
+}
+.evento-item a {
+    background: rgba(255, 55, 102, 0);
+    display: block;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+    height: 100%;
+}
+.evento-item a:hover {
+    background: rgba(255, 55, 102, 0.5);
+}
+.vertical-center {
+    position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+    transform: translateY(-50%);
+}
+
+.evento-item .vertical-center {
+    padding: 1rem 2rem;
+}
+.evento-item_title,
+.evento-item_tag {
+    color: #FFF;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 0;
+    text-shadow: 2px 2px 1px rgba(255, 55, 102, 1);
+}
+.evento-item_tag {
+    font-size: 1rem;
+    line-height: 1rem;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.push {
+    clear: both;
+}
+
+.busca {
+    margin: 50px 0px;
+}
+
+.asistir {
+    background: #eaeaea;
+    float: left;
+    width: 100%;
+}
+
+.icons {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 5px #a4a1a1;
+    line-height: 0em;
+    margin: 0px 11.5%;
+    float: left;
+}
+
+.icons p {
+    color: #a4a1a1;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0px;
+    text-align: center;
+    padding: 0px;
+}
+
+.icon-text {
+    float: left;
+    width: 29%;
+    text-align: center;
+    margin: 20px 18px;
+}
+
+.icon-text h3 {
+    font-size: 20px;
+    color: $c-main-pink;
+    font-weight: 500;
+}
+
+.icon-text p {
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    color: #333;
+    line-height: 1.8em;
+}
+
+
+

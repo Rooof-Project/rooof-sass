@@ -1,0 +1,19 @@
+<div class="button__wrap"><a href="somos.html" class="button">DESCUBRE QUÉ ES</a></div>
+
+.button__wrap {
+    text-align: center;
+}
+.button {
+    background: #ff3766;
+    border: 0;
+    color: white;
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 5px;
+    text-shadow: none;
+    text-transform: uppercase;
+}

@@ -1,0 +1,234 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ROOOF</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+</head>
+<body>
+	<div class="header">
+            <div class="wrap">
+                <div class="logo"><a href="index.html">ROOOF</a></div>
+                <nav>
+                    <ul class="left">
+                    <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
+                    <li><a href="evento.html">Busca un evento</a></li>
+                    <li><a href="crea.html">Crea tu evento</a></li>
+                    </ul>
+                    <ul class="right">
+                    <button class="log-in">Inicia sesión</button>
+                    <div class="pop-log">
+                      <span>✖</span>
+                      <h1>Inicia sesión</h1>
+                      <div class="reg-facebook">
+                        <img src="img/social-facebook.png">
+                        <a href="">Inicia sesión con facebook</a>
+                    </div>
+                      <div class="reg-twitter">
+                        <img src="img/social-twitter.png">
+                        <a href="">Inicia sesión con twitter</a>
+                    </div>
+                        <div class="reg-line-left"></div>
+                        <div class="zero">o</div>
+                            <div class="reg-line-right"></div>
+                      <h2>Inicia sesión con cuenta de correo</h2>
+                      <form class="reg">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email"><br>
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" name="password"><br>
+                        <p>¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
+                        <button id="send" class="registrarse1" type="submit">INICIAR SESIÓN</button>
+                      </form>
+                      <div class="inicia-sesion1">
+                        <p>¿Todavía no tienes tu cuenta en ROOOF? <a href="">Regístrate</a></p></div>
+                    </div>
+
+                    <script type="text/javascript">
+                         $(document).ready(function () {
+                             $("button.log-in").click(function () {
+                                 $(".pop-log").fadeIn(300);
+                                 positionPopup();
+                             });
+
+                             $(".pop-log > span").click(function () {
+                                 $(".pop-log").fadeOut(300);
+                             });
+                         });
+                    </script>
+                    <button class="registro">Regístrate</button>
+                    <div class="pop">
+                      <span>✖</span>
+                      <h1>Regístrate</h1>
+                      <div class="reg-facebook">
+                        <img src="img/social-facebook.png">
+                        <a href="">Regístrate con facebook</a>
+                    </div>
+                      <div class="reg-twitter">
+                        <img src="img/social-twitter.png">
+                        <a href="">Regístrate con twitter</a>
+                    </div>
+                        <div class="reg-line-left"></div>
+                        <div class="zero">o</div>
+                            <div class="reg-line-right"></div>
+                      <h2>Regístrate con cuenta de correo</h2>
+                      <form class="reg">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="palabra"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email"><br>
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" name="password"><br>
+                        <p>Al registrate aceptas las <a href="">condiciones legales</a>.</p>
+                        <button id="send" class="registrarse" type="submit">REGISTRARSE</button>
+                      </form>
+                      <div class="inicia-sesion">
+                        <p>¿Ya tienes una cuenta en ROOOF? <a href="">Inicia seción</a></p></div>
+                    </div>
+                    <script type="text/javascript">
+                         $(document).ready(function () {
+                             $("button.registro").click(function () {
+                                 $(".pop").fadeIn(300);
+                                 positionPopup();
+                             });
+
+                             $(".pop > span").click(function () {
+                                 $(".pop").fadeOut(300);
+                             });
+                         });
+                    </script>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+
+
+<div class="ficha-evento">
+    <div class="titulo">
+        <h2>COCODRILA</h2>
+        <p>Picoteo y street art en nuestra casa</p>
+    </div>
+    <div class="wrap">
+        <div class="wrap2">
+        <div class="main">
+            <img src="img/destacado_evento_1.png">
+            <h1>SOBRE EL EVENTO</h1>
+            <p>Somos Sainer y Bezt, dos artistas polacos que desde 2008 formamos el duo Ugly Heroes.</p>
+            <p>Tras convertirnos en figuras de referencia en el arte urbano de los últimos años inauguramos nuestra  primera exposición en Barcelona bajo el título “Cocodrila”.</p>
+            <p>Poética visual, colorido y por supuesto picoteo para todo aquel que venga. Una exposición ineludible en el panorama del Street Art.</p>
+        </div>
+        <div class="main-compartir">
+            <p>COMPARTIR</p>
+            <img src="img/social-twitter-333.png">
+            <img src="img/social-facebook-333.png">
+        </div>
+        </div>
+        <aside>
+            <h3>DETALLES DEL EVENTO</h3>
+            <div class="main-etiqueta-musica"><p>#ARTE</p></div>
+            <div class="main-etiqueta-gastronomia"><p>#GASTRONOMÍA</p></div>
+            <div class="push"></div>
+            <div class="lista">
+                <div class="fecha">
+                    <img src="img/calendar.png">
+                    <h4>Fecha</h4>
+                    <p>Sábado 21 Marzo, 18:00-22:00h</p>
+                </div>
+                <div class="push"></div>
+                <div class="lugar">
+                    <img src="img/place.png">
+                    <h4>Lugar</h4>
+                    <p>Poblenou</p>
+                </div>
+                <div class="push"></div>
+                <div class="aforo">
+                    <img src="img/user.png">
+                    <h4>Aforo</h4>
+                    <p>50 personas</p>
+                </div>
+                <div class="push"></div>
+            </div>
+            <div class="main-precio"><p>Taquilla Inversa</p></div>
+            <div class="push"></div>
+
+
+
+             <div class="border-ticket">
+              <div>
+                <ul>
+                  <li>
+                    <h4>Escoge tu entrada</h4></li>
+
+                  <li><input type="radio" name="radio-btn" />+1 voy solo</li>
+
+                  <li><input type="radio" name="radio-btn" />+2 voy con un amigo</li>
+                  </ul>
+
+              </div>
+
+              <div class="aside-botton paso2"><p><a href="">RESERVA ENTRADA</a></p></div>
+            </div>
+            <div class="push"></div>
+
+            <div class="reserva-container">
+             <div class="aviso-reserva">
+                <h4>Reservar es muy fácil</h4>
+                <p>Reserva ahora y paga el día del evento en casa del creador. Te mandaremos la dirección exacta y los datos de contacto a tu email una vez que hayas reservado.</p>
+            </div>
+            </div>
+        </aside>
+    </div>
+    <div class="push"></div>
+
+    <div class="main-line"></div>
+    <div class="push"></div>
+    <div class="wrap">
+        <div class="sobre-host">
+            <img src="img/cocodrila-user.png">
+            <h1>SOBRE UGLY HEROES</h1>
+            <h2>Creador del evento</h2>
+            <div class="ver-perfil"><a href="perfil-ugly.html">VER PERFIL</a></div>
+            <p>Graduados en bellas artes en Lodz (Polonia), encontramos en las producciones murales a gran escala el formato ideal donde expresar y mostrar lo que hacemos: Street Art en un mundo imaginario y surrealista. </p>
+            <p>Más info: <a href="http://themilkywayexpress.bandcamp.com/">Ugly Heroes</a></p>
+        </div>
+    </div>
+<footer>
+    <div class="wrap">
+        <div class="logo-down">ROOOF</div>
+        <div class="link-down"><a href="mailto:hellorooof@gmail.com">contacta con nosotros</a></div>
+        <div class="social-network">
+            <a href="https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
+            <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

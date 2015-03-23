@@ -1,0 +1,26 @@
+@import "base/header";
+@import "base/variables";
+@import "base/landing";
+@import "base/footer";
+
+
+html, body {
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+    height: 100%;
+    margin: 0px;
+}
+
+a {
+    text-decoration:none;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+.wrap{
+        margin:0px auto;
+        max-width: 60rem;
+        padding: 0 1rem;
+        width:100%;
+    }

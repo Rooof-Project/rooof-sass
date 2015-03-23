@@ -1,0 +1,221 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ROOOF</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+</head>
+<body>
+	<div class="header">
+      <div class="wrap">
+        <div class="logo"><a href="index.html">ROOOF</a></div>
+        <nav>
+          <ul class="left">
+                    <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
+          <li><a href="evento.html">Busca un evento</a></li>
+          <li><a href="crea.html">Crea tu evento</a></li>
+          </ul>
+                    <ul class="right">
+                    <button class="log-in">Inicia sesión</button>
+                    <div class="pop-log">
+                      <span>✖</span>
+                      <h1>Inicia sesión</h1>
+                      <div class="reg-facebook">
+                        <img src="img/social-facebook.png">
+                        <a href="">Inicia sesión con facebook</a>
+                    </div>
+                      <div class="reg-twitter">
+                        <img src="img/social-twitter.png">
+                        <a href="">Inicia sesión con twitter</a>
+                    </div>
+                        <div class="reg-line-left"></div>
+                        <div class="zero">o</div>
+                            <div class="reg-line-right"></div>
+                      <h2>Inicia sesión con cuenta de correo</h2>
+                      <form class="reg">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email"><br>
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" name="password"><br>
+                        <p>¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
+                        <button id="send" class="registrarse1" type="submit">INICIAR SESIÓN</button>
+                      </form>
+                      <div class="inicia-sesion1">
+                        <p>¿Todavía no tienes tu cuenta en ROOOF? <a href="">Regístrate</a></p></div>
+                    </div>
+
+                    <script type="text/javascript">
+                         $(document).ready(function () {
+                             $("button.log-in").click(function () {
+                                 $(".pop-log").fadeIn(300);
+                                 positionPopup();
+                             });
+
+                             $(".pop-log > span").click(function () {
+                                 $(".pop-log").fadeOut(300);
+                             });
+                         });
+                    </script>
+                    <button class="registro">Regístrate</button>
+                    <div class="pop">
+                      <span>✖</span>
+                      <h1>Regístrate</h1>
+                      <div class="reg-facebook">
+                        <img src="img/social-facebook.png">
+                        <a href="">Regístrate con facebook</a>
+                    </div>
+                      <div class="reg-twitter">
+                        <img src="img/social-twitter.png">
+                        <a href="">Regístrate con twitter</a>
+                    </div>
+                        <div class="reg-line-left"></div>
+                        <div class="zero">o</div>
+                            <div class="reg-line-right"></div>
+                      <h2>Regístrate con cuenta de correo</h2>
+                      <form class="reg">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="palabra"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email"><br>
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" name="password"><br>
+                        <p>Al registrate aceptas las <a href="">condiciones legales</a>.</p>
+                        <button id="send" class="registrarse" type="submit">REGISTRARSE</button>
+                      </form>
+                      <div class="inicia-sesion">
+                        <p>¿Ya tienes una cuenta en ROOOF? <a href="">Inicia seción</a></p></div>
+                    </div>
+                    <script type="text/javascript">
+                         $(document).ready(function () {
+                             $("button.registro").click(function () {
+                                 $(".pop").fadeIn(300);
+                                 positionPopup();
+                             });
+
+                             $(".pop > span").click(function () {
+                                 $(".pop").fadeOut(300);
+                             });
+                         });
+                    </script>
+                    </ul>
+        </nav>
+      </div>
+  </div>
+
+
+
+
+<div class="ficha-perfil">
+
+    <div class="wrap sobre-user">
+
+            <img src="img/hostperfil01.jpg">
+            <div class="main-info-user">
+                <h1>MILKY WAY</h1>
+
+                <p>Haciendo barbacoas juntos desde 1995. Tocando juntos desde 2004. Somos una Banda de Rock Blues con ramalazos psicodélicos y folkcountry.
+
+                 Puedes vernos en algunos festivales nacionales como Extremusika o Monkey Week, y ahora en el tejado!
+                 <br>
+                 Nos encanta la buena música, la buena comida y la buena compañia. Llevamos tocando juntos bastantes añitos y queremos compartir nuestra música con todo aquel que quiera, siempre rodeados de buen ambiente.
+
+                </p>
+                <p>Más info<a href="http://themilkywayexpress.bandcamp.com/"> www.themilkywayexpress.bandcamp.com/</p></a>
+            </div>
+        <div class="push"></div>
+    </div>
+
+     <div class="main-line"></div>
+
+        <div class="wrap">
+            <div class="info-user">
+                <h3>Eventos</h3>
+                <div class="eventos-disfrutados">
+                    <div class=" left">
+                        <h4>Disfrutados</h4>
+                        <h5>2 eventos</h5>
+                    </div>
+
+                    <div class="eventos-user">
+                        <div class="destacado-evento-user left">
+                           <a href="vietnamita.html"> <img src="img/destacado_evento_4.jpg"></a>
+                             <a href="vietnamita.html"><h2>Vietnamise Food Experience</h2></a>
+                            <p id="etiqueta-gastronomia"> #GASTRONOMÍA</p>
+
+                        </div>
+
+                        <div class="destacado-evento-user left">
+                             <a href="band.html"><img src="img/destacado_evento_5.jpg"></a>
+                            <a href="band.html"><h2>A band Apart</h2></a>
+                            <p id="etiqueta-musica"> #MÚSICA</p>
+                        </div>
+                    </div>
+                    <div class="push"></div>
+                </div>
+
+                <div class="main-line"></div>
+
+                <div class="eventos-creados">
+                    <div class="left">
+                        <h4>Creados</h4>
+                        <h5>1 evento</h5>
+                    </div>
+
+                    <div class="eventos-user">
+                        <a href="milky.html">
+                        <div class="destacado-evento-user left">
+                            <img src="img/destacado_evento_2.jpg"></a>
+                            <a href="milky.html"><h2>The Milky way express</h2></a>
+
+                            <p id="etiqueta-musica"> #MÚSICA</p>
+                    </div>
+                    <div class="push"></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+
+<footer>
+    <div class="wrap">
+        <div class="logo-down">ROOOF</div>
+        <div class="link-down"><a href="mailto:hellorooof@gmail.com">contacta con nosotros</a></div>
+        <div class="social-network">
+            <a href="https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
+            <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

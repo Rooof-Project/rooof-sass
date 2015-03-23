@@ -1,0 +1,91 @@
+@import '_variables';
+
+.crea ,.busca_banner{
+    background-image: url("../img/hazte_creador.jpg");
+    height: 310px;
+    width: 100%;
+    background-origin: content-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+.crea {
+    background-image: url("../img/hazte_creador.jpg");
+
+}
+.busca_banner {
+    background-image: url("../img/busca_eventos.jpg");
+
+}
+
+.crea h1, .crea p , .busca_banner h1, .busca_banner p{
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+}
+
+.crea h1 , .busca_banner h1{
+    margin-top: 60px;
+    font-size: 50px
+}
+
+.crea p, .busca_banner p {
+    font-size: 24px;
+    margin-top: 20 0;
+    font-family: 'PT Serif', serif;
+}
+
+.bottom-abajo {
+    margin-top: 20px;
+
+}
+
+.bottom-abajo a {
+    border: solid 1px white;
+}
+
+footer {
+    height: 84px;
+    width: 100%;
+    background: #333;
+    float: left;
+    margin: 1px 0px;
+}
+
+.logo-down {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    line-height: 2.6em;
+    width: 600px;
+    float: left;
+}
+
+.social-network {
+    float: right;
+    margin: 20px 0px 0px 0px;
+    width: 200px;
+    border-left: solid 1px #eaeaea;
+}
+
+.social-network img {
+    width: auto;
+    height: auto;
+    margin: 0px 0px 0px 38px;
+}
+
+footer a {
+    color: white;
+    font-weight: 200;
+    text-decoration: underline;
+
+}
+
+.link-down {
+    width: 150px;
+    float: left;
+    margin-top: 30px;
+}
