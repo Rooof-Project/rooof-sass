@@ -12,11 +12,12 @@ header {
 
     .wrap{
         .logo {
+            border-right: solid 1px $c-dark-gray;
             font-weight: 700;
             font-size: 30px;
             color: $c-main-gray;
             line-height: 1.8em;
-            border-right: solid 1px $c-dark-gray;
+            margin-left: 1.5rem;
             width: 120px;
             float: left;
         }
@@ -115,6 +116,10 @@ header {
 @media screen and (min-width: (960px)) {
     header {
         .wrap {
+
+          .logo {
+            margin-left: 0;
+          }
 
             .nav-hamburger {
                 display: none;

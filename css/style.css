@@ -8,11 +8,12 @@ header {
   height: 54px;
   border-bottom: solid 2px #bbbaba; }
   header .wrap .logo {
+    border-right: solid 1px #bbbaba;
     font-weight: 700;
     font-size: 30px;
     color: #333;
     line-height: 1.8em;
-    border-right: solid 1px #bbbaba;
+    margin-left: 1.5rem;
     width: 120px;
     float: left; }
   header .wrap .logo a {
@@ -95,6 +96,8 @@ header {
 @media screen and (min-width: 960px) {
   header .wrap {
     /* end of pop-up */ }
+    header .wrap .logo {
+      margin-left: 0; }
     header .wrap .nav-hamburger {
       display: none; }
     header .wrap .menu {
@@ -261,11 +264,12 @@ header {
   height: 54px;
   border-bottom: solid 2px #bbbaba; }
   header .wrap .logo {
+    border-right: solid 1px #bbbaba;
     font-weight: 700;
     font-size: 30px;
     color: #333;
     line-height: 1.8em;
-    border-right: solid 1px #bbbaba;
+    margin-left: 1.5rem;
     width: 120px;
     float: left; }
   header .wrap .logo a {
@@ -348,6 +352,8 @@ header {
 @media screen and (min-width: 960px) {
   header .wrap {
     /* end of pop-up */ }
+    header .wrap .logo {
+      margin-left: 0; }
     header .wrap .nav-hamburger {
       display: none; }
     header .wrap .menu {
@@ -867,7 +873,6 @@ a {
 .wrap {
   margin: 0px auto;
   max-width: 60rem;
-  padding: 0 1rem;
   width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
