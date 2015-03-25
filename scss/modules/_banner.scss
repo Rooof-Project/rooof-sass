@@ -1,0 +1,29 @@
+.banner{
+
+        .text{
+            max-width: 700px;
+            text-align: center;
+            margin: 0 auto;
+            h1{
+             @include font-size(40px);
+                color: $c-Lightest;
+                font-weight: $weight-semi-bold;
+                text-shadow: 2px 2px 1px $c-main-pink;
+            }
+
+            p{
+                @include font-size(18px);
+                color:$c-Lightest ;
+                text-shadow: 2px 2px 1px $c-main-gray;
+
+                @include responsive($small-break) {
+                    @include font-size(16px);
+                    padding: 0;
+                }
+                }
+            }
+        @include responsive($small-break) {
+                h1{ line-height: 1.6rem;
+                    }
+            }
+            }

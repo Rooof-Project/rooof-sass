@@ -3,3 +3,38 @@ $c-light-gray: #8e8e8e;
 $c-dark-gray: #bbbaba;
 $c-main-gray: #333;
 $c-main-pink: #ff3766;
+
+// color style-guide
+$teal:  #39cccc;
+
+// background color
+
+$grey:   #eaeaea;
+$bg-color: $grey;
+
+// Tags colors
+//
+
+$blue:  #0074d9;
+$teal:  #39cccc;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime:  #01ff70;
+$orange:  #ff851b;
+$red:     #ff4136;
+
+// Responsive breakpoints
+$small-break: 480px;
+$big-break: 780px;
+
+
+// Margin
+$margin:0;
+$margin-bottom:20px;
+
+// Consistent settings
+$br: 5px; // Border-radius
+$btn-br: 5px; // Button border-radius
+$padding: 40px; // Padding and margins
+$line-height: 44px; // Consistent height for buttons, inputs etc.
+

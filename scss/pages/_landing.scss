@@ -43,13 +43,13 @@
 .button {
     background: $c-main-pink;
     border: solid 1px transparent;
+    border-radius: 5px;
     color: white;
     display: inline-block;
     font-size: 1.5rem;
     line-height: 1.5rem;
     padding: 1rem 2rem;
     text-align: center;
-    border-radius: 5px;
     text-shadow: none;
     text-transform: uppercase;
 }
@@ -64,24 +64,7 @@
     background: white;
 }
 
-.titulo h2 {
-    font-size: 34px;
-    font-weight: 300;
-    color: #333;
-    margin: 0px auto;
-    text-align: center;
-    padding-top: 50px;
-}
 
-.titulo p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: $c-main-pink;
-    margin: 0px auto;
-    text-align: center;
-    font-family: 'PT Sans', sans-serif;
-    padding-bottom: 60px;
-}
 
 .evento {
     width: 100%;
@@ -224,6 +207,12 @@
     font-family: 'PT Serif', serif;
     color: #333;
     line-height: 1.8em;
+}
+
+.crea{
+    background: url("../img/hazte_creador.jpg") no-repeat;
+    background-size: cover;
+    margin: 0;
 }
 
 

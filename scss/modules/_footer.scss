@@ -1,0 +1,55 @@
+
+
+.bottom-abajo {
+    margin-top: 20px;
+
+}
+
+.bottom-abajo a {
+    border: solid 1px white;
+}
+
+footer {
+    height: 84px;
+    width: 100%;
+    background: #333;
+    float: left;
+    margin: 1px 0px;
+}
+
+.logo-down {
+
+    color: white;
+    font-family: $font-primary;
+    font-size: 30px;
+    font-weight: $weight-extra-bold;
+    line-height: 2.6em;
+    width: 600px;
+    float: left;
+}
+
+.social-network {
+    float: right;
+    margin: 20px 0px 0px 0px;
+    width: 200px;
+    border-left: solid 1px #eaeaea;
+}
+
+.social-network img {
+    width: auto;
+    height: auto;
+    margin: 0px 0px 0px 38px;
+}
+
+footer a {
+    color: white;
+    font-weight: 200;
+    text-decoration: underline;
+
+}
+
+.link-down {
+    width: 150px;
+    float: left;
+    margin-top: 30px;
+}

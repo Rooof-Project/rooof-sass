@@ -1,12 +1,39 @@
-@import "base/header";
 @import "base/variables";
-@import "base/landing";
-@import "base/footer";
+@import "base/mixins";
+
+// Import typical layout styles
+@import "base/grid";
+@import "base/type";
+@import "base/responsive";
+// Style-guide
+@import "base/style-guide";
+
+// Import reusable modules
+@import "modules/header";
+@import "modules/footer";
+@import "modules/buttons";
+@import "modules/forms";
+@import "modules/banner";
+@import "modules/media";
+
+
+// Reset default browser styles using Normalize
+@import "base/normalize";
+
+// Import fonts from Google
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+// Specific project styles, add any section specific sass modules here
+@import "pages/landing";
+@import "pages/lista_eventos";
+
+
 
 
 html, body {
-    display: inline-block;
-    font-family: 'Dosis', sans-serif;
+    font-family: $font-complementary;
     height: 100%;
     margin: 0px;
 }

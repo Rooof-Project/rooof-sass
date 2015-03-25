@@ -1,0 +1,24 @@
+.lista-eventos{
+background-color: $bg-color;
+padding-top: 70px;
+}
+
+.lista-evento-item{
+    background-color: $c-Lightest;
+        .evento_info{
+        margin:0px 15px;
+        }
+    }
+
+a.img{
+    display: block;
+    position: relative;
+        &:hover {
+      background: $c-main-pink;
+     }
+}
+
+
+
+
+
