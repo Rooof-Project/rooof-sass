@@ -20,13 +20,16 @@
 }
 
 .top-heading h1 {
-    line-height: 0rem;
+    color: white;
+    line-height: 2.3rem;
     font-size: 70px;
+    font-weight: $weight-extra-bold;
 }
 
 .top-heading p {
     color: white;
     font-size: 42px;
+    font-family: $font-primary;
     line-height: 1.1em;
     margin: 0px auto;
     max-width: 520px;
@@ -34,29 +37,6 @@
     text-align: center;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 1);
     width: 50%;
-}
-
-
-.button__wrap {
-    text-align: center;
-}
-.button {
-    background: $c-main-pink;
-    border: solid 1px transparent;
-    border-radius: 5px;
-    color: white;
-    display: inline-block;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-shadow: none;
-    text-transform: uppercase;
-}
-.button:hover{
-    background: white;
-    border: solid 1px  $c-main-pink;
-    color:  $c-main-pink;
 }
 
 .sugerencias {
@@ -140,8 +120,7 @@
 .evento-item .vertical-center {
     padding: 1rem 2rem;
 }
-.evento-item_title,
-.evento-item_tag {
+.evento-item_title{
     color: #FFF;
     font-size: 2rem;
     line-height: 2rem;
@@ -149,7 +128,8 @@
     text-shadow: 2px 2px 1px rgba(255, 55, 102, 1);
 }
 .evento-item_tag {
-    font-size: 1rem;
+    color: #FFF;
+    font-size: 1.1rem;
     line-height: 1rem;
     text-shadow: none;
     text-transform: uppercase;

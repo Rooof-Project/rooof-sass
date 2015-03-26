@@ -412,7 +412,7 @@ h4.sg-ptserif {
     margin-right: 50px; }
 
 .space {
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
 
 /* --------------------header-------------------- */
 header {
@@ -1237,12 +1237,15 @@ table {
   transform: translateY(-50%); }
 
 .top-heading h1 {
-  line-height: 0rem;
-  font-size: 70px; }
+  color: white;
+  line-height: 2.3rem;
+  font-size: 70px;
+  font-weight: 800; }
 
 .top-heading p, .top-heading blockquote {
   color: white;
   font-size: 42px;
+  font-family: "Dosis", sans-serif;
   line-height: 1.1em;
   margin: 0px auto;
   max-width: 520px;
@@ -1250,27 +1253,6 @@ table {
   text-align: center;
   text-shadow: -1px -1px 1px black;
   width: 50%; }
-
-.button__wrap {
-  text-align: center; }
-
-.button {
-  background: #ff3766;
-  border: solid 1px transparent;
-  border-radius: 5px;
-  color: white;
-  display: inline-block;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  padding: 1rem 2rem;
-  text-align: center;
-  text-shadow: none;
-  text-transform: uppercase; }
-
-.button:hover {
-  background: white;
-  border: solid 1px #ff3766;
-  color: #ff3766; }
 
 .sugerencias {
   width: 100%;
@@ -1340,8 +1322,7 @@ table {
 .evento-item .vertical-center {
   padding: 1rem 2rem; }
 
-.evento-item_title,
-.evento-item_tag {
+.evento-item_title {
   color: #FFF;
   font-size: 2rem;
   line-height: 2rem;
@@ -1349,7 +1330,8 @@ table {
   text-shadow: 2px 2px 1px #ff3766; }
 
 .evento-item_tag {
-  font-size: 1rem;
+  color: #FFF;
+  font-size: 1.1rem;
   line-height: 1rem;
   text-shadow: none;
   text-transform: uppercase; }
