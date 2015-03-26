@@ -28,7 +28,6 @@ $weight-extra-bold: 800;
 body {
   color: $c-main-gray;
   font-family: "PT Sans", "Dosis", Arial, sans-serif;
-
   font-style: normal;
   line-height: 1.6;
 }
@@ -86,7 +85,7 @@ h3,.h3{
 
 .h3-complementary{
   color: $c-main-pink;
-  line-height: 0.8rem;
+  line-height: 1.3rem;
   text-transform: none;
   @include font-size(20px);
 }
@@ -110,11 +109,13 @@ h3,.h3{
 p, .p{
   color: $c-main-gray;
   font-family: $font-serif;
+  line-height: 1.4rem;
   margin-bottom: 10px;
 }
 .p-complementary{
   color: $c-main-gray;
   font-family: $font-complementary;
+  line-height: 1.4rem;
   margin-bottom: 10px;
 }
 
@@ -140,25 +141,38 @@ a {
   display: inline-block;
   font-weight: $weight-regular;
   line-height: 1rem;
+  text-transform: uppercase;
 }
 
 .tag-musica{
   color: $blue;
+    &:after{
+      content:"#música";
+    }
 }
 .tag-gastronomia{
-  color: $orange;
-
+  color: $green;
+  &:after{
+      content:"#gastronomía";
+      }
 }
 .tag-teatro{
-  color: $red;
-
+  color: $orange;
+  &:after{
+      content:"#teatro";
+}
 }
 .tag-humor{
-  color: $lime;
-
-}
+  color: $red;
+  &:after{
+      content:"#humor";
+  }
+  }
 .tag-arte{
   color:$teal;
+  &:after{
+      content:"#arte";
+}
 }
 
 .titulo{
@@ -198,9 +212,14 @@ pre {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 13px;
   line-height: 20px;
+  margin: 30px 0px;
   padding: 2px 10px;
   word-break: break-all;
   word-wrap: break-word;
+}
+
+hr{
+  margin-bottom: 20px;
 }
 
 
@@ -229,20 +248,19 @@ pre {
   h1,
   .h1 {
     font-size: 26px;
-    line-height: 2.2rem;
+    line-height: 2.6rem;
   }
 
   h2,
   .h2,
   .h2-complementary {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 1.6rem;
   }
 
   h3,
   .h3,
   .h3-complementary {
-    font-size: 16px;
   }
 
   h4,
@@ -258,7 +276,7 @@ pre {
   .p-complementary,
   ul,
   ol {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 

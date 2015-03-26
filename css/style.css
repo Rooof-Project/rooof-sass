@@ -16,13 +16,22 @@
   .group:after {
     clear: both; }
 
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.valign {
+  vertical-align: middle; }
+
 section,
 .section {
   padding: 30px 0px; }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 980px;
   padding: 0 10px; }
 
 .span1,
@@ -222,7 +231,7 @@ h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
 
 .h3-complementary {
   color: #ff3766;
-  line-height: 0.8rem;
+  line-height: 1.3rem;
   text-transform: none;
   font-size: 20px;
   font-size: 1.25rem; }
@@ -249,11 +258,13 @@ h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
 p, blockquote, .p {
   color: #333;
   font-family: "PT Serif", serif;
+  line-height: 1.4rem;
   margin-bottom: 10px; }
 
 .p-complementary {
   color: #333;
   font-family: "PT Sans", sans-serif;
+  line-height: 1.4rem;
   margin-bottom: 10px; }
 
 blockquote {
@@ -272,22 +283,33 @@ a {
   font-size: 0.9375rem;
   display: inline-block;
   font-weight: 400;
-  line-height: 1rem; }
+  line-height: 1rem;
+  text-transform: uppercase; }
 
 .tag-musica {
-  color: #0074d9; }
+  color: #0e96a5; }
+  .tag-musica:after {
+    content: "#música"; }
 
 .tag-gastronomia {
-  color: #ff851b; }
+  color: #49b000; }
+  .tag-gastronomia:after {
+    content: "#gastronomía"; }
 
 .tag-teatro {
-  color: #ff4136; }
+  color: #ff8500; }
+  .tag-teatro:after {
+    content: "#teatro"; }
 
 .tag-humor {
-  color: #01ff70; }
+  color: #ff4136; }
+  .tag-humor:after {
+    content: "#humor"; }
 
 .tag-arte {
   color: #39cccc; }
+  .tag-arte:after {
+    content: "#arte"; }
 
 .titulo {
   margin-bottom: 20px;
@@ -306,9 +328,13 @@ pre {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 13px;
   line-height: 20px;
+  margin: 30px 0px;
   padding: 2px 10px;
   word-break: break-all;
   word-wrap: break-word; }
+
+hr {
+  margin-bottom: 20px; }
 
 @media screen and (max-width: 480px) {
   body {
@@ -329,18 +355,13 @@ pre {
   h1,
   .h1 {
     font-size: 26px;
-    line-height: 2.2rem; }
+    line-height: 2.6rem; }
 
   h2,
   .h2,
   .h2-complementary {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 1.6rem; }
-
-  h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte,
-  .h3,
-  .h3-complementary {
-    font-size: 16px; }
 
   h4,
   .h4,
@@ -356,7 +377,7 @@ pre {
   .p-complementary,
   ul,
   ol {
-    font-size: 14px; } }
+    font-size: 16px; } }
 @media screen and (max-width: 480px) {
   body {
     overflow-x: hidden; } }
@@ -365,6 +386,7 @@ h2.sg {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
+  margin: 20px 0px 0px 0px;
   text-transform: none; }
 
 h4.sg-dosis {
@@ -379,8 +401,6 @@ h4.sg-ptserif {
 
 .sg-intro {
   background-color: #eaeaea;
-  margin-top: -40px;
-  position: fixed;
   width: 100%; }
   .sg-intro h2 {
     color: #fff;
@@ -388,7 +408,11 @@ h4.sg-ptserif {
     font-weight: 600;
     font-size: 28px;
     font-size: 1.75rem;
-    float: right; }
+    float: right;
+    margin-right: 50px; }
+
+.space {
+  margin-bottom: 20px; }
 
 /* --------------------header-------------------- */
 header {
@@ -769,8 +793,9 @@ footer a {
 
 @media screen and (max-width: 480px) {
   .btn {
-    display: block;
-    margin-bottom: 10px; } }
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 60%; } }
 label {
   display: block;
   margin-bottom: 5px; }
@@ -853,8 +878,8 @@ form {
         font-size: 1rem;
         padding: 0; } }
 @media screen and (max-width: 480px) {
-  .banner h1 {
-    line-height: 1.6rem; } }
+  .banner {
+    padding: 60px 0px; } }
 
 img,
 video,
@@ -1387,13 +1412,32 @@ table {
 .lista-evento-item {
   background-color: #fff; }
   .lista-evento-item .evento_info {
-    margin: 0px 15px; }
+    padding: 15px 15px 5px 15px; }
 
 a.img {
   display: block;
   position: relative; }
   a.img:hover {
     background: #ff3766; }
+
+.host-info {
+  padding-top: 10px; }
+
+.host {
+  float: left; }
+  .host p, .host blockquote {
+    line-height: 1rem; }
+
+.host-img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  height: 45px;
+  width: 45px;
+  vertical-align: middle; }
+
+.evento-btn {
+  float: right; }
 
 html, body {
   font-family: "PT Sans", sans-serif;

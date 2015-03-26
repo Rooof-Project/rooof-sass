@@ -106,8 +106,9 @@
 // }
 @include responsive($small-break) {
   .btn {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
+    width: 60%;
   }
 
 }

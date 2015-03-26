@@ -23,7 +23,6 @@
                 }
             }
         @include responsive($small-break) {
-                h1{ line-height: 1.6rem;
-                    }
+            padding: 60px 0px;
             }
             }

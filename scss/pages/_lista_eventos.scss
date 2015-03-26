@@ -6,7 +6,7 @@ padding-top: 70px;
 .lista-evento-item{
     background-color: $c-Lightest;
         .evento_info{
-        margin:0px 15px;
+        padding: 15px 15px 5px 15px;
         }
     }
 
@@ -17,6 +17,33 @@ a.img{
       background: $c-main-pink;
      }
 }
+.host-info{
+    padding-top: 10px;
+}
+.host{
+    float: left;
+     p{
+        line-height: 1rem;
+    }
+
+}
+.host-img{
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  height: 45px;
+  width: 45px;
+  vertical-align: middle;
+}
+
+.evento-btn{
+    float: right;
+}
+
+@include responsive($big-break) {
+
+}
+
 
 
 
