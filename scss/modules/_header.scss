@@ -27,6 +27,9 @@ header {
             font-family: $font-primary;
             font-size: 30px;
             font-weight: $weight-extra-bold;
+              &:hover{
+                    text-decoration: none;
+                      }
         }
 
         nav {
@@ -38,6 +41,7 @@ header {
 
                  &:hover{
                     color: $c-light-gray;
+                    text-decoration: none;
                       }
                 }
            }
@@ -156,7 +160,8 @@ header {
 
             nav ul.left li {
                 float: left;
-                margin-right: 30px;
+                margin: 12px 15px;
+
             }
 
             nav ul.left li a {
@@ -168,7 +173,8 @@ header {
 
             nav ul.right {
                 display: inline-block;
-                margin-top: 27px;
+                margin: 8px 0px;
+
                 float: right;
                 list-style: none;
                 text-decoration: none;
@@ -178,13 +184,10 @@ header {
                 .registro, .log-in {
                     background: none;
                     border: none;
-                    color: $c-main-pink;
                     cursor: pointer;
                     display: block;
                     float: right;
-                    font-size: 13px;
-                    margin-left: 30px;
-                    margin-top: -14px;
+
                     text-decoration: underline;
                 }
 

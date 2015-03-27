@@ -25,151 +25,146 @@
 .valign {
   vertical-align: middle; }
 
-section,
-.section {
-  padding: 30px 0px; }
+section {
+  padding-bottom: 30px; }
 
 .container {
   margin: 0 auto;
   max-width: 980px;
   padding: 0 10px; }
 
-.span1,
-.span2,
-.span3,
-.span4,
-.span5,
-.span6,
-.span7,
-.span8,
-.span9,
-.span10,
-.span11,
-.span12 {
+/*  SECTIONS  ============================================================================= */
+.section {
+  clear: both;
+  padding: 30px 0px;
+  margin: 0px; }
+
+/*  GROUPING  ============================================================================= */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+.col {
   display: block;
-  margin-bottom: 20px; }
+  float: left;
+  margin: 1% 0 1% 1.6%; }
 
-@media screen and (min-width: 480px) {
-  .container {
-    padding: 0 40px; }
+.col:first-child {
+  margin-left: 0; }
 
-  .group {
-    margin-left: -2.1277%; }
-    .group .group:last-child {
-      margin-bottom: 0px; }
+/* all browsers except IE6 and lower */
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+/*  GRID OF TWELVE   ============================================================================= */
+.span12 {
+  width: 100%; }
 
-  .span1,
-  .span2,
-  .span3,
-  .span4,
-  .span5,
-  .span6,
-  .span7,
-  .span8,
-  .span9,
-  .span10,
+.span11 {
+  width: 91.53%; }
+
+.span10 {
+  width: 83.06%; }
+
+.span9 {
+  width: 74.6%; }
+
+.span8 {
+  width: 66.13%; }
+
+.span7 {
+  width: 57.66%; }
+
+.span6 {
+  width: 49.2%; }
+
+.span5 {
+  width: 40.73%; }
+
+.span4 {
+  width: 32.26%; }
+
+.span3 {
+  width: 23.8%; }
+
+.span2 {
+  width: 15.33%; }
+
+.span1 {
+  width: 6.86%; }
+
+/*  LESS THAN 780 PIXELS */
+@media screen and (max-width: 780px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+
+  .col:first-child {
+    margin-right: 1.8%; }
+
+  /* all browsers except IE6 and lower */
+  .span12,
   .span11,
-  .span12 {
-    box-sizing: border-box;
-    float: left;
-    margin-bottom: 0;
-    margin-left: 2.1277%; }
-
-  .span1 {
-    width: 6.20563%; }
-    .span1.break {
-      float: none; }
-
-  .offset1 {
-    margin-left: 10.46103%; }
-
-  .span2 {
-    width: 14.53897%; }
-    .span2.break {
-      float: none; }
-
-  .offset2 {
-    margin-left: 18.79437%; }
-
-  .span3 {
-    width: 22.8723%; }
-    .span3.break {
-      float: none; }
-
-  .offset3 {
-    margin-left: 27.1277%; }
-
-  .span4 {
-    width: 31.20563%; }
-    .span4.break {
-      float: none; }
-
-  .offset4 {
-    margin-left: 35.46103%; }
-
-  .span5 {
-    width: 39.53897%; }
-    .span5.break {
-      float: none; }
-
-  .offset5 {
-    margin-left: 43.79437%; }
-
-  .span6 {
-    width: 47.8723%; }
-    .span6.break {
-      float: none; }
-
-  .offset6 {
-    margin-left: 52.1277%; }
-
-  .span7 {
-    width: 56.20563%; }
-    .span7.break {
-      float: none; }
-
-  .offset7 {
-    margin-left: 60.46103%; }
-
+  .span10,
   .span8 {
-    width: 64.53897%; }
-    .span8.break {
-      float: none; }
+    width: 100%; }
 
-  .offset8 {
-    margin-left: 68.79437%; }
+  .span7,
+  .span6,
+  .span5,
+  .span4 {
+    width: 49%; }
 
-  .span9 {
-    width: 72.8723%; }
-    .span9.break {
-      float: none; }
+  .span3,
+  .span2,
+  .span1 {
+    width: 100%; } }
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
 
-  .offset9 {
-    margin-left: 77.1277%; }
-
-  .span10 {
-    width: 81.20563%; }
-    .span10.break {
-      float: none; }
-
-  .offset10 {
-    margin-left: 85.46103%; }
+  .span12 {
+    width: 100%; }
 
   .span11 {
-    width: 89.53897%; }
-    .span11.break {
-      float: none; }
+    width: 100%; }
 
-  .offset11 {
-    margin-left: 93.79437%; }
+  .span10 {
+    width: 100%; }
 
-  .span12 {
-    width: 97.8723%; }
-    .span12.break {
-      float: none; }
+  .span9 {
+    width: 100%; }
 
-  .offset12 {
-    margin-left: 102.1277%; } }
+  .span8 {
+    width: 100%; }
+
+  .span7 {
+    width: 100%; }
+
+  .span6 {
+    width: 100%; }
+
+  .span5 {
+    width: 100%; }
+
+  .span4 {
+    width: 100%; }
+
+  .span3 {
+    width: 100%; }
+
+  .span2 {
+    width: 100%; }
+
+  .span1 {
+    width: 100%; } }
 body {
   color: #333;
   font-family: "PT Sans", "Dosis", Arial, sans-serif;
@@ -436,13 +431,16 @@ header {
     font-family: "Dosis", sans-serif;
     font-size: 30px;
     font-weight: 800; }
+    header .wrap .logo a:hover {
+      text-decoration: none; }
   header .wrap nav {
     display: none; }
     header .wrap nav a {
       color: #333;
       font-family: "Dosis", sans-serif; }
       header .wrap nav a:hover {
-        color: #8e8e8e; }
+        color: #8e8e8e;
+        text-decoration: none; }
   header .wrap .nav-hamburger {
     width: 100%;
     height: 50px;
@@ -536,14 +534,14 @@ header {
       text-decoration: none; }
     header .wrap nav ul.left li {
       float: left;
-      margin-right: 30px; }
+      margin: 12px 15px; }
     header .wrap nav ul.left li a {
       color: #333; }
     header .wrap nav ul.left li a:hover {
       color: #8e8e8e; }
     header .wrap nav ul.right {
       display: inline-block;
-      margin-top: 27px;
+      margin: 8px 0px;
       float: right;
       list-style: none;
       text-decoration: none;
@@ -552,13 +550,9 @@ a la simulacion de user de Slay*/ }
       header .wrap nav ul.right .registro, header .wrap nav ul.right .log-in {
         background: none;
         border: none;
-        color: #ff3766;
         cursor: pointer;
         display: block;
         float: right;
-        font-size: 13px;
-        margin-left: 30px;
-        margin-top: -14px;
         text-decoration: underline; }
       header .wrap nav ul.right .pop, header .wrap nav ul.right .pop-log {
         display: none;
@@ -713,8 +707,9 @@ footer {
 
 footer a {
   color: white;
-  font-weight: 200;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: 400; }
 
 .link-down {
   width: 150px;
@@ -788,7 +783,6 @@ footer a {
   text-transform: none; }
   .btn-link:hover, .btn-link:focus {
     background: transparent;
-    color: #ff3766;
     text-decoration: underline; }
 
 @media screen and (max-width: 480px) {
@@ -857,29 +851,31 @@ form {
   form .has-error textarea {
     border-color: #ff3766; }
 
-.banner .text {
-  max-width: 700px;
-  text-align: center;
-  margin: 0 auto; }
-  .banner .text h1 {
-    font-size: 40px;
-    font-size: 2.5rem;
-    color: #fff;
-    font-weight: 600;
-    text-shadow: 2px 2px 1px #ff3766; }
-  .banner .text p, .banner .text blockquote {
-    font-size: 18px;
-    font-size: 1.125rem;
-    color: #fff;
-    text-shadow: 2px 2px 1px #333; }
-    @media screen and (max-width: 480px) {
-      .banner .text p, .banner .text blockquote {
-        font-size: 16px;
-        font-size: 1rem;
-        padding: 0; } }
-@media screen and (max-width: 480px) {
-  .banner {
-    padding: 60px 0px; } }
+.banner {
+  padding: 50px 0px; }
+  .banner .text {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto; }
+    .banner .text h1 {
+      font-size: 40px;
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: 600;
+      text-shadow: 2px 2px 1px #ff3766; }
+    .banner .text p, .banner .text blockquote {
+      font-size: 18px;
+      font-size: 1.125rem;
+      color: #fff;
+      text-shadow: 2px 2px 1px #333; }
+      @media screen and (max-width: 480px) {
+        .banner .text p, .banner .text blockquote {
+          font-size: 16px;
+          font-size: 1rem;
+          padding: 0; } }
+  @media screen and (max-width: 480px) {
+    .banner {
+      padding: 60px 0px; } }
 
 img,
 video,
@@ -1397,10 +1393,22 @@ table {
     padding: 15px 15px 5px 15px; }
 
 a.img {
-  display: block;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   a.img:hover {
-    background: #ff3766; }
+    display: block; }
+
+.img-evento {
+  background-color: rgba(255, 55, 102, 0.3);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0; }
+  .img-evento img {
+    display: block;
+    overflow: hidden; }
 
 .host-info {
   padding-top: 10px; }

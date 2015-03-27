@@ -1,86 +1,175 @@
-//**
-// 12 Column Responsive Grid
-//**
 
-section,
-.section{
-  padding: 30px 0px;
+section{
+  padding-bottom: 30px;
 }
-
-
 .container {
   margin: 0 auto;
   max-width: 980px;
   padding: 0 10px;
 }
 
-.span1,
-.span2,
-.span3,
-.span4,
-.span5,
-.span6,
-.span7,
-.span8,
-.span9,
-.span10,
-.span11,
-.span12 {
-  display: block;
-  margin-bottom: 20px;
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+  clear: both;
+  padding: 30px 0px;
+  margin: 0px;
 }
 
-
-// Grid columns are stacked until the display size is greater than min-width
-@include mobilefirst($small-break) {
-
-  $unit: 6.2056333%; // Width of each grid column unit
-  $margin: 2.1277%; // Margin between the grid columns
+/*  GROUPING  ============================================================================= */
 
 
-  .container {
-    padding: 0 40px;
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+
+
+
+/*  GRID OF TWELVE   ============================================================================= */
+
+.span12 {
+  width: 100%;
+}
+
+.span11{
+  width: 91.53%;
+}
+
+.span10 {
+  width: 83.06%;
+}
+
+.span9 {
+  width: 74.6%;
+}
+
+.span8 {
+  width: 66.13%;
+}
+
+.span7 {
+  width: 57.66%;
+}
+
+.span6 {
+  width: 49.2%;
+}
+
+.span5 {
+  width: 40.73%;
+}
+
+.span4 {
+  width: 32.26%;
+}
+
+.span3 {
+  width: 23.8%;
+}
+
+.span2 {
+  width: 15.33%;
+}
+
+.span1 {
+  width: 6.86%;
+}
+/*  LESS THAN 780 PIXELS */
+
+@include responsive($big-break) {
+  // e.g. iPad, tablets, small browsers
+  .col {
+    margin: 1% 0 1% 0%;
   }
+  .col:first-child {
+    margin-right: 1.8%;
+    } /* all browsers except IE6 and lower */
 
-  .group {
-    margin-left: -$margin;
-    .group:last-child {
-      margin-bottom: 0px;
-    }
-  }
-
-
-  .span1,
-  .span2,
-  .span3,
-  .span4,
-  .span5,
-  .span6,
-  .span7,
-  .span8,
-  .span9,
-  .span10,
+  .span12,
   .span11,
-  .span12 {
-    box-sizing:border-box;
-    float: left;
-    margin-bottom: 0;
-    margin-left: $margin;
+  .span10,
+  .span8,{
+    width: 100%;
+    }
+
+  .span7,
+  .span6,
+  .span5,
+  .span4{
+    width:49%;
   }
+  .span3,
+  .span2,
+  .span1 {
+    width: 100%;
+  }
+}
 
-  @for $i from 1 through 12 {
-    .span#{$i} {
-      width: ($unit * $i) + ($margin * ($i - 1));
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-      // remove float so span#'s don't stack inline.
-      &.break {
-        float: none;
-      }
-    }
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
 
-    .offset#{$i} {
-      margin-left: ($unit * $i) + ($margin * ($i +1));
-    }
+  }
+  .span12 {
+    width: 100%;
+  }
+  .span11 {
+    width: 100%;
+  }
+  .span10 {
+    width: 100%;
+  }
+  .span9 {
+    width: 100%;
+  }
+  .span8 {
+    width: 100%;
+  }
+  .span7 {
+    width: 100%;
+  }
+  .span6 {
+    width: 100%;
+  }
+  .span5 {
+    width: 100%;
+  }
+  .span4 {
+    width: 100%;
+  }
+  .span3 {
+    width: 100%;
+  }
+  .span2 {
+    width: 100%;
+  }
+  .span1 {
+    width: 100%;
   }
 }
 
