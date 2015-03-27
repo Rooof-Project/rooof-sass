@@ -16,10 +16,10 @@
                 @include font-size(18px);
                 color:$c-Lightest ;
                 text-shadow: 2px 2px 1px $c-main-gray;
+                padding: 15px 0px;
 
                 @include responsive($small-break) {
                     @include font-size(16px);
-                    padding: 0;
                 }
                 }
             }

@@ -31,7 +31,7 @@ section {
 .container {
   margin: 0 auto;
   max-width: 980px;
-  padding: 0 10px; }
+  padding: 0 20px; }
 
 /*  SECTIONS  ============================================================================= */
 .section {
@@ -56,13 +56,8 @@ section {
 .col {
   display: block;
   float: left;
-  margin: 1% 0 1% 1.6%; }
+  margin: 1%; }
 
-.col:first-child {
-  margin-left: 0; }
-
-/* all browsers except IE6 and lower */
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
 /*  GRID OF TWELVE   ============================================================================= */
 .span12 {
   width: 100%; }
@@ -89,7 +84,7 @@ section {
   width: 40.73%; }
 
 .span4 {
-  width: 32.26%; }
+  width: 31.3%; }
 
 .span3 {
   width: 23.8%; }
@@ -101,12 +96,13 @@ section {
   width: 6.86%; }
 
 /*  LESS THAN 780 PIXELS */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 850px) {
+  /*  FIX MARGIN PROBLEM */
   .col {
-    margin: 1% 0 1% 0%; }
+    margin: 1.5%; }
 
   .col:first-child {
-    margin-right: 1.8%; }
+    margin: 1.5%; }
 
   /* all browsers except IE6 and lower */
   .span12,
@@ -119,16 +115,20 @@ section {
   .span6,
   .span5,
   .span4 {
-    width: 49%; }
+    width: 47%; }
 
   .span3,
   .span2,
   .span1 {
     width: 100%; } }
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
   .col {
-    margin: 1% 0 1% 0%; }
+    margin: 0.1; }
+
+  .col:first-child {
+    margin: 0.1; }
 
   .span12 {
     width: 100%; }
@@ -867,12 +867,12 @@ form {
       font-size: 18px;
       font-size: 1.125rem;
       color: #fff;
-      text-shadow: 2px 2px 1px #333; }
+      text-shadow: 2px 2px 1px #333;
+      padding: 15px 0px; }
       @media screen and (max-width: 480px) {
         .banner .text p, .banner .text blockquote {
           font-size: 16px;
-          font-size: 1rem;
-          padding: 0; } }
+          font-size: 1rem; } }
   @media screen and (max-width: 480px) {
     .banner {
       padding: 60px 0px; } }
@@ -1383,14 +1383,19 @@ table {
   background-size: cover;
   margin: 0; }
 
-.lista-eventos {
+section.lista-eventos {
   background-color: #eaeaea;
   padding-top: 70px; }
+  section.lista-eventos ul {
+    padding-left: 0; }
 
 .lista-evento-item {
-  background-color: #fff; }
-  .lista-evento-item .evento_info {
-    padding: 15px 15px 5px 15px; }
+  background-color: #fff;
+  margin-bottom: 10px; }
+  .lista-evento-item .evento-info {
+    padding: 15px 15px 5px 15px;
+    height: 100px;
+    overflow: hidden; }
 
 a.img {
   position: relative;
@@ -1410,25 +1415,45 @@ a.img {
     display: block;
     overflow: hidden; }
 
-.host-info {
-  padding-top: 10px; }
+.evento-footer {
+  padding: 15px 15px 5px 15px; }
 
-.host {
-  float: left; }
-  .host p, .host blockquote {
-    line-height: 1rem; }
+.host-info {
+  float: left;
+  max-width: 60%; }
 
 .host-img {
-  border-radius: 50%;
-  float: left;
-  margin-right: 10px;
-  height: 45px;
-  width: 45px;
+  display: inline-block;
+  height: 40px;
+  margin-right: 5px;
+  width: 40px;
   vertical-align: middle; }
+  .host-img img {
+    border-radius: 50%; }
 
-.evento-btn {
-  float: right; }
+.btn-lista-evento {
+  float: right;
+  padding-top: 5px; }
 
+.host-name {
+  display: inline-block; }
+  .host-name a {
+    font-size: 14px;
+    line-height: 0.7rem; }
+
+@media screen and (max-width: 480px) {
+  .evento-footer {
+    padding: 0px 15px; }
+
+  .btn-lista-evento {
+    padding-right: 20px; }
+
+  .btn-sm {
+    width: 100%; }
+
+  .host-img {
+    width: 35px;
+    height: 35px; } }
 html, body {
   font-family: "PT Sans", sans-serif;
   height: 100%;

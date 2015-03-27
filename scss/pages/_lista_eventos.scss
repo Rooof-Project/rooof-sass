@@ -1,12 +1,19 @@
-.lista-eventos{
+section.lista-eventos{
 background-color: $bg-color;
 padding-top: 70px;
+  ul{
+    padding-left: 0;
+  }
 }
 
 .lista-evento-item{
     background-color: $c-Lightest;
-        .evento_info{
+    margin-bottom: 10px;
+
+        .evento-info{
         padding: 15px 15px 5px 15px;
+        height: 100px;
+        overflow: hidden;
         }
     }
 
@@ -28,34 +35,62 @@ a.img{
   right:0;
   top:0;
    img{
-
     display: block;
     overflow: hidden;
    }
 }
+.evento-footer{
+  padding: 15px 15px 5px 15px;
+  }
 
 .host-info{
-    padding-top: 10px;
+  float: left;
+  max-width: 60%;
 }
-.host{
-    float: left;
-     p{
-        line-height: 1rem;
+.host-img{
+  display: inline-block;
+  height: 40px;
+  margin-right: 5px;
+  width: 40px;
+  vertical-align: middle;
+
+    img{
+      border-radius: 50%;
     }
 
 }
-.host-img{
-  border-radius: 50%;
-  float: left;
-  margin-right: 10px;
-  height: 45px;
-  width: 45px;
-  vertical-align: middle;
+
+.btn-lista-evento{
+    float: right;
+    padding-top: 5px;
+}
+.host-name{
+  display: inline-block;
+   a{
+      font-size: 14px;
+      line-height: 0.7rem;
+    }
+
 }
 
-.evento-btn{
-    float: right;
+@include responsive($small-break){
+  .evento-footer{
+  padding: 0px 15px;
+  }
+  .btn-lista-evento{
+    padding-right: 20px;
+  }
+  .btn-sm{
+    width: 100%;
+  }
+  .host-img{
+    width: 35px;
+    height: 35px;
+  }
+
 }
+
+
 
 
 

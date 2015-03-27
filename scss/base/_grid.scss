@@ -5,7 +5,7 @@ section{
 .container {
   margin: 0 auto;
   max-width: 980px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 
@@ -37,13 +37,8 @@ section{
 .col {
   display: block;
   float:left;
-  margin: 1% 0 1% 1.6%;
+  margin: 1% ;
 }
-
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
-
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
 
 
 
@@ -83,7 +78,7 @@ section{
 }
 
 .span4 {
-  width: 32.26%;
+  width: 31.3%;
 }
 
 .span3 {
@@ -101,11 +96,14 @@ section{
 
 @include responsive($big-break) {
   // e.g. iPad, tablets, small browsers
+
+   /*  FIX MARGIN PROBLEM */
   .col {
-    margin: 1% 0 1% 0%;
+    margin: 1.5%;
   }
   .col:first-child {
-    margin-right: 1.8%;
+    margin:1.5%;
+
     } /* all browsers except IE6 and lower */
 
   .span12,
@@ -119,7 +117,7 @@ section{
   .span6,
   .span5,
   .span4{
-    width:49%;
+    width:47%;
   }
   .span3,
   .span2,
@@ -130,11 +128,17 @@ section{
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%;
+@include responsive($small-break){
 
+  /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+  .col {
+    margin: 0.1;
   }
+  .col:first-child {
+    margin:0.1;
+
+    }
+
   .span12 {
     width: 100%;
   }
