@@ -1,7 +1,8 @@
 
-section{
+section, .section{
   padding-bottom: 30px;
 }
+
 .container {
   margin: 0 auto;
   max-width: 980px;
@@ -9,172 +10,73 @@ section{
 }
 
 
-/*  SECTIONS  ============================================================================= */
+//**
+// 12 Column Responsive Grid
+//**
 
-.section {
-  clear: both;
-  padding: 30px 0px;
-  margin: 0px;
-}
-
-/*  GROUPING  ============================================================================= */
-
-
-.group:before,
-.group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-/*  GRID COLUMN SETUP   ==================================================================== */
-
-.col {
-  display: block;
-  float:left;
-  margin: 1% ;
-}
-
-
-
-
-/*  GRID OF TWELVE   ============================================================================= */
-
+.span1,
+.span2,
+.span3,
+.span4,
+.span5,
+.span6,
+.span7,
+.span8,
+.span9,
+.span10,
+.span11,
 .span12 {
-  width: 100%;
+  display: block;
+  margin-bottom: 40px;
 }
 
-.span11{
-  width: 91.53%;
-}
 
-.span10 {
-  width: 83.06%;
-}
 
-.span9 {
-  width: 74.6%;
-}
 
-.span8 {
-  width: 66.13%;
-}
+// Grid columns are stacked until the display size is greater than min-width
+@include mobilefirst ($small-break) {
 
-.span7 {
-  width: 57.66%;
-}
+  $unit: 6.2056333%; // Width of each grid column unit
+  $margin: 2.1277%; // Margin between the grid columns
 
-.span6 {
-  width: 49.2%;
-}
-
-.span5 {
-  width: 40.73%;
-}
-
-.span4 {
-  width: 31.3%;
-}
-
-.span3 {
-  width: 23.8%;
-}
-
-.span2 {
-  width: 15.33%;
-}
-
-.span1 {
-  width: 6.86%;
-}
-/*  LESS THAN 780 PIXELS */
-
-@include responsive($big-break) {
-  // e.g. iPad, tablets, small browsers
-
-   /*  FIX MARGIN PROBLEM */
-  .col {
-    margin: 1.5%;
+  .container {
+    padding: 0 40px;
   }
-  .col:first-child {
-    margin:1.5%;
 
-    } /* all browsers except IE6 and lower */
-
-  .span12,
-  .span11,
-  .span10,
-  .span8,{
-    width: 100%;
-    }
-
-  .span7,
-  .span6,
-  .span5,
-  .span4{
-    width:47%;
+  .group {
+    margin-left: -$margin;
   }
-  .span3,
+
+  .span1,
   .span2,
-  .span1 {
-    width: 100%;
+  .span3,
+  .span4,
+  .span5,
+  .span6,
+  .span7,
+  .span8,
+  .span9,
+  .span10,
+  .span11,
+  .span12 {
+    box-sizing:border-box;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: $margin;
   }
-}
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+  @for $i from 1 through 12 {
+    .span#{$i} {
+      width: ($unit * $i) + ($margin * ($i - 1));
 
-@include responsive($small-break){
-
-  /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-  .col {
-    margin: 0.1;
-  }
-  .col:first-child {
-    margin:0.1;
-
+      // remove float so span#'s don't stack inline.
+      &.break {
+        float: none;
+      }
     }
 
-  .span12 {
-    width: 100%;
-  }
-  .span11 {
-    width: 100%;
-  }
-  .span10 {
-    width: 100%;
-  }
-  .span9 {
-    width: 100%;
-  }
-  .span8 {
-    width: 100%;
-  }
-  .span7 {
-    width: 100%;
-  }
-  .span6 {
-    width: 100%;
-  }
-  .span5 {
-    width: 100%;
-  }
-  .span4 {
-    width: 100%;
-  }
-  .span3 {
-    width: 100%;
-  }
-  .span2 {
-    width: 100%;
-  }
-  .span1 {
-    width: 100%;
+    .offset#{$i} {
+      margin-left: ($unit * $i) + ($margin * ($i +1));
+    }
   }
 }
-
-

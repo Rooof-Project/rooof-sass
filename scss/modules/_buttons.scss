@@ -104,10 +104,10 @@
 // @include responsive($big-break) {
 // }
 @include responsive($small-break) {
-  .btn {
+  .btn{
     display: inline-block;
     margin-bottom: 10px;
-    width: 60%;
+
   }
 
 }
