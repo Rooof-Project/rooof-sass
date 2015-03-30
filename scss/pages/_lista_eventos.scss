@@ -9,6 +9,8 @@ padding-top: 70px;
 .lista-evento-item{
     background-color: $c-Lightest;
     margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
 
         .evento-info{
         padding: 15px 15px 5px 15px;
@@ -20,25 +22,27 @@ padding-top: 70px;
 a.img{
     position: relative;
     overflow: hidden;
-
     &:hover{
       display: block;
     }
 }
 .img-evento{
-
   background-color: transparentize($c-main-pink, 0.7);
-  display: block;
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
   right:0;
   top:0;
-   img{
-    display: block;
-    overflow: hidden;
-   }
+     &:hover{
+        display: block;
+      }
 }
+
+a:hover .img-evento{
+  display: block;
+}
+
 .evento-footer{
   padding: 15px 15px 5px 15px;
   }
