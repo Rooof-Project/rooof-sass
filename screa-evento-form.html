@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div class="header">
+<header>
             <div class="wrap">
                 <div class="logo"><a href="sindex.html">ROOOF</a></div>
                 <nav>
@@ -106,8 +106,40 @@
                     </script>
                     </ul>
                 </nav>
-            </div>
-    </div>
+            <div class="nav-hamburger">
+          <button class="hamburger">&#9776;</button>
+          <button class="cross">&#735;</button>
+        </div>
+
+      </div>
+        <div class="menu">
+          <ul>
+            <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
+            <a href="lista_eventos.html"><li>Busca un evento</li></a>
+            <a href="crea.html"><li>Crea tu evento</li></a>
+            <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
+            <a href="inicio-sesion.html"><li>Regístrate</li></a>
+          </ul>
+        </div>
+
+        <script>
+          $( ".cross" ).hide();
+          $( ".menu" ).hide();
+          $( ".hamburger" ).click(function() {
+          $( ".menu" ).slideToggle( "slow", function() {
+          $( ".hamburger" ).hide();
+          $( ".cross" ).show();
+          });
+          });
+
+          $( ".cross" ).click(function() {
+          $( ".menu" ).slideToggle( "slow", function() {
+          $( ".cross" ).hide();
+          $( ".hamburger" ).show();
+          });
+          });
+        </script>
+    </header>
 
 
     <div class="push"></div>

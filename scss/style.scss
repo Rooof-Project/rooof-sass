@@ -7,6 +7,9 @@
 // Style-guide
 @import "base/style-guide";
 
+//foundation grids
+@import "base/foundation";
+
 // Import reusable modules
 @import "modules/header";
 @import "modules/footer";
@@ -14,7 +17,6 @@
 @import "modules/forms";
 @import "modules/banner";
 @import "modules/media";
-
 
 // Reset default browser styles using Normalize
 @import "base/normalize";
@@ -27,6 +29,7 @@
 // Specific project styles, add any section specific sass modules here
 @import "pages/landing";
 @import "pages/lista_eventos";
+
 
 
 

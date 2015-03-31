@@ -31,17 +31,17 @@ $(function() {
 
 </head>
 <body>
-	<div class="header">
+	<header>
             <div class="wrap">
                 <div class="logo"><a href="index.html">ROOOF</a></div>
                 <nav>
                     <ul class="left">
                     <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
-                    <li><a href="evento.html">Busca un evento</a></li>
+                    <li><a href="lista_eventos.html">Busca un evento</a></li>
                     <li><a href="crea.html">Crea tu evento</a></li>
                     </ul>
                     <ul class="right">
-                    <button class="log-in">Inicia sesión</button>
+                    <button class="btn btn-link log-in">Inicia sesión</button>
                     <div class="pop-log">
                       <span>✖</span>
                       <h1>Inicia sesión</h1>
@@ -81,7 +81,7 @@ $(function() {
                              });
                          });
                     </script>
-                    <button class="registro">Regístrate</button>
+                    <button class="btn btn-link registro">Regístrate</button>
                     <div class="pop">
                       <span>✖</span>
                       <h1>Regístrate</h1>
@@ -124,8 +124,40 @@ $(function() {
                     </script>
                     </ul>
                 </nav>
-            </div>
-    </div>
+            <div class="nav-hamburger">
+          <button class="hamburger">&#9776;</button>
+          <button class="cross">&#735;</button>
+        </div>
+
+      </div>
+        <div class="menu">
+          <ul>
+            <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
+            <a href="lista_eventos.html"><li>Busca un evento</li></a>
+            <a href="crea.html"><li>Crea tu evento</li></a>
+            <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
+            <a href="inicio-sesion.html"><li>Regístrate</li></a>
+          </ul>
+        </div>
+
+        <script>
+          $( ".cross" ).hide();
+          $( ".menu" ).hide();
+          $( ".hamburger" ).click(function() {
+          $( ".menu" ).slideToggle( "slow", function() {
+          $( ".hamburger" ).hide();
+          $( ".cross" ).show();
+          });
+          });
+
+          $( ".cross" ).click(function() {
+          $( ".menu" ).slideToggle( "slow", function() {
+          $( ".cross" ).hide();
+          $( ".hamburger" ).show();
+          });
+          });
+        </script>
+    </header>
     <div class="slider-wrap">
       <div id="slider">
         <a href="#" class="control_next">></a>
@@ -261,7 +293,7 @@ $(function() {
     <h1>NO TE QUEDES EN CASA</h1>
     <p>Tenemos planes para ti. Descubre los eventos <br>más interesantes en los tejados de Barcelona.</p>
     <div class="bottom-abajo">
-      <div class="button__wrap"><a href="evento.html" class="button">BUSCAR EVENTOS</a></div>
+      <div class="button__wrap"><a href="lista_eventos.html" class="button">BUSCAR EVENTOS</a></div>
     </div>
 </div>
 <footer>

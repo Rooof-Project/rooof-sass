@@ -1,6 +1,6 @@
 section.lista-eventos{
 background-color: $bg-color;
-padding-top: 70px;
+padding-top: 120px;
   ul{
     padding-left: 0;
   }
@@ -19,30 +19,6 @@ padding-top: 70px;
         }
     }
 
-a.img{
-    position: relative;
-    overflow: hidden;
-    &:hover{
-      display: block;
-    }
-}
-.img-evento{
-  background-color: transparentize($c-main-pink, 0.7);
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right:0;
-  top:0;
-     &:hover{
-        display: block;
-      }
-}
-
-a:hover .img-evento{
-  display: block;
-}
-
 .evento-footer{
   padding: 15px 15px 5px 15px;
   }
@@ -53,6 +29,7 @@ a:hover .img-evento{
 }
 .host-img{
   display: inline-block;
+  float: left;
   height: 40px;
   margin-right: 5px;
   width: 40px;
@@ -72,7 +49,7 @@ a:hover .img-evento{
   display: inline-block;
    a{
       font-size: 14px;
-      line-height: 0.7rem;
+      line-height: 2.5rem;
     }
 
 }
@@ -89,6 +66,30 @@ a:hover .img-evento{
 
 }
 
+
+
+.event-list_container {
+    background: rgba(255, 55, 102, 1);
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 65%;
+
+    &:hover {
+        img {
+            opacity: .5;
+        }
+    }
+}
+
+.event-list_container img {
+    position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    width: 100%;
+}
 
 
 

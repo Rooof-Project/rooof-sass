@@ -18,17 +18,18 @@ footer {
 }
 
 .logo-down {
-
     color: white;
     font-family: $font-primary;
     font-size: 30px;
     font-weight: $weight-extra-bold;
     line-height: 2.6em;
-    width: 600px;
+    margin: 0 0 0 1.5rem;
+    width: 57%;
     float: left;
 }
 
 .social-network {
+    display: block;
     float: right;
     margin: 20px 0px 0px 0px;
     width: 200px;
@@ -43,10 +44,10 @@ footer {
 
 footer a {
     color: white;
+    display: inline-block;
     text-decoration: underline;
     font-size: 15px;
     font-weight: $weight-regular;
-
 }
 
 .link-down {
@@ -54,4 +55,31 @@ footer a {
     float: left;
     margin-top: 30px;
 
+}
+
+@media screen and (max-width: 900px) {
+    .logo-down {
+        width: 54%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .logo-down {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .link-down {
+        float: right;
+        margin-right: 1.5rem;
+    }
+
+    .logo-down {
+        width: auto;
+    }
+
+    .social-network {
+        display: none;
+    }
 }
