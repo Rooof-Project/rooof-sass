@@ -2,7 +2,7 @@
 @import "base/mixins";
 
 // Import typical layout styles
-@import "base/grid";
+
 @import "base/type";
 // Style-guide
 @import "base/style-guide";
@@ -16,7 +16,7 @@
 @import "modules/buttons";
 @import "modules/forms";
 @import "modules/banner";
-@import "modules/media";
+
 
 // Reset default browser styles using Normalize
 @import "base/normalize";
@@ -29,8 +29,7 @@
 // Specific project styles, add any section specific sass modules here
 @import "pages/landing";
 @import "pages/lista_eventos";
-
-
+@import "pages/ficha_evento";
 
 
 
@@ -52,3 +51,10 @@ a {
         max-width: 60rem;
         width:100%;
 }
+
+.divider{
+    height: 2px;
+    background-color: $grey;
+    margin: 20px 0px;
+}
+

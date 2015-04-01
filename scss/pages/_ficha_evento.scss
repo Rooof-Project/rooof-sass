@@ -1,0 +1,134 @@
+
+.ficha-evento{
+    background-color: $grey;
+    }
+.img-main{
+    width: 100%;
+    margin-bottom: 0px;
+        }
+
+.main{
+    background-color: white;
+    padding: 30px;
+
+    .divider{
+    margin: 20px -30px;
+        }
+    }
+
+.map{
+    margin-top: 40px;
+}
+
+
+.sobre-host{
+    padding:10px 0px;
+
+    .host-img{
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+    }
+    .title{
+        float: left;
+        width: 70%;
+        padding-bottom: 20px;
+    }
+
+    h2{
+        line-height: 1.5rem;
+    }
+}
+
+.aside{
+    padding:0px 20px;
+        h5.fecha{
+            &:before{
+                content: url("../img/calendar.png");
+                height:26px;
+                width:26px;
+                overflow:hidden;
+                margin-right: 2px;
+                }
+            }
+
+         h5.lugar{
+            &:before{
+                content: url("../img/place.png");
+                height:26px;
+                width:26px;
+                overflow:hidden;
+                margin-right: 2px;
+                }
+            }
+
+            h5.aforo{
+            &:before{
+                content: url("../img/user.png");
+                height:26px;
+                width:26px;
+                overflow:hidden;
+                margin-right: 2px;
+                }
+            }
+}
+
+.info{
+    h5, p{
+        margin: 0px;
+    }
+    p{
+        padding: 0px 0px 15px 20px;
+    }
+}
+
+.main-precio{
+  background: url("../img/etiqueta-white.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0px;
+  height: 30px;
+  width: 120px;
+  padding: 2px 0px 2px 15px;
+  p{
+    text-align: center;
+  }
+
+}
+.border-ticket{
+   background: white;
+   position: relative;
+   z-index: 444;
+
+   ul{
+    list-style: none;
+    margin:10px 0px;
+    padding: 0;
+   }
+}
+.ticket{
+    padding: 20px 10px 10px 20px;
+}
+
+.border-ticket:before{
+   content:"";
+   height: 5px;
+   width: 100%;
+   background-color: $grey;
+   background-image: radial-gradient(white 40%, transparent 16%);
+   background-repeat: repeat;
+   background-size: 10px 10px;
+   background-position: -10px 0px;
+   position: absolute;
+   top: 0px;
+}
+.ticket__wrap{
+    width: 200px;
+}
+.btn-full{
+     width: 100%;
+}
+
+
+
+

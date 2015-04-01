@@ -16,157 +16,6 @@
   .group:after {
     clear: both; }
 
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-.valign {
-  vertical-align: middle; }
-
-section, .section {
-  padding: 30px 0px; }
-
-.container {
-  margin: 0 auto;
-  max-width: 980px;
-  padding: 0 20px; }
-
-.span1,
-.span2,
-.span3,
-.span4,
-.span5,
-.span6,
-.span7,
-.span8,
-.span9,
-.span10,
-.span11,
-.span12 {
-  display: block;
-  margin-bottom: 40px; }
-
-@media screen and (min-width: 480px) {
-  .container {
-    padding: 0 40px; }
-
-  .group {
-    margin-left: -2.1277%; }
-
-  .span1,
-  .span2,
-  .span3,
-  .span4,
-  .span5,
-  .span6,
-  .span7,
-  .span8,
-  .span9,
-  .span10,
-  .span11,
-  .span12 {
-    box-sizing: border-box;
-    float: left;
-    margin-bottom: 10px;
-    margin-left: 2.1277%; }
-
-  .span1 {
-    width: 6.20563%; }
-    .span1.break {
-      float: none; }
-
-  .offset1 {
-    margin-left: 10.46103%; }
-
-  .span2 {
-    width: 14.53897%; }
-    .span2.break {
-      float: none; }
-
-  .offset2 {
-    margin-left: 18.79437%; }
-
-  .span3 {
-    width: 22.8723%; }
-    .span3.break {
-      float: none; }
-
-  .offset3 {
-    margin-left: 27.1277%; }
-
-  .span4 {
-    width: 31.20563%; }
-    .span4.break {
-      float: none; }
-
-  .offset4 {
-    margin-left: 35.46103%; }
-
-  .span5 {
-    width: 39.53897%; }
-    .span5.break {
-      float: none; }
-
-  .offset5 {
-    margin-left: 43.79437%; }
-
-  .span6 {
-    width: 47.8723%; }
-    .span6.break {
-      float: none; }
-
-  .offset6 {
-    margin-left: 52.1277%; }
-
-  .span7 {
-    width: 56.20563%; }
-    .span7.break {
-      float: none; }
-
-  .offset7 {
-    margin-left: 60.46103%; }
-
-  .span8 {
-    width: 64.53897%; }
-    .span8.break {
-      float: none; }
-
-  .offset8 {
-    margin-left: 68.79437%; }
-
-  .span9 {
-    width: 72.8723%; }
-    .span9.break {
-      float: none; }
-
-  .offset9 {
-    margin-left: 77.1277%; }
-
-  .span10 {
-    width: 81.20563%; }
-    .span10.break {
-      float: none; }
-
-  .offset10 {
-    margin-left: 85.46103%; }
-
-  .span11 {
-    width: 89.53897%; }
-    .span11.break {
-      float: none; }
-
-  .offset11 {
-    margin-left: 93.79437%; }
-
-  .span12 {
-    width: 97.8723%; }
-    .span12.break {
-      float: none; }
-
-  .offset12 {
-    margin-left: 102.1277%; } }
 body {
   color: #333;
   font-family: "PT Sans", "Dosis", Arial, sans-serif;
@@ -460,21 +309,15 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html,
-body {
-  font-size: 100%; }
+section, .section {
+  padding: 30px 0px; }
 
-body {
-  background: #fff;
-  color: #222222;
-  padding: 0;
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.5;
-  position: relative;
-  cursor: auto; }
+.container {
+  margin: 0 auto;
+  max-width: 980px; }
+  @media only screen and (min-width: 40.063em) {
+    .container {
+      padding: 0px 0px; } }
 
 a:hover {
   cursor: pointer; }
@@ -2867,14 +2710,7 @@ form {
           font-size: 1rem; } }
   @media screen and (max-width: 480px) {
     .banner {
-      padding: 60px 0px; } }
-
-img,
-video,
-audio,
-iframe,
-object {
-  max-width: 100%; }
+      padding: 60px 20px; } }
 
 /* ==========================================================================
    HTML5 display definitions
@@ -3397,7 +3233,7 @@ table {
     width: 100%; } }
 section.lista-eventos {
   background-color: #eaeaea;
-  padding-top: 120px; }
+  padding-top: 80px; }
   section.lista-eventos ul {
     padding-left: 0; }
 
@@ -3407,8 +3243,8 @@ section.lista-eventos {
   position: relative;
   overflow: hidden; }
   .lista-evento-item .evento-info {
-    padding: 15px 15px 5px 15px;
-    height: 120px;
+    padding: 0px 15px 5px 15px;
+    height: 140px;
     overflow: hidden; }
 
 .evento-footer {
@@ -3462,6 +3298,102 @@ section.lista-eventos {
   transform: translateY(-50%);
   width: 100%; }
 
+.ficha-evento {
+  background-color: #eaeaea; }
+
+.img-main {
+  width: 100%;
+  margin-bottom: 0px; }
+
+.main {
+  background-color: white;
+  padding: 30px; }
+  .main .divider {
+    margin: 20px -30px; }
+
+.map {
+  margin-top: 40px; }
+
+.sobre-host {
+  padding: 10px 0px; }
+  .sobre-host .host-img {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px; }
+  .sobre-host .title {
+    float: left;
+    width: 70%;
+    padding-bottom: 20px; }
+  .sobre-host h2 {
+    line-height: 1.5rem; }
+
+.aside {
+  padding: 0px 20px; }
+  .aside h5.fecha:before {
+    content: url("../img/calendar.png");
+    height: 26px;
+    width: 26px;
+    overflow: hidden;
+    margin-right: 2px; }
+  .aside h5.lugar:before {
+    content: url("../img/place.png");
+    height: 26px;
+    width: 26px;
+    overflow: hidden;
+    margin-right: 2px; }
+  .aside h5.aforo:before {
+    content: url("../img/user.png");
+    height: 26px;
+    width: 26px;
+    overflow: hidden;
+    margin-right: 2px; }
+
+.info h5, .info p, .info blockquote {
+  margin: 0px; }
+.info p, .info blockquote {
+  padding: 0px 0px 15px 20px; }
+
+.main-precio {
+  background: url("../img/etiqueta-white.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0px;
+  height: 30px;
+  width: 120px;
+  padding: 2px 0px 2px 15px; }
+  .main-precio p, .main-precio blockquote {
+    text-align: center; }
+
+.border-ticket {
+  background: white;
+  position: relative;
+  z-index: 444; }
+  .border-ticket ul {
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0; }
+
+.ticket {
+  padding: 20px 10px 10px 20px; }
+
+.border-ticket:before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #eaeaea;
+  background-image: radial-gradient(white 40%, transparent 16%);
+  background-repeat: repeat;
+  background-size: 10px 10px;
+  background-position: -10px 0px;
+  position: absolute;
+  top: 0px; }
+
+.ticket__wrap {
+  width: 200px; }
+
+.btn-full {
+  width: 100%; }
+
 html, body {
   font-family: "PT Sans", sans-serif;
   height: 100%;
@@ -3477,5 +3409,10 @@ a {
   margin: 0px auto;
   max-width: 60rem;
   width: 100%; }
+
+.divider {
+  height: 2px;
+  background-color: #eaeaea;
+  margin: 20px 0px; }
 
 /*# sourceMappingURL=style.css.map */
