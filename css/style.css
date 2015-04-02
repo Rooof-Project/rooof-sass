@@ -224,6 +224,11 @@ hr {
   ul,
   ol {
     font-size: 16px; } }
+.guide-container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0px 20px; }
+
 h2.sg {
   color: #39cccc;
   font-family: "PT Sans", sans-serif;
@@ -308,16 +313,6 @@ html, body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-section, .section {
-  padding: 30px 0px; }
-
-.container {
-  margin: 0 auto;
-  max-width: 980px; }
-  @media only screen and (min-width: 40.063em) {
-    .container {
-      padding: 0px 0px; } }
 
 a:hover {
   cursor: pointer; }
@@ -3247,6 +3242,37 @@ section.lista-eventos {
     height: 140px;
     overflow: hidden; }
 
+.event-list_container {
+  background: #ff3766;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%; }
+  .event-list_container:hover img {
+    opacity: .5; }
+
+.event-list_container img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+
+.precio {
+  background: url("../img/etiqueta.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 110px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 3px 0px 0px 20px;
+  z-index: 333; }
+  .precio p, .precio blockquote {
+    font-size: 90%; }
+
 .evento-footer {
   padding: 15px 15px 5px 15px; }
 
@@ -3281,23 +3307,6 @@ section.lista-eventos {
   .host-img {
     width: 35px;
     height: 35px; } }
-.event-list_container {
-  background: #ff3766;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 65%; }
-  .event-list_container:hover img {
-    opacity: .5; }
-
-.event-list_container img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%; }
-
 .ficha-evento {
   background-color: #eaeaea; }
 
@@ -3305,26 +3314,26 @@ section.lista-eventos {
   width: 100%;
   margin-bottom: 0px; }
 
-.main {
+.main-container {
   background-color: white;
   padding: 30px; }
-  .main .divider {
+  .main-container .divider {
     margin: 20px -30px; }
 
 .map {
   margin-top: 40px; }
 
-.sobre-host {
+.sobre-host__wrap {
   padding: 10px 0px; }
-  .sobre-host .host-img {
+  .sobre-host__wrap .host-img {
     border-radius: 50%;
     height: 55px;
     width: 55px; }
-  .sobre-host .title {
+  .sobre-host__wrap .title {
     float: left;
     width: 70%;
     padding-bottom: 20px; }
-  .sobre-host h2 {
+  .sobre-host__wrap h2 {
     line-height: 1.5rem; }
 
 .aside {
@@ -3373,6 +3382,9 @@ section.lista-eventos {
     margin: 10px 0px;
     padding: 0; }
 
+.ticket__wrap {
+  width: 200px; }
+
 .ticket {
   padding: 20px 10px 10px 20px; }
 
@@ -3388,11 +3400,16 @@ section.lista-eventos {
   position: absolute;
   top: 0px; }
 
-.ticket__wrap {
-  width: 200px; }
-
 .btn-full {
   width: 100%; }
+
+.compartir__wrap {
+  float: left;
+  border-top: solid 8px #ff3766;
+  margin-top: 20px; }
+  .compartir__wrap img {
+    height: 20px;
+    width: auto; }
 
 html, body {
   font-family: "PT Sans", sans-serif;
@@ -3405,10 +3422,21 @@ a {
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in; }
 
+section, .section {
+  padding: 30px 0px; }
+
 .wrap {
-  margin: 0px auto;
-  max-width: 60rem;
-  width: 100%; }
+  margin: 0 auto;
+  max-width: 1100px; }
+  @media only screen and (min-width: 40.063em) {
+    .wrap {
+      padding: 0px 0px; } }
+
+.container {
+  padding: 0px 10px; }
+  @media only screen and (max-width: 40.063em) {
+    .container {
+      padding: 0px 0px; } }
 
 .divider {
   height: 2px;

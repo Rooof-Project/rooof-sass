@@ -46,15 +46,34 @@ a {
     -o-transition: all 0.3s ease-in;
 }
 
-.wrap{
-        margin:0px auto;
-        max-width: 60rem;
-        width:100%;
+
+// containers
+
+section, .section{
+  padding: 30px 0px;
 }
+
+// contenedor general, centra el contenido
+.wrap {
+  margin: 0 auto;
+  max-width: 1100px;
+    @media only screen and (min-width: 40.063em) {
+      padding: 0px 0px;
+    }
+}
+
+// contenedor dentro del grid, da paddings laterales para separar columnas.
+.container{
+padding:0px 10px;
+@media only screen and (max-width: 40.063em) {
+      padding: 0px 0px;
+    }
+}
+
+// ----
 
 .divider{
     height: 2px;
     background-color: $grey;
     margin: 20px 0px;
 }
-

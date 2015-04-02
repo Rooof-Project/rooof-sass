@@ -7,7 +7,7 @@
     margin-bottom: 0px;
         }
 
-.main{
+.main-container{
     background-color: white;
     padding: 30px;
 
@@ -20,8 +20,7 @@
     margin-top: 40px;
 }
 
-
-.sobre-host{
+.sobre-host__wrap{
     padding:10px 0px;
 
     .host-img{
@@ -106,6 +105,9 @@
     padding: 0;
    }
 }
+.ticket__wrap{
+    width: 200px;
+}
 .ticket{
     padding: 20px 10px 10px 20px;
 }
@@ -122,12 +124,21 @@
    position: absolute;
    top: 0px;
 }
-.ticket__wrap{
-    width: 200px;
-}
+
 .btn-full{
      width: 100%;
 }
+
+.compartir__wrap{
+  float: left;
+  border-top: solid 8px #ff3766;
+  margin-top: 20px;
+    img{
+    height: 20px;
+    width: auto;
+    }
+}
+
 
 
 

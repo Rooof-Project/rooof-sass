@@ -16,7 +16,9 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="wrap">
+
+		<div class="guide-container">
 		<div class="space">
 
 		<h2 class="sg">Family Fonts</h2>
@@ -199,57 +201,146 @@
 
 		<style>
 		/*Style to help visualize grid for demo purposes*/
-		.grid-style-helper{background:pink;height:50px;margin-bottom:10px;}
+		.grid-style-helper{background:pink;height:50px;margin-bottom:10px;padding: 10px;}
 		</style>
 
-		<div class="group">
-			<div class="span6 grid-style-helper">.span6</div>
-			<div class="span6 grid-style-helper">.span6</div>
-		</div>
-		<div class="group">
-			<div class="span8 grid-style-helper">.span8</div>
-			<div class="span4 grid-style-helper">.span4</div>
-		</div>
-		<div class="group">
-			<div class="span3 grid-style-helper">.span3</div>
-			<div class="span3 grid-style-helper">.span3</div>
-			<div class="span3 grid-style-helper">.span3</div>
-			<div class="span3 grid-style-helper">.span3</div>
-		</div>
-<div class="group">
-			<div class="span12 grid-style-helper">.span12</div>
-</div>
+		<div class="row">
+			<div class="columns small-24  medium-8 large-8">
+				<div class="grid-style-helper">3 columns
+				</div>
+			</div>
 
-		<div class="group">
-			<div class="span4 grid-style-helper">.span4</div>
-			<div class="span4 grid-style-helper">.span4</div>
-			<div class="span4 grid-style-helper">.span4</div>
-			<div class="span4 grid-style-helper">.span4</div>
-			<div class="span4 grid-style-helper">.span4</div>
-			<div class="span4 grid-style-helper">.span4</div>
+			<div class="columns small-24  medium-8 large-8">
+				<div class="grid-style-helper">3 columns
+				</div>
+			</div>
+
+			<div class="columns small-24  medium-8 large-8">
+				<div class="grid-style-helper">3 columns
+				</div>
+			</div>
 		</div>
 
+		<div class="row">
+			<div class="columns small-24  medium-12 large-6">
+				<div class="grid-style-helper">4/2 columns
+				</div>
+			</div>
+
+			<div class="columns small-24  medium-12 large-6">
+				<div class="grid-style-helper">4/2 columns
+				</div>
+			</div>
+
+			<div class="columns small-24  medium-12 large-6">
+				<div class="grid-style-helper">4/2 columns
+				</div>
+			</div>
+			<div class="columns small-24  medium-12 large-6">
+				<div class="grid-style-helper">4/2 columns
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="columns small-24  medium-24 large-24">
+				<div class="grid-style-helper">1 column
+				</div>
+			</div>
+
+			<div class="columns small-24  medium-12 large-12">
+				<div class="grid-style-helper">2/1 columns
+				</div>
+			</div>
+			<div class="columns small-24  medium-12 large-12">
+				<div class="grid-style-helper">2/1 columns
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+			<div class="columns small-4  medium-2 large-2">
+			<div class="span4 grid-style-helper">2</div>
+			</div>
+
+		</div>
+		<a href="http://foundation.zurb.com/docs/components/grid.html">More info</a>
 
 
 		<h2 class="sg">Images</h2>
 		<hr>
 		<!-- Example using picture element -->
+		<div class="container">
 		<picture>
 			<source media="(min-width: 1000px)" srcset="img/rooof_header.jpg">
 			<source media="(min-width: 640px)" srcset="img/rooof_header.jpg.jpg">
 			<img src="img/rooof_header.jpg" alt="Rooof">
 		</picture>
+		</div>
 
 		<!-- Examples using srcset -->
-		<div class="group">
-			<div class="col span6">
+		<div class="row">
+
+			<div class="columns medium-12 large-12 small-24">
+				<div class="container">
 				<img src="img/rooof_header.jpg" alt="ejemplo" srcset="img/rooof_header.jpg 2x, img/rooof_header.jpg 1x" sizes="(min-width:480px) 100vw, 50vw">
+				</div>
 			</div>
-			<div class="col span4">
+
+			<div class="columns medium-6 large-6 small-12">
+				<div class="container">
 				<img src="img/rooof_header.jpg" alt="ejemplo" srcset="rooof_header.jpg 2x, img/rooof_header.jpg 1x" sizes="(min-width:480px) 100vw, 50vw">
+				</div>
 			</div>
-			<div class="col span2">
+			<div class="columns medium-6 large-6 small-12">
+				<div class="container">
 				<img src="img/destacado_evento_2.jpg" alt="ejemplo" srcset="img/destacado_evento_2.jpg 2x, img/destacado_evento_2.jpg 1x" sizes="(min-width:480px) 100vw, 50vw">
+			</div>
 			</div>
 		</div>
 
@@ -271,7 +362,7 @@
 
 		<p><a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">More icons</a></p>
 
-
+	</div>
 	</div>
 
 </body>
