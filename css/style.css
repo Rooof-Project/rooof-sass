@@ -229,6 +229,9 @@ hr {
   max-width: 800px;
   padding: 0px 20px; }
 
+.margin-container {
+  margin-bottom: 20px; }
+
 h2.sg {
   color: #39cccc;
   font-family: "PT Sans", sans-serif;
@@ -2227,7 +2230,7 @@ header {
   background: #fff;
   z-index: 9998;
   width: 100%;
-  height: 56px;
+  height: 57px;
   border-bottom: solid 1px #bbbaba; }
   header .wrap .logo {
     border-right: solid 1px #bbbaba;
@@ -2367,21 +2370,16 @@ a la simulacion de user de Slay*/ }
         float: right;
         text-decoration: underline; }
       header .wrap nav ul.right .pop, header .wrap nav ul.right .pop-log {
+        background: #fff;
+        border: solid 2px #ff3766;
         display: none;
         position: fixed;
         top: 5%;
         left: 40%;
-        width: 360px;
-        height: 560px;
-        background: #fff;
-        border: solid 2px #ff3766;
-        outline: 20px solid rgba(0, 0, 0, 0.2); }
-      header .wrap nav ul.right .pop > h1, header .wrap nav ul.right .pop-log > h1 {
-        text-align: center;
-        color: #ff3766;
-        font-size: 22px; }
-      header .wrap nav ul.right .pop > p, header .wrap nav ul.right .pop > blockquote, header .wrap nav ul.right .pop-log > p, header .wrap nav ul.right .pop-log > blockquote {
-        color: #333; }
+        outline: 20px solid rgba(0, 0, 0, 0.2);
+        width: 360px; }
+        header .wrap nav ul.right .pop .container, header .wrap nav ul.right .pop-log .container {
+          padding: 20px 25px; }
       header .wrap nav ul.right .pop > span, header .wrap nav ul.right .pop-log > span {
         cursor: pointer;
         position: absolute;
@@ -2391,17 +2389,18 @@ a la simulacion de user de Slay*/ }
         width: 30px;
         height: 30px; }
       header .wrap nav ul.right .reg-facebook, header .wrap nav ul.right .reg-twitter {
-        width: 300px;
         margin: 0px auto;
         height: 35px; }
       header .wrap nav ul.right .reg-facebook a, header .wrap nav ul.right .reg-twitter a {
         text-align: center;
         color: white;
-        margin: 0px 0px 0px 50px;
+        margin: 0px 0px 0px 40px;
         line-height: 2em; }
       header .wrap nav ul.right .reg-facebook {
         background: #37589B;
         margin-bottom: 10px; }
+      header .wrap nav ul.right .reg-twitter {
+        background: #60CAEF; }
       header .wrap nav ul.right .reg-facebook img {
         float: left;
         width: 10.9px;
@@ -2412,78 +2411,32 @@ a la simulacion de user de Slay*/ }
         width: 25px;
         height: 19.8px;
         margin: 8px 0px 0px 23px; }
-      header .wrap nav ul.right .reg-twitter {
-        background: #60CAEF; }
+      header .wrap nav ul.right .form-divider__wrap {
+        margin: 5px 0px; }
       header .wrap nav ul.right .reg-line-left, header .wrap nav ul.right .reg-line-right {
         width: 133px;
         height: 20px;
         border-bottom: solid 1px #a7a7a8; }
       header .wrap nav ul.right .reg-line-left {
-        float: left;
-        margin-left: 30px; }
+        float: left; }
       header .wrap nav ul.right .zero {
         float: left;
-        margin: 8px 0px 0px 15px; }
+        margin: 6px 0px 0px 15px; }
       header .wrap nav ul.right .reg-line-right {
-        float: right;
-        margin-right: 30px; }
-      header .wrap nav ul.right .pop h2, header .wrap nav ul.right .pop-log h2 {
-        float: left;
-        font-size: 14px;
-        color: #333;
-        font-weight: 700;
-        margin-left: 30px; }
-      header .wrap nav ul.right .pop form, header .wrap nav ul.right .pop-log form {
-        float: left;
-        margin-left: 30px; }
-      header .wrap nav ul.right .pop input, header .wrap nav ul.right .pop-log input {
-        width: 295px;
-        height: 30px;
-        margin-bottom: 10px;
-        background: #eaeaea;
-        font-size: 14px;
-        color: #a7a7a8;
-        border: solid 1px #a7a7a8; }
-      header .wrap nav ul.right .pop-log input {
-        margin-bottom: 42px; }
-      header .wrap nav ul.right .pop p, header .wrap nav ul.right .pop blockquote, header .wrap nav ul.right .pop-log p, header .wrap nav ul.right .pop-log blockquote {
-        float: left;
-        margin-left: 0px;
-        font-size: 14px;
-        line-height: 0em; }
-      header .wrap nav ul.right .pop p a, header .wrap nav ul.right .pop blockquote a, header .wrap nav ul.right .pop-log p a, header .wrap nav ul.right .pop-log blockquote a {
-        color: #333;
-        text-decoration: underline; }
-      header .wrap nav ul.right button.registrarse, header .wrap nav ul.right button.registrarse1 {
-        color: white;
-        font-size: 18px;
-        width: 186px;
-        height: 36px;
-        text-align: center;
-        background: #ff3766;
-        margin: 0px auto;
-        border: none;
-        border-radius: 5px;
-        font-weight: 300;
-        margin: 10px 0px 0px 55px;
-        border: solid 2px #ff3766; }
-      header .wrap nav ul.right button.registrarse:hover, header .wrap nav ul.right button.registrarse1:hover {
-        background: white;
-        color: #ff3766; }
+        float: right; }
       header .wrap nav ul.right .inicia-sesion, header .wrap nav ul.right .inicia-sesion1 {
-        float: left;
         width: 100%;
-        height: 57px;
-        background: #ededed;
-        margin-top: 24px; }
-      header .wrap nav ul.right .inicia-sesion p, header .wrap nav ul.right .inicia-sesion blockquote, header .wrap nav ul.right .inicia-sesion1 p, header .wrap nav ul.right .inicia-sesion1 blockquote {
-        color: #333;
-        text-align: center;
-        margin-left: 50px;
-        margin-top: 25px; }
-      header .wrap nav ul.right .inicia-sesion p a, header .wrap nav ul.right .inicia-sesion blockquote a, header .wrap nav ul.right .inicia-sesion1 p a, header .wrap nav ul.right .inicia-sesion1 blockquote a {
-        text-decoration: underline;
-        color: #ff3766; } }
+        background: #ededed; }
+      header .wrap nav ul.right .footer-reg {
+        padding: 20px;
+        margin-bottom: 0px; }
+        header .wrap nav ul.right .footer-reg p.p-complementary, header .wrap nav ul.right .footer-reg blockquote.p-complementary {
+          font-size: 14px; }
+        header .wrap nav ul.right .footer-reg a {
+          font-family: "PT Sans", sans-serif;
+          color: #ff3766;
+          text-decoration: underline;
+          font-size: 14px; } }
 .bottom-abajo {
   margin-top: 20px; }
 
@@ -2572,6 +2525,11 @@ footer a {
     background: #ff043f;
     border-color: #ff043f; }
 
+.disabled {
+  background: gray;
+  border: gray;
+  color: #cccccc; }
+
 .btn-primary {
   background-color: #ff3766;
   border-color: #ff3766;
@@ -2659,7 +2617,7 @@ textarea {
   height: 132px; }
 
 form {
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
   form .field {
     margin-bottom: 20px; }
   form .hint {
@@ -2706,6 +2664,32 @@ form {
   @media screen and (max-width: 480px) {
     .banner {
       padding: 60px 20px; } }
+
+.alert {
+  zoom: 1;
+  margin-bottom: 40px;
+  padding: 10px 50px;
+  border: solid 4px #8e8e8e;
+  text-align: center; }
+  .alert:before, .alert:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .alert:after {
+    clear: both; }
+  .alert.alert-success {
+    background: transparent;
+    border-color: #ff6a8d;
+    color: #666666; }
+  .alert.alert-info {
+    background: white;
+    border-color: #666666;
+    color: black; }
+  .alert p, .alert blockquote, .alert h1, .alert h2, .alert h3, .alert .tag-musica, .alert .tag-gastronomia, .alert .tag-teatro, .alert .tag-humor, .alert .tag-arte, .alert h4, .alert h5, .alert h5, .alert .h1, .alert .h2, .alert .h3, .alert .h4, .alert .h5, .alert .h6, .alert .p {
+    font-family: "PT Sans", sans-serif; }
+  .alert p:last-child, .alert blockquote:last-child {
+    margin-bottom: 0; }
 
 /* ==========================================================================
    HTML5 display definitions

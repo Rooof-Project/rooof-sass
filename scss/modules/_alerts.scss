@@ -1,0 +1,43 @@
+//**
+// Alerts & Notifications
+//**
+
+.alert {
+  @include clearfix;
+  margin-bottom: $padding;
+  padding: 10px 50px;
+  border: solid 4px $c-light-gray;
+  text-align: center;
+
+  //&.alert-danger {
+  //  background: lighten($danger-color, 35);
+  //  border-color: $danger-color;
+  //  color: darken($danger-color, 15);
+  //}
+
+  &.alert-success {
+    background: transparent;
+    border-color: lighten($c-main-pink,10);
+    color: lighten($c-main-gray, 20);
+
+  }
+
+  //&.alert-warning {
+  //  background: lighten($warning-color, 40);
+  //  border-color: #333;
+  //  color: darken($c-main-pink, 10);
+  //}
+
+  &.alert-info {
+    background: lighten($c-light-gray, 50);
+    border-color: lighten($c-main-gray,20);
+    color: darken(#333, 30);
+  }
+
+  p,h1,h2,h3,h4,h5,h5,.h1,.h2,.h3,.h4,.h5,.h6,.p{
+    font-family: $font-complementary;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

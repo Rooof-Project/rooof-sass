@@ -32,6 +32,11 @@
     border-color: darken($c-main-pink, 10);
   }
 }
+.disabled{
+    background: lighten($c-main-gray, 30);
+    border: lighten($c-main-gray, 30);
+    color: darken(white,20)
+  }
 
 // Primary action button
 .btn-primary {
