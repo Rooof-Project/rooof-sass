@@ -186,7 +186,7 @@ padding: 0 6%;
 
 @include responsive($small-break) {
   .titulo {
-    padding: 0;
+    padding: 0px 5px;
   }
   }
 

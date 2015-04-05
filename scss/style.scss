@@ -31,6 +31,7 @@
 @import "pages/landing";
 @import "pages/lista_eventos";
 @import "pages/ficha_evento";
+@import "pages/crea";
 
 
 
@@ -53,6 +54,10 @@ a {
 section, .section{
   padding: 30px 0px;
 }
+// para dar margen en las secciones de arriba de cada página, evita el conflicto con el nav.
+.section-intro{
+  padding-top: 80px;
+}
 
 // contenedor general, centra el contenido
 .wrap {
@@ -62,6 +67,9 @@ section, .section{
       padding: 0px 0px;
     }
 }
+.secondary-title__wrap{
+  padding: 0px 0px 10px 5px;
+}
 
 // contenedor dentro del grid, da paddings laterales para separar columnas.
 .container{
@@ -70,7 +78,12 @@ padding:0px 10px;
       padding: 0px 0px;
     }
 }
-
+.container-columns{
+padding:0px 30px;
+@media only screen and (max-width: 40.063em) {
+      padding: 0px 10px;
+    }
+}
 // ----
 
 .divider{

@@ -9,6 +9,7 @@
              @include font-size(40px);
                 color: $c-Lightest;
                 font-weight: $weight-semi-bold;
+                line-height: 40px;
                 text-shadow: 2px 2px 1px $c-main-pink;
             }
 
@@ -27,3 +28,16 @@
             padding: 60px 20px;
             }
             }
+
+.banner-buscar{
+    background: url("../img/busca_eventos.jpg") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.banner-crear{
+    background: url("../img/hazte_creador.jpg") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
