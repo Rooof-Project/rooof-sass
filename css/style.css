@@ -3183,7 +3183,7 @@ table {
       border-radius: 50%;
       border: solid 5px #a4a1a1;
       line-height: 0em;
-      margin: 1rem 0 1rem .5rem; }
+      margin: 2rem auto 1rem; }
       .asistir .icon-text .icons p, .asistir .icon-text .icons blockquote {
         color: #a4a1a1;
         font-family: "Dosis", sans-serif;
@@ -3231,7 +3231,7 @@ section.lista-eventos {
 
 .lista-evento-item {
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   position: relative;
   overflow: hidden; }
   .lista-evento-item .evento-info {
@@ -3318,7 +3318,8 @@ section.lista-eventos {
     margin: 20px -30px; }
 
 .map {
-  margin-top: 40px; }
+  margin-top: 40px;
+  overflow: hidden; }
 
 .sobre-host__wrap {
   padding: 10px 0px; }
@@ -3408,6 +3409,20 @@ section.lista-eventos {
     height: 20px;
     width: auto; }
 
+.more-info a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: none;
+  font-weight: normal; }
+
+@media screen and (max-width: 642px) {
+  .aside {
+    margin: 3rem 0 0; }
+
+  .map {
+    height: 200px; } }
 .testimonios-img {
   margin: 10px auto; }
 

@@ -18,6 +18,7 @@
 
 .map{
     margin-top: 40px;
+    overflow: hidden;
 }
 
 .sobre-host__wrap{
@@ -138,7 +139,26 @@
     width: auto;
     }
 }
+.more-info {
+  a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    font-weight: normal;
+  }
+}
 
+@media screen and (max-width: 642px) {
+  .aside {
+    margin: 3rem 0 0;
+  }
+
+  .map {
+    height: 200px;
+  }
+}
 
 
 
