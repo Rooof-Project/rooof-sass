@@ -113,7 +113,7 @@ h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
 p, blockquote, .p {
   color: #333;
   font-family: "PT Serif", serif;
-  line-height: 1.4rem;
+  line-height: 1.8rem;
   margin-bottom: 10px; }
 
 .p-complementary {
@@ -3313,10 +3313,13 @@ section.lista-eventos {
 
 .main-container {
   background-color: white;
-  padding: 30px; }
+  padding: 30px 50px; }
   .main-container .divider {
-    margin: 20px -30px; }
+    margin: 30px -50px; }
 
+@media screen and (max-width: 900px) {
+  .main-container {
+    padding: 30px; } }
 .map {
   margin-top: 40px;
   overflow: hidden; }
