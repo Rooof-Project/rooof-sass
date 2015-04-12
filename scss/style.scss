@@ -33,6 +33,7 @@
 @import "pages/ficha_evento";
 @import "pages/crea";
 @import "pages/somos";
+@import "pages/perfil";
 
 
 
@@ -91,4 +92,9 @@ padding:0px 30px;
     height: 2px;
     background-color: $grey;
     margin: 20px 0px;
+}
+
+.creador-item{
+  margin-bottom: 30px;
+
 }

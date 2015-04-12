@@ -3429,8 +3429,20 @@ section.lista-eventos {
 .testimonios-img {
   margin: 10px auto; }
 
+section.crea-tu-evento {
+  background-color: #eaeaea; }
+  section.crea-tu-evento .button__wrap {
+    padding-top: 20px; }
+
 section.testimonios span {
   color: #ff3766; }
+
+.creador-img {
+  padding-bottom: 30px; }
+
+img.unete {
+  width: 100%;
+  padding-bottom: 30px; }
 
 .slider-wrap {
   padding-top: 54px; }
@@ -3532,6 +3544,9 @@ a.control_next {
   right: 0;
   border-radius: 2px 0 0 2px; }
 
+.somos-text {
+  padding: 60px 20px; }
+
 html, body {
   font-family: "PT Sans", sans-serif;
   height: 100%;
@@ -3575,5 +3590,8 @@ section, .section {
   height: 2px;
   background-color: #eaeaea;
   margin: 20px 0px; }
+
+.creador-item {
+  margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
