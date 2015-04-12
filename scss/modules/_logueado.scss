@@ -1,0 +1,22 @@
+.sregistro{
+  color: $c-main-pink;
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: block;
+  float: none;
+  font-size: 13px;
+  text-decoration: underline;
+  position: absolute;
+    right: 2rem;
+    top: 50%;
+  transform: translateY(-50%);
+}
+
+.sregistro:before{
+  content:url('../img/avatar_perfil_user.png'); /* with class ModalCarrot ??*/
+  padding-right: 10px;
+  position: absolute;
+  top: -12px;
+  left: -50px;
+}
