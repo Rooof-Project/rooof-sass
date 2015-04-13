@@ -2,8 +2,10 @@
     margin: 10px auto;
 }
 
-section.crea-tu-evento{
+.crea-tu-evento_block{
     background-color: $grey;
+    padding: 2rem 0;
+
     .button__wrap{
         padding-top: 20px;
 
@@ -18,8 +20,29 @@ section.testimonios, {
 
 .creador-img{
     padding-bottom: 30px;
+
+    img {
+        width: 100%;
+    }
 }
 img.unete{
     width: 100%;
     padding-bottom: 30px;
+}
+
+.como-crea {
+    background-color: $grey;
+    border: solid 10px white;
+    padding: 0 0 1rem;
+
+    .como-crea-info {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 642px) {
+    .como-crea {
+        height: 30rem;
+        padding: 0;
+    }
 }

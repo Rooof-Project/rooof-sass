@@ -113,7 +113,7 @@ h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
 p, blockquote, .p {
   color: #333;
   font-family: "PT Serif", serif;
-  line-height: 1.8rem;
+  line-height: 1.6rem;
   margin-bottom: 10px; }
 
 .p-complementary {
@@ -167,7 +167,7 @@ a {
     content: "#arte"; }
 
 .titulo {
-  margin-bottom: 20px;
+  margin: 2rem 0;
   text-align: center;
   padding: 0 6%; }
   .titulo * {
@@ -3451,9 +3451,10 @@ section.lista-eventos {
 .testimonios-img {
   margin: 10px auto; }
 
-section.crea-tu-evento {
-  background-color: #eaeaea; }
-  section.crea-tu-evento .button__wrap {
+.crea-tu-evento_block {
+  background-color: #eaeaea;
+  padding: 2rem 0; }
+  .crea-tu-evento_block .button__wrap {
     padding-top: 20px; }
 
 section.testimonios span {
@@ -3461,11 +3462,24 @@ section.testimonios span {
 
 .creador-img {
   padding-bottom: 30px; }
+  .creador-img img {
+    width: 100%; }
 
 img.unete {
   width: 100%;
   padding-bottom: 30px; }
 
+.como-crea {
+  background-color: #eaeaea;
+  border: solid 10px white;
+  padding: 0 0 1rem; }
+  .como-crea .como-crea-info {
+    margin: 0 1rem; }
+
+@media screen and (min-width: 642px) {
+  .como-crea {
+    height: 30rem;
+    padding: 0; } }
 .slider-wrap {
   padding-top: 54px; }
 
@@ -3603,7 +3617,7 @@ section, .section {
       padding: 0px 0px; } }
 
 .container-columns {
-  padding: 0px 30px; }
+  padding: 0px 1rem; }
   @media only screen and (max-width: 40.063em) {
     .container-columns {
       padding: 0px 10px; } }
