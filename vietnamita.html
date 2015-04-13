@@ -2,262 +2,480 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>ROOOF</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="shortcut icon" href="img/favicon.ico"/>
-<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
-<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
-
+  <title>ROOOF</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico"/>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/foundation.min.js"></script>
+  <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
 
 </head>
 <body>
-	<header>
-            <div class="wrap">
-                <div class="logo"><a href="index.html">ROOOF</a></div>
-                <nav>
-                    <ul class="left">
-                    <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
-                    <li><a href="lista_eventos.html">Busca un evento</a></li>
-                    <li><a href="crea.html">Crea tu evento</a></li>
-                    </ul>
-                    <ul class="right">
-                    <button class="btn btn-link log-in">Inicia sesión</button>
-                    <div class="pop-log">
-                      <span>✖</span>
-                      <h1>Inicia sesión</h1>
-                      <div class="reg-facebook">
-                        <img src="img/social-facebook.png">
-                        <a href="">Inicia sesión con facebook</a>
-                    </div>
-                      <div class="reg-twitter">
-                        <img src="img/social-twitter.png">
-                        <a href="">Inicia sesión con twitter</a>
-                    </div>
-                        <div class="reg-line-left"></div>
-                        <div class="zero">o</div>
-                            <div class="reg-line-right"></div>
-                      <h2>Inicia sesión con cuenta de correo</h2>
-                      <form class="reg">
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email"><br>
-                        <label for="contraseña">Contraseña</label><br>
-                        <input type="password" name="password"><br>
-                        <p>¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
-                        <button id="send" class="registrarse1" type="submit">INICIAR SESIÓN</button>
-                      </form>
-                      <div class="inicia-sesion1">
-                        <p>¿Todavía no tienes tu cuenta en ROOOF? <a href="">Regístrate</a></p></div>
-                    </div>
+  <header>
+    <div class="wrap">
+      <div class="logo"><a href="index.html">ROOOF</a></div>
+      <nav>
+        <ul class="left">
+          <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
+          <li><a href="lista-eventos.html">Busca un evento</a></li>
+          <li><a href="crea.html">Crea tu evento</a></li>
+        </ul>
+        <ul class="right">
+          <button class="btn btn-link log-in">Inicia sesión</button>
 
-                    <script type="text/javascript">
-                         $(document).ready(function () {
-                             $("button.log-in").click(function () {
-                                 $(".pop-log").fadeIn(300);
-                                 positionPopup();
-                             });
+          <div class="pop-log">
+            <span>✖</span>
+            <div class="container">
+              <div class="titulo">
+                <h1 class="h3-complementary">Inicia sesión</h1>
+              </div>
+              <div class="form-divider__wrap clearfix">
+                <div class="reg-facebook">
 
-                             $(".pop-log > span").click(function () {
-                                 $(".pop-log").fadeOut(300);
-                             });
-                         });
-                    </script>
-                    <button class="btn btn-link registro">Regístrate</button>
-                    <div class="pop">
-                      <span>✖</span>
-                      <h1>Regístrate</h1>
-                      <div class="reg-facebook">
-                        <img src="img/social-facebook.png">
-                        <a href="">Regístrate con facebook</a>
-                    </div>
-                      <div class="reg-twitter">
-                        <img src="img/social-twitter.png">
-                        <a href="">Regístrate con twitter</a>
-                    </div>
-                        <div class="reg-line-left"></div>
-                        <div class="zero">o</div>
-                            <div class="reg-line-right"></div>
-                      <h2>Regístrate con cuenta de correo</h2>
-                      <form class="reg">
-                        <label for="nombre">Nombre</label><br>
-                        <input type="text" name="palabra"><br>
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email"><br>
-                        <label for="contraseña">Contraseña</label><br>
-                        <input type="password" name="password"><br>
-                        <p>Al registrate aceptas las <a href="">condiciones legales</a>.</p>
-                        <button id="send" class="registrarse" type="submit">REGISTRARSE</button>
-                      </form>
-                      <div class="inicia-sesion">
-                        <p>¿Ya tienes una cuenta en ROOOF? <a href="">Inicia seción</a></p></div>
-                    </div>
-                    <script type="text/javascript">
-                         $(document).ready(function () {
-                             $("button.registro").click(function () {
-                                 $(".pop").fadeIn(300);
-                                 positionPopup();
-                             });
+                  <img src="img/social-facebook.png">
+                  <a href="">Inicia sesión con facebook</a>
+                </div>
+                <div class="reg-twitter">
+                  <img src="img/social-twitter.png">
+                  <a href="">Inicia sesión con twitter</a>
+                </div>
+              </div>
+              <div class=" form-divider__wrap clearfix">
+                <div class="reg-line-left"></div>
+                <div class="zero">o</div>
+                <div class="reg-line-right"></div>
+              </div>
 
-                             $(".pop > span").click(function () {
-                                 $(".pop").fadeOut(300);
-                             });
-                         });
-                    </script>
-                    </ul>
-                </nav>
-            <div class="nav-hamburger">
-          <button class="hamburger">&#9776;</button>
-          <button class="cross">&#735;</button>
+              <h2 class="h5-complementary">Inicia sesión con tu cuenta de correo</h2>
+              <form>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" name="email">
+                </div>
+
+                <div class="field">
+                  <label for="password">Contraseña</label>
+                  <input type="password" name="password">
+                </div>
+              </form>
+
+              <p class="p-complementary">¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
+
+              <div class="button__wrap">
+                <button href="sindex.html" id="send" class="btn" type="submit">Iniciar sesión</button>
+              </div>
+            </div>
+
+            <div class="inicia-sesion1">
+              <div class="footer-reg titulo">
+                <p class="p-complementary">¿Todavía no tienes tu cuenta en ROOOF? <a href="">Regístrate</a></p>
+              </div>
+            </div>
+          </div>
+
+          <script type="text/javascript">
+           $(document).ready(function () {
+             $("button.log-in").click(function () {
+               $(".pop-log").fadeIn(300);
+               positionPopup();
+             });
+
+             $(".pop-log > span").click(function () {
+               $(".pop-log").fadeOut(300);
+             });
+           });
+         </script>
+         <button class="btn btn-link registro">Regístrate</button>
+
+         <div class="pop">
+          <span>✖</span>
+
+          <div class="container">
+            <div class="titulo">
+              <h1 class="h3-complementary">Regístrate</h1>
+            </div>
+
+            <div class="form-divider__wrap clearfix">
+
+              <div class="reg-facebook">
+                <img src="img/social-facebook.png">
+                <a href="">Regístrate con facebook</a>
+              </div>
+
+              <div class="reg-twitter">
+                <img src="img/social-twitter.png">
+                <a href="">Regístrate con twitter</a>
+              </div>
+            </div>
+            <div class=" form-divider__wrap clearfix">
+              <div class="reg-line-left"></div>
+              <div class="zero">o</div>
+              <div class="reg-line-right"></div>
+            </div>
+            <h2 class="h5-complementary">Regístrate con tu cuenta de correo</h2>
+
+            <form class="reg">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="palabra">
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+              </div>
+              <div class="field">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password">
+              </div>
+            </form>
+            <p class="p-complementary">Al registrarte aceptas las <a href="">condiciones legales</a>.</p>
+            <div class="button__wrap">
+              <a id="send" href="milky-reserva.html" class="btn registrarse" type="submit">Registrarse</a>
+            </div>
+
+          </div>
+          <div class="inicia-sesion">
+            <div class="footer-reg titulo">
+              <p class="p-complementary">¿Ya tienes una cuenta en ROOOF? <a href="">Inicia sesión</a></p></div>
+            </div>
+          </div>
+          <script type="text/javascript">
+           $(document).ready(function () {
+             $("button.registro").click(function () {
+               $(".pop").fadeIn(300);
+               positionPopup();
+             });
+
+             $(".pop > span").click(function () {
+               $(".pop").fadeOut(300);
+             });
+           });
+         </script>
+       </ul>
+     </nav>
+
+     <div class="nav-hamburger">
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+    </div>
+
+  </div>
+  <div class="menu">
+    <ul>
+      <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
+      <a href="lista-eventos.html"><li>Busca un evento</li></a>
+      <a href="crea.html"><li>Crea tu evento</li></a>
+      <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
+      <a href="inicio-sesion.html"><li>Regístrate</li></a>
+    </ul>
+  </div>
+
+  <script>
+    $( ".cross" ).hide();
+    $( ".menu" ).hide();
+    $( ".hamburger" ).click(function() {
+      $( ".menu" ).slideToggle( "slow", function() {
+        $( ".hamburger" ).hide();
+        $( ".cross" ).show();
+      });
+    });
+
+    $( ".cross" ).click(function() {
+      $( ".menu" ).slideToggle( "slow", function() {
+        $( ".cross" ).hide();
+        $( ".hamburger" ).show();
+      });
+    });
+  </script>
+</header>
+
+<section class="ficha-evento section-intro">
+  <div class="wrap">
+    <div class="titulo">
+      <h2 class="h1">VIETNAMESE FOOD EXPERIENCE</h2>
+      <p class="h2-complementary">Comida con "rollito"</p>
+    </div>
+    <div class="row">
+      <div class="large-18 medium-16 columns">
+        <img class="img-main" src="img/vietnamita.jpg">
+        <div class="main-container">
+
+          <p>Prepararé una cena Vietnamita típica bastante sana y sabrosa. Entre otros platos estarán el bobún y los rollitos. El bobún es la típica comida que se suele vender en puestos ambulantes en vietnam, los rollitos con muy parecidos a los que conocéis pero más sanos ya que durante su elaboración no se frie ningún ingrediente.</p>
+          <p>Ven con tus amigos, conoce gente nueva y disfruta de un nuevo sabor.</p>
+          <p>Os espero :)</p>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11971.307311189796!2d2.20226760000001!3d41.39956699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3154b13aea1%3A0x7a6055adf5edd733!2sEl+Poblenou%2C+Barcelona!5e0!3m2!1ses!2ses!4v1427888282111" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="sobre-host__wrap">
+            <div class="clearfix">
+              <div class="title">
+                <img class="host-img"src="img/tutu.png">
+                <h2>Sobre TUTU</h2>
+                <h3 class="h6-complementary">Creador del evento</h3>
+              </div>
+
+              <div class="right">
+                <a href="perfil.html" class="btn btn.primary btn-sm">Ver perfil</a>
+              </div>
+            </div>
+
+            <p>Me llamo Tutu, soy francesa de origen vietnamita y me encanta compartir la mesa y mi cultura gastronómica con mis invitados.</p>
+            <p class="more-info">Más info<a href="http://themilkywayexpress.bandcamp.com/"> Tutu oui çe moi</p></a>
+
+
+          </div>
         </div>
 
       </div>
-        <div class="menu">
-          <ul>
-            <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
-            <a href="lista_eventos.html"><li>Busca un evento</li></a>
-            <a href="crea.html"><li>Crea tu evento</li></a>
-            <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
-            <a href="inicio-sesion.html"><li>Regístrate</li></a>
-          </ul>
+      <aside class=" aside large-6 medium-8 columns">
+        <h4 class="h4-complementary">DETALLES DEL EVENTO</h4>
+
+        <div class="">
+          <p class="tag-gastronomia"></p>
         </div>
 
-        <script>
-          $( ".cross" ).hide();
-          $( ".menu" ).hide();
-          $( ".hamburger" ).click(function() {
-          $( ".menu" ).slideToggle( "slow", function() {
-          $( ".hamburger" ).hide();
-          $( ".cross" ).show();
-          });
-          });
+        <div class="info">
 
-          $( ".cross" ).click(function() {
-          $( ".menu" ).slideToggle( "slow", function() {
-          $( ".cross" ).hide();
-          $( ".hamburger" ).show();
-          });
-          });
-        </script>
-    </header>
+          <h5 class=" fecha h5-complementary">Fecha</h5>
+          <p class="p-complementary">Sábado 1 Abril, 20:00-23:00h</p>
 
+          <h5 class="lugar h5-complementary">Lugar</h5>
+          <p class="p-complementary">Mundet</p>
 
-<div class="ficha-evento">
-    <div class="titulo">
-        <h2>VIETNAMESE FOOD EXPERIENCE</h2>
-        <p>Comida con "rollito"</p>
-    </div>
-    <div class="wrap">
-        <div class="wrap2">
-        <div class="main">
-            <img src="img/vietnamita.jpg">
-            <h1>SOBRE EL EVENTO</h1>
-            <p>Prepararé una cena Vietnamita típica bastante sana y sabrosa. Entre otros platos estarán el bobún y los rollitos. El bobún es la típica comida que se suele vender en puestos ambulantes en vietnam, los rollitos con muy parecidos a los que conocéis pero más sanos ya que durante su elaboración no se frie ningún ingrediente.</p>
-            <p>Ven con tus amigos, conoce gente nueva y disfruta de un nuevo sabor.</p>
-            <p>Os espero :)</p>
+          <h5 class="aforo h5-complementary">Aforo</h5>
+          <p class="p-complementary">8 personas</p>
 
         </div>
-        <div class="main-compartir">
-            <p>COMPARTIR</p>
-            <img src="img/social-twitter-333.png">
-            <img src="img/social-facebook-333.png">
-        </div>
-        </div>
-        <aside>
-            <h3>DETALLES DEL EVENTO</h3>
-            <div class="main-etiqueta-gastronomia"><p>#GASTRONOMÍA</p></div>
-            <div class="push"></div>
-            <div class="lista">
-                <div class="fecha">
-                    <img src="img/calendar.png">
-                    <h4>Fecha</h4>
-                    <p>Sábado 1 Abril, 20:00-23:00h</p>
-                </div>
-                <div class="push"></div>
-                <div class="lugar">
-                    <img src="img/place.png">
-                    <h4>Lugar</h4>
-                    <p>Mundet</p>
-                </div>
-                <div class="push"></div>
-                <div class="aforo">
-                    <img src="img/user.png">
-                    <h4>Aforo</h4>
-                    <p>8 personas</p>
-                </div>
-                <div class="push"></div>
+
+        <div class="main-precio"><p class="p-complementary">16€ / persona</p></div>
+        <div class="ticket__warp">
+          <div class="border-ticket">
+            <div class="ticket">
+              <h4>Escoge tu entrada</h4>
+              <ul>
+                <li><input type="radio" name="radio-btn"/>  Voy solo</li>
+                <li><input type="radio" name="radio-btn"/> +1 Voy con un amigo</li>
+              </ul>
+
             </div>
-            <div class="main-precio"><p>16€ / persona</p></div>
-            <div class="push"></div>
+          </div>
+          <button class="btn btn-full registro">RESERVAR ENTRADA</button>
+        </div>
 
 
-             <div class="border-ticket">
-              <div>
-                <ul>
-                  <li>
-                    <h4>Escoge tu entrada</h4></li>
+        <div class="clearfix">
+          <div class="compartir__wrap">
+            <a href=""><img src="img/social-twitter-333.png"></a>
+            <a href=""><img src="img/social-facebook-333.png"></a>
+          </div>
+        </div>
+      </aside>
+    </div>
 
-                  <li><input type="radio" name="radio-btn" />+1 voy solo</li>
 
-                  <li><input type="radio" name="radio-btn" />+2 voy con un amigo</li>
-                  </ul>
+  </section>
 
+  <section class="lista-eventos">
+    <div class="wrap">
+      <div class="secondary-title__wrap row">
+        <h2 class="h3-complementary columns small-push-1 small-20 medium-push-0">Eventos relacionados</h2>
+      </div>
+
+      <ul class="row">
+        <li class=" columns small-22 small-centered medium-12 medium-uncentered large-6">
+          <div class="lista-evento-item">
+
+            <a class="event-list_container" href="cocodrila.html">
+              <div class="precio"><p class="p-complementary">6€/persona</p></div>
+              <img alt=""src="img/destacado_evento_1.jpg">
+            </a>
+
+            <div class="evento-info four-columns">
+              <a href="cocodrila.html">
+                <h3 class="h3-complementary">Cocodrila</h3>
+              </a>
+              <p class="p-complementary">Picoteo y Street Art en nuestra casa.</p>
+              <div class="tags">
+                <p class="tag-arte"></p>
+                <p class="tag-gastronomia"href=""></p>
+              </div>
+            </div>
+
+            <div class="evento-footer row">
+
+              <div class="host-info">
+                <div class="host-img">
+                  <img class="host-img"src="img/host02.png">
+                </div>
+
+                <div class="host-name">
+                  <p><a class="host-link" href="perfil.html">Ugly Heroes</a></p>
+                </div>
               </div>
 
-              <div class="aside-botton paso2"><p><a href="">RESERVA ENTRADA</a></p></div>
-            </div>
-            <div class="push"></div>
 
-            <div class="reserva-container">
-             <div class="aviso-reserva">
-                <h4>Reservar es muy fácil</h4>
-                <p>Reserva ahora y paga el día del evento en casa del creador. Te mandaremos la dirección exacta y los datos de contacto a tu email una vez que hayas reservado.</p>
-            </div>
-            </div>
-        </aside>
-    </div>
-    <div class="push"></div>
+              <div class="btn-lista-evento">
+                <a class="btn btn-sm btn-secondary" href="cocodrila.html">ver más</a>
+              </div>
 
-    <div class="main-line"></div>
-    <div class="push"></div>
-    <div class="wrap">
-        <div class="sobre-host">
-            <img src="img/tutu.png">
-            <h1>SOBRE TUTU</h1>
-            <h2>Creador del evento</h2>
-            <div class="ver-perfil"><a href="perfil-tutu.html">VER PERFIL</a></div>
-            <p>Me llamo Tutu, soy francesa de origen vietnamita y me encanta compartir la mesa y mi cultura gastronómica con mis invitados.</p>
-            <p>Más info: <a href="http://themilkywayexpress.bandcamp.com/">Tutu oui çe moi</a></p>
-        </div>
-    </div>
+            </div>
+          </div>
+        </li> <!--fin .span4-->
+
+        <li class=" columns small-22 small-centered medium-12 medium-uncentered large-6">
+          <div class="lista-evento-item">
+
+            <a class="event-list_container" href="milky.html">
+              <div class="precio"><p class="p-complementary">6€/persona</p></div>
+              <img alt=""src="img/destacado_evento_2.jpg">
+            </a>
+
+            <div class="evento-info four-columns">
+              <a href="milky.html">
+                <h3 class="h3-complementary">The Milky Way Express</h3>
+              </a>
+              <p class="p-complementary">Rock sueño a la parrilla en nuestro terrado.</p>
+              <div class="tags">
+                <p class="tag-musica"></p>
+                <p class="tag-gastronomia"href=""></p>
+              </div>
+            </div>
+
+            <div class="evento-footer row">
+
+              <div class="host-info">
+                <div class="host-img">
+                  <img class="host-img"src="img/host01.jpg">
+                </div>
+
+                <div class="host-name">
+                  <p><a class="host-link" href="perfil.html">Por Milky way</a></p>
+                </div>
+              </div>
+
+
+              <div class="btn-lista-evento">
+                <a class="btn btn-sm btn-secondary" href="milky.html">ver más</a>
+              </div>
+
+            </div>
+          </div>
+        </li> <!--fin .span4-->
+
+        <li class=" columns small-22 small-centered medium-12 medium-uncentered large-6">
+          <div class="lista-evento-item">
+            <a class="event-list_container" href="solose.html">
+              <div class="precio"><p class="p-complementary">12€/persona</p></div>
+
+              <img alt=""src="img/destacado_evento_3.jpg">
+            </a>
+
+            <div class="evento-info four-columns">
+              <a href="solose.html">
+                <h3 class="h3-complementary">Sólo sé que no se nada</h3>
+              </a>
+              <p class="p-complementary">Una obra nada clásica en mi patio.</p>
+              <div class="tags">
+                <p class="tag-teatro"></p>
+              </div>
+            </div>
+
+            <div class="evento-footer row">
+
+              <div class="host-info">
+                <div class="host-img">
+                  <img class="host-img"src="img/host03.jpg">
+                </div>
+
+                <div class="host-name">
+                  <p><a class="" href="perfil.html">Por Carmen</a></p>
+                </div>
+              </div>
+
+
+              <div class="btn-lista-evento">
+                <a class="btn btn-sm btn-secondary" href="solose.html">ver más</a>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class=" columns small-22 small-centered medium-12 medium-uncentered large-6">
+            <div class="lista-evento-item">
+                <a class="event-list_container" href="band.html">
+                  <div class="precio"><p class="p-complementary">12€/persona</p></div>
+                  <img alt=""src="img/destacado_evento_5.jpg">
+                </a>
+
+                <div class="evento-info four-columns">
+                    <a href="band.html">
+                      <h3 class="h3-complementary">A Band Apart</h3>
+                    </a>
+                    <p class="p-complementary">Funky, monólogos y humor en nuestra casa.</p>
+                    <div class="tags">
+                        <p class="tag-musica"></p>
+                        <p class="tag-humor"href=""></p>
+                    </div>
+                </div>
+
+                <div class="evento-footer row">
+
+                <div class="host-info">
+                  <div class="host-img">
+                    <img class="host-img"src="img/host05.jpg">
+                  </div>
+
+                  <div class="host-name">
+                    <p><a class="" href="perfil.html">Por locos</a></p>
+                  </div>
+                </div>
+
+
+              <div class="btn-lista-evento">
+                <a class="btn btn-sm btn-secondary" href="band.html">ver más</a>
+              </div>
+
+            </div>
+            </li>
+    </ul>
+  </div>
+</section>
 <footer>
-    <div class="wrap">
-        <div class="logo-down">ROOOF</div>
-        <div class="link-down"><a href="mailto:hellorooof@gmail.com">contacta con nosotros</a></div>
-        <div class="social-network">
-            <a href="https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
-            <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
-        </div>
+  <div class="wrap">
+    <div class="logo-down">ROOOF</div>
+    <div class="link-down"><a href="mailto:hellorooof@gmail.com">contacta con nosotros</a></div>
+    <div class="social-network">
+      <a href="https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
+      <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
     </div>
+  </div>
 </footer>
 
 </body>
