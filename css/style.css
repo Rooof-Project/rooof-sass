@@ -3260,6 +3260,8 @@ section.lista-eventos {
     padding: 0px 15px 5px 15px;
     height: 140px;
     overflow: hidden; }
+  .lista-evento-item .four-columns {
+    height: 170px; }
 
 .event-list_container {
   background: #ff3766;
