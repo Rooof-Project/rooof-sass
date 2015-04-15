@@ -3679,7 +3679,39 @@ a.control_next {
 .tab-content {
   background-color: #fff;
   margin: 0 0 1rem;
-  padding: 1em 2em 1em 2em; }
+  text-align: center; }
+  .tab-content form {
+    padding: 2rem 0;
+    position: relative; }
+    .tab-content form input {
+      background-color: #eaeaea;
+      border: solid 1px #ff3766;
+      border-radius: 0;
+      text-align: center;
+      font-size: 18px;
+      height: 2.5rem;
+      margin: 0 auto 2rem;
+      width: 15rem; }
+    .tab-content form .euro {
+      padding: 0 0 0 7rem; }
+    .tab-content form .btn_euro {
+      margin: 1rem auto 2rem; }
+    .tab-content form .price-number {
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      right: 0;
+      width: 4rem; }
+      .tab-content form .price-number:after {
+        content: 'mmmm';
+        color: black;
+        font-size: 18px;
+        float: right; }
+  .tab-content textarea {
+    border-radius: none;
+    width: 400px;
+    height: 150px;
+    font-size: 16px; }
 
 .accordion {
   position: relative;
@@ -3718,11 +3750,9 @@ a.control_next {
 .accordionItem {
   height: auto;
   overflow: hidden;
-  max-height: 50em;
   transition: max-height 1s; }
   @media screen and (min-width: 48em) {
     .accordionItem {
-      max-height: 15em;
       transition: max-height 0.5s; } }
 
 .accordionItemCollapsed,

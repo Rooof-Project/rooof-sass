@@ -321,9 +321,7 @@ $(function() {
             <form>
               <input type="date" name="date"><br>
               <input type="time" name="time"><br>
-              <div class="tab-button">
-                <a href="#c2">GUARDAR</a>
-              </div>
+              <button href="#accordion2" class="btn">GUARDAR</button>
             </form>
           </div>
         </dd>
@@ -332,7 +330,13 @@ $(function() {
             Precio</a>
         </dt>
         <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
+          <div class="tab-content">
+              <form>
+                <input class="price-number" type="number" min="0" max="9999999" name="price"> <h1 class="euro"> €</h1>
+                <button href="#accordion3" class="btn btn_euro">GUARDAR</button>
+                <p>*Las entradas se cobrarán en el lugar del evento</p>
+              </form>
+            </div>
         </dd>
         <dt>
           <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
@@ -340,30 +344,35 @@ $(function() {
           </a>
         </dt>
         <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
+          <div class="tab-content">
+            <textarea type="text" placeholder="Escribe un resumen con un máximo de 250 carácteres" name="text" maxlength="250"></textarea>
+            <p>Quedan 250 carácteres</p>
+            <div class="space"></div>
+            <button href="#accordion4" class="btn btn_euro">GUARDAR</button>
+          </div>
         </dd>
         <dt>
-          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+          <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
             Fotos
           </a>
         </dt>
-        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
         </dd>
         <dt>
-          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+          <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">
             Ubicación
           </a>
         </dt>
-        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
         </dd>
         <dt>
-          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+          <a href="#accordion6" aria-expanded="false" aria-controls="accordion6" class="accordion-title accordionTitle js-accordionTrigger">
             Publicar
           </a>
         </dt>
-        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
         </dd>
       </dl>

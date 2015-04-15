@@ -443,7 +443,54 @@
 .tab-content {
     background-color: $c-Lightest;
     margin: 0 0 1rem;
-    padding:1em 2em 1em 2em;
+    text-align: center;
+    // padding:1em 2em 1em 2em;
+
+    form {
+        padding: 2rem 0;
+        position: relative;
+
+        input {
+            background-color: $grey;
+            border: solid 1px $c-main-pink;
+            border-radius: 0;
+            text-align: center;
+            font-size: 18px;
+            height: 2.5rem;
+            margin: 0 auto 2rem;
+            width: 15rem;
+        }
+
+        .euro {
+            padding: 0 0 0 7rem;
+        }
+
+        .btn_euro {
+            margin: 1rem auto 2rem;
+        }
+
+        .price-number {
+            position: absolute;
+                top: 2rem;
+                left: 0;
+                right: 0;
+            width: 4rem;
+
+            &:after {
+                content: 'mmmm';
+                color: black;
+                font-size: 18px;
+                float: right;
+            }
+        }
+    }
+
+    textarea {
+        border-radius: none;
+        width: 400px;
+        height: 150px;
+        font-size: 16px;
+    }
 }
 
 .accordion {
@@ -488,12 +535,12 @@
     overflow:hidden;
     //SHAME: magic number to allow the accordion to animate
 
-     max-height:50em;
+     // max-height:50em;
     transition:max-height 1s;
 
 
     @media screen and (min-width:48em) {
-         max-height:15em;
+         // max-height:15em;
         transition:max-height 0.5s
 
     }
