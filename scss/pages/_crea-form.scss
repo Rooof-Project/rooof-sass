@@ -452,7 +452,6 @@
 
         input {
             background-color: $grey;
-            border: solid 1px $c-main-pink;
             border-radius: 0;
             text-align: center;
             font-size: 18px;
@@ -463,6 +462,12 @@
 
         .euro {
             padding: 0 0 0 7rem;
+        }
+
+        .persona {
+            padding: 5px 0 0 9.5rem;
+            font-size: 20px;
+            text-transform: lowercase;
         }
 
         .btn_euro {
@@ -483,14 +488,49 @@
                 float: right;
             }
         }
+
+        .add-photo {
+            border: none;
+            background-color: $c-Lightest;
+            display: inherit;
+            font-size: 1rem;
+            margin: 0 auto;
+            width: 12rem;
+        }
     }
 
     textarea {
         border-radius: none;
-        width: 400px;
+        max-width: 400px;
         height: 150px;
         font-size: 16px;
+        width: 90%;
     }
+
+    .form-description {
+        color: #8e8e8e;
+        font-size: 16px;
+    }
+
+    p {
+        margin: 2rem auto;
+        max-width: 28rem;
+        width: 80%;
+    }
+
+    .direction {
+        height: 50px;
+        display: inherit;
+        margin: 0 auto;
+    }
+
+    select {
+        display: inherit;
+        max-width: 100px;
+        margin: 2rem auto 1rem;
+        width: 90%;
+    }
+
 }
 
 .accordion {

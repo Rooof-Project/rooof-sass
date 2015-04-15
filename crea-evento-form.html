@@ -314,66 +314,146 @@ $(function() {
 
       <dl class="accordion">
         <dt>
-          <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Fecha / Hora</a>
+          <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Título</a>
         </dt>
         <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
           <div class="tab-content">
             <form>
-              <input type="date" name="date"><br>
-              <input type="time" name="time"><br>
-              <button href="#accordion2" class="btn">GUARDAR</button>
+              <textarea class="direction" type="text" name="text"></textarea>
+              <select>
+                <option value="gastronomia">Gastronomía</option>
+                <option value="musica">Música</option>
+                <option value="arte">Arte</option>
+                <option value="teatro">Teatro</option>
+                <option value="performance">Performance</option>
+                <option value="comida">Comida</option>
+              </select>
+              <button href="#accordion2" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
             </form>
           </div>
         </dd>
         <dt>
-          <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
-            Precio</a>
+          <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">Barrio / Aforo</a>
         </dt>
         <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
           <div class="tab-content">
+            <form>
+              <input class="price-number" type="number" min="0" max="9999999" name="price"> <h2 class="persona"> personas</h2>
+              <select>
+                <option value="eixampla">Eixample</option>
+                <option value="gracia">Gràcia</option>
+                <option value="sant-marti">Sant Martí</option>
+                <option value="ciutat-vella">Ciutat Vella</option>
+                <option value="les-corts">Les Corts</option>
+                <option value="nou-barris">Nou Barris</option>
+                <option value="sants-montjuic">Sants-Montjuïc</option>
+                <option value="sant-andreu">Sant Andreu</option>
+                <option value="sarria-sant-gervasi">Sarrià-Sant Gervasi</option>
+                <option value="horta-guinardo">Horta-Guinardó</option>
+              </select>
+              <button href="#accordion3" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Fecha / Hora</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <input type="date" name="date"><br>
+              <input type="time" name="time"><br>
+              <button href="#accordion4" class="btn js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
+            Precio</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+          <div class="tab-content">
               <form>
                 <input class="price-number" type="number" min="0" max="9999999" name="price"> <h1 class="euro"> €</h1>
-                <button href="#accordion3" class="btn btn_euro">GUARDAR</button>
+                <button href="#accordion5" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
                 <p>*Las entradas se cobrarán en el lugar del evento</p>
               </form>
             </div>
         </dd>
         <dt>
-          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+          <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">
             Descripción
           </a>
         </dt>
-        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
           <div class="tab-content">
-            <textarea type="text" placeholder="Escribe un resumen con un máximo de 250 carácteres" name="text" maxlength="250"></textarea>
-            <p>Quedan 250 carácteres</p>
-            <div class="space"></div>
-            <button href="#accordion4" class="btn btn_euro">GUARDAR</button>
+            <form>
+              <textarea type="text" placeholder="Escribe un resumen con un máximo de 250 carácteres" name="text" maxlength="250"></textarea>
+              <p class="form-description">Quedan 250 carácteres</p>
+              <div class="space"></div>
+              <button href="#accordion6" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+            </form>
           </div>
         </dd>
         <dt>
-          <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
+          <a href="#accordion6" aria-expanded="false" aria-controls="accordion6" class="accordion-title accordionTitle js-accordionTrigger">
             Fotos
           </a>
         </dt>
-        <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <h2>¡Añade un par de fotos!</h2>
+              <p>O todas las que quieras. Tu público agradecerá las fotos que muestren claramente que es lo que quieres ofrecerles.</p>
+              <input class="add-photo" type="file" name="photo">
+              <button href="#accordion7" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
         </dd>
         <dt>
-          <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">
+          <a href="#accordion7" aria-expanded="false" aria-controls="accordion7" class="accordion-title accordionTitle js-accordionTrigger">
             Ubicación
           </a>
         </dt>
-        <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion7" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <h2>Dirección</h2>
+              <p>Tu dirección exacta es privada y sólo la compartiremos<br>con los usuarios que dispongan de una reserva confirmada</p>
+              <textarea class="direction" type="text" name="text"></textarea>
+              <button href="#accordion8" class="btn btn_euro js-temporarySaveButton">GUARDAR</button>
+            </form>
+          </div>
         </dd>
         <dt>
-          <a href="#accordion6" aria-expanded="false" aria-controls="accordion6" class="accordion-title accordionTitle js-accordionTrigger">
+          <a href="#accordion8" aria-expanded="false" aria-controls="accordion8" class="accordion-title accordionTitle js-accordionTrigger">
             Publicar
           </a>
         </dt>
-        <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion8" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <h2>Ya está casi listo</h2>
+              <p>Ya tenemos todos los datos necesarios<br>para publicar tu anuncio. Pulsa el botón de <span>publicar</span><br>y tu evento aparecerá en la lista de eventos de ROOOF</p>
+              <button href="#accordion9" class="btn btn_euro js-temporarySaveButton">PUBLICAR</button>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion9" aria-expanded="false" aria-controls="accordion9" class="accordion-title accordionTitle js-accordionTrigger">
+            Done!
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion9" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <h2>¡ENHORABUENA!</h2>
+              <p>Tu evento ha sido publicado con éxito.
+            Recuerda completar tu perfil para que tus invitados sepan más sobre ti
+                y se animen a compartir esta experiencia contigo.</p>
+              <a href="lista-eventos-logueado.html" class="btn btn_euro">CONTINUAR EN ROOOF</a>
+            </form>
+          </div>
         </dd>
       </dl>
 
@@ -381,6 +461,7 @@ $(function() {
         (function(){
           var d = document,
           accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+          temporarySaveButtons = d.querySelectorAll('.js-temporarySaveButton'),
           setAria,
           setAccordionAria,
           switchAccordion,
@@ -409,22 +490,51 @@ $(function() {
                 break;
             }
           };
-        //function
-        switchAccordion = function(e) {
-          e.preventDefault();
-          var thisAnswer = e.target.parentNode.nextElementSibling;
-          var thisQuestion = e.target;
-          if(thisAnswer.classList.contains('is-collapsed')) {
-            setAccordionAria(thisQuestion, thisAnswer, 'true');
-          } else {
-            setAccordionAria(thisQuestion, thisAnswer, 'false');
-          }
+          //function
+          switchAccordion = function(e) {
+            e.preventDefault();
+            var thisAnswer = e.target.parentNode.nextElementSibling;
+            var thisQuestion = e.target;
+            if(thisAnswer.classList.contains('is-collapsed')) {
+              setAccordionAria(thisQuestion, thisAnswer, 'true');
+            } else {
+              setAccordionAria(thisQuestion, thisAnswer, 'false');
+            }
             thisQuestion.classList.toggle('is-collapsed');
             thisQuestion.classList.toggle('is-expanded');
             thisAnswer.classList.toggle('is-collapsed');
             thisAnswer.classList.toggle('is-expanded');
 
             thisAnswer.classList.toggle('animateIn');
+          };
+          openNextAccordionItem = function(e) {
+            e.preventDefault();
+            var thisHeading = e.target.parentNode.parentNode.parentNode.previousSibling.previousSibling.childNodes[0].nextSibling,
+                thisContainer = e.target.parentNode.parentNode.parentNode,
+                nextHeading = thisContainer.nextElementSibling.childNodes[0].nextSibling,
+                nextContainer = thisContainer.nextElementSibling.nextElementSibling;
+
+            if(thisContainer.classList.contains('is-collapsed')) {
+              setAccordionAria(thisHeading, thisContainer, 'true');
+            } else {
+              setAccordionAria(thisHeading, thisContainer, 'false');
+            }
+            thisHeading.classList.toggle('is-collapsed');
+            thisHeading.classList.toggle('is-expanded');
+            thisContainer.classList.toggle('is-collapsed');
+            thisContainer.classList.toggle('is-expanded');
+            thisContainer.classList.toggle('animateIn');
+
+            if(nextContainer.classList.contains('is-collapsed')) {
+              setAccordionAria(nextHeading, nextContainer, 'true');
+            } else {
+              setAccordionAria(nextHeading, nextContainer, 'false');
+            }
+            nextHeading.classList.toggle('is-collapsed');
+            nextHeading.classList.toggle('is-expanded');
+            nextContainer.classList.toggle('is-collapsed');
+            nextContainer.classList.toggle('is-expanded');
+            nextContainer.classList.toggle('animateIn');
           };
           for (var i=0,len=accordionToggles.length; i<len; i++) {
             if(touchSupported) {
@@ -434,6 +544,15 @@ $(function() {
               accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
             }
             accordionToggles[i].addEventListener('click', switchAccordion, false);
+          }
+          for (var i=0,len=temporarySaveButtons.length; i<len; i++) {
+            if(touchSupported) {
+              temporarySaveButtons[i].addEventListener('touchstart', skipClickDelay, false);
+            }
+            if(pointerSupported){
+              temporarySaveButtons[i].addEventListener('pointerdown', skipClickDelay, false);
+            }
+            temporarySaveButtons[i].addEventListener('click', openNextAccordionItem, false);
           }
         })();
       </script>
@@ -459,3 +578,4 @@ $(function() {
 </body>
 
 </html>
+
