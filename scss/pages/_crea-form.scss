@@ -1,0 +1,534 @@
+/* crea-evento-form */
+.wrap-wider {
+    margin: 0px auto;
+    max-width: 1050px;
+    width: 100%;
+}
+
+.crea-form {
+    background-color: $grey;
+    padding-top: 57px;
+    width: 100%;
+}
+
+.atras {
+    background: #333;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 18px;
+
+    p {
+        color: white;
+        font-family: $font-primary;
+    }
+
+    a {
+        color: white;
+        font-size: 14px;
+        margin: 0 15px 0 1.5rem;
+    }
+}
+
+// #container{
+//     margin: 0 auto;
+//     margin: 5% 0px;
+//     font-weight: 500;
+//     font-size: 18px;
+// }
+
+// .tab-container {
+//     position: relative;
+//     width: 100%;
+//     z-index: 0;
+//     border: solid 15px #e8e8e8;
+//     width: 990px;
+
+//     div {
+//         a {
+//             position: relative !important;
+//             text-decoration: none;
+//             color: #000;
+//             display: inline-block;
+//             margin: 0px;
+//             background: white;
+//             padding: 15px 80px 10px 20px;
+//             width: 220px;
+//             font-size: 18px;
+//         }
+
+//         div {
+//             background: white;
+//             z-index: -2;
+//             top: 0;
+//             left: 220px;
+//             height: 320px;
+//             border-left: solid 20px #e8e8e8;
+//         }
+//     }
+
+//     div:target {
+//         a {
+//             background: #e8e8e8;
+//         }
+//     }
+// }
+
+// .tab-container > div:not(:target) > div {
+//     position: absolute;
+// }
+
+// .tab-container > div:target > div {
+//     position: absolute;
+//     z-index: 3 !important;
+// }
+
+// div.tab-content{
+//     padding-bottom: 70px;
+//     padding-left: 20px;
+//     padding-right: 20px;
+// }
+
+// .tab-content img{
+//     margin:0 auto;
+//     display:block;
+//     padding-bottom: 20px;
+//     padding-top: 10px;
+// }
+
+// #tabs-right {
+//     position: relative;
+//     padding-right: 6.5em;
+// }
+
+// #tabs-right .ui-tabs-nav {
+//     position: absolute;
+//     right: 0.25em;
+//     top: 0.25em;
+//     bottom: 0.25em;
+//     width: 6em;
+//     padding: 0.2em 0.2em 0.2em 0em;
+// }
+
+// #tabs-right .ui-tabs-nav li {
+//     width: 100%;
+//     border-left: none;
+//     border-bottom-width: 1px !important;
+//     -moz-border-radius: 0px 4px 4px 0px;
+//     -webkit-border-radius: 0px 4px 4px 0px;
+//     border-radius: 0px 4px 4px 0px;
+//     overflow: hidden;
+// }
+
+// #tabs-right .ui-tabs-nav li.ui-tabs-selected,
+// #tabs-right .ui-tabs-nav li.ui-state-active {
+//     left: -1px;
+//     border-left: 1px solid transparent;
+// }
+// #tabs-right .ui-tabs-nav li a {
+//     width: 100%;
+// }
+
+// #c5 > a{
+//     border-bottom: solid 1px #e8e8e8;
+
+// }
+
+// #c7 {
+//     height: 99px;
+//     width: 150px;
+//     text-align: center;
+//     font-size: 18px;
+//     margin: 30px 0px 0px 35px;
+// }
+
+// #c7 span {
+//     color: #ff3766
+// }
+
+// .tab-container input {
+//     width: 300px;
+//     height: 45px;
+//     margin: 0px auto;
+//     text-align: center;
+//     font-size: 18px;
+//     margin: 15px;
+// }
+
+// #c1 > .tab-content {
+//     width: 740px;
+//     height: 448px;
+//     padding: 70px 100px 105px 200px;
+//     background: white;
+// }
+
+// .tab-button {
+//     margin-top: 10px;
+// }
+
+// .tab-button a {
+//     padding: 10px 60px;
+//     background: #ff3766;
+//     text-align: center;
+//     color: white;
+//     font-size: 22px;
+//     border-radius: 5px;
+//     line-height: 2em;
+//     margin: 15px 0px 0px 60px;
+//     border: solid 1px #ff3766;
+// }
+
+// .tab-button a:hover {
+//     color: #ff3766;
+//     background: white;
+// }
+
+// #c2 input {
+//     width: 100px;
+//     margin: 10px 10px 60px 100px;
+//     float: left;
+
+// }
+
+// #c2 > .tab-content {
+//     width: 420px;
+//     height: 230px;
+//     padding: 0px 100px 150px 200px;
+//     background: white;
+// }
+
+// #c2 h2 {
+//     margin: 80px 0px 0px 120px;
+//     font-size: 25px;
+//     font-weight: 500;
+// }
+// #c2 h1 {
+//     margin-top: 10px;
+//     font-weight: 400;
+// }
+
+// textarea {
+//     width: 400px;
+//     height: 150px;
+//     font-size: 16px;
+// }
+
+// #c3 .tab-content{
+//     padding: 10px 150px 50px 150px;
+// }
+
+// #c3 > .tab-content h2 {
+//     margin-left: 45px;
+// }
+
+// #c3 > .tab-content p {
+//     color: #8e8e8e;
+//     line-height: 0em;
+//     padding: 0px 0px 20px 260px;
+//     font-size: 16px;
+// }
+
+// .space {
+//     width: 40px;
+//     height: 50px;
+//     float: left;
+// }
+
+// #c3 > .tab-button {
+//     float: left;
+//     padding-left: 700px;
+//     margin-left: 1000px;
+// }
+
+// #c4 h2 {
+//     color: #ff3766;
+//     text-align: center;
+//     margin-left: 30px;
+// }
+
+// #c4 p {
+//     text-align: center;
+//     width: 270px;
+//     font-size: 20px;
+//     margin: 0px 0px 20px 30px;
+// }
+
+// #c4 > .tab-content input {
+//     font-size: 15px;
+//     width: 200px;
+//     margin-left: 70px;
+// }
+
+// #c4 > .tab-content {
+//     padding: 10px 210px 50px 210px;
+// }
+
+// #c5 h2 {
+//     color: #ff3766;
+//     text-align: center;
+// }
+
+// #c5 p {
+//     text-align: center;
+//     width: 500px;
+//     font-size: 20px;
+//     margin: 0px;
+// }
+
+// #c5 textarea {
+//     height: 40px;
+//     width: 500px;
+//     margin: 30px 0px;
+//     font-size: 25px;
+//     line-height: 1.6em;
+//     text-align: center;
+// }
+
+// #c5 > .tab-content {
+//     padding: 20px 100px;
+// }
+
+// #c5 > .tab-content >.tab-button a {
+//     margin: 0 90px;
+// }
+
+
+// #c6 h2 {
+//     color: #ff3766;
+//     text-align: center;
+// }
+
+// #c6 p {
+//     text-align: center;
+//     width: 500px;
+//     font-size: 20px;
+//     margin: 20px auto;
+// }
+
+// #c6 textarea {
+//     height: 40px;
+//     width: 500px;
+//     margin: 30px 0px;
+//     font-size: 25px;
+//     line-height: 1.6em;
+//     text-align: center;
+// }
+
+// #c6 > .tab-content {
+//     padding: 20px 100px;
+// }
+
+// #c7 > .tab-content h2 {
+//     color: #ff3766;
+//     text-align: center;
+//     margin: 100px 0px 30px 50px;
+// }
+// #c6 > .tab-content >.tab-button a {
+//     margin: 30px 100px;
+// }
+
+// #c7 > .tab-content p {
+//     text-align: center;
+//     width: 420px;
+//     font-size: 20px;
+//     margin: 0px 0px 40px 50px;
+// }
+
+// #c7 > .tab-content {
+//     padding: 0px 100px 30px 100px;
+// }
+
+
+// /* end of crea-evento-form */
+
+
+// /* start crea-evento-y-formulario */
+
+// .wrap3 h1 {
+//     text-align: center;
+//     font-weight: 400;
+//     padding: 40px 0px;
+//     color: #333;
+//     font-size: 2rem;
+// }
+
+// .wrap3 {
+//     margin-bottom: 50px;
+//     float: left;
+//     background-color: #eaeaea;
+//     width: 100%;
+// }
+
+// .wrap3 p {
+//     color: #ff3766;
+//     font-size: 2rem;
+//     float: left;
+//     line-height: 0rem;
+// }
+
+// .wrap3 form select {
+//     float: left;
+//     border: 0;
+//     border-radius: 0;
+//     width: 250px;
+//     height: 65px;
+//     margin: 0px 20px;
+//     font-size: 1.8rem;
+//     color: #333;
+//     font-weight: 300;
+// }
+
+// .wrap3-form {
+//     margin: 0px auto;
+//     width: 70%;
+// }
+
+// .wrap3 input.text {
+//     width: 100%;
+//     height: 56px;
+//     font-size: 1.8rem;
+//     background-color: #eaeaea;
+//     border: none;
+//     border-bottom: solid 1px #333;
+//     float: left;
+// }
+
+// .wrap3 p.aforo {
+//     float: left;
+//     margin: 60px 0px 0px 240px;
+// }
+
+// .wrap3 input.aforo {
+//     float: left;
+//     width: 94px;
+//     height: 54px;
+//     clear: left;
+//     font-size: 1.8rem;
+//     text-align: center;
+//     margin: 50px auto;
+//     margin-left: 41%;
+// }
+
+// .wrap3 p.barrio {
+//     float: left;
+//     clear: left;
+//     margin-left: 43%;
+// }
+
+// .select-category-barrio {
+//     clear: left;
+//     margin: 20px 0px 30px 29%;
+//     float: left;
+// }
+
+// .crea-evento-form {
+//     clear: left;
+// }
+
+// .wrap3 p:last-child {
+//     color: #000;
+//     font-size: 16px;
+//     text-align: center;
+//     float: left;
+//     margin: 50px 0px 70px 20%;
+// }
+
+// /* end of crea-evento-y-formulario */
+
+.accordion dd {
+    font-size:1em;
+    line-height:1.5em;
+}
+.tab-content {
+    background-color: $c-Lightest;
+    margin: 0 0 1rem;
+    padding:1em 2em 1em 2em;
+}
+
+.accordion {
+    position:relative;
+    max-width:800px;
+    margin:0 auto;
+    padding:2em 0 2em 0;
+    width: 90%;
+}
+
+.accordionTitle {
+ background-color: $c-Lightest;
+   text-align:center;
+     font-weight:700;
+          padding:.8rem 2em;
+          display:block;
+          text-decoration:none;
+          color:$c-main-gray;
+          transition:background-color 0.5s ease-in-out;
+  border-bottom:3px solid darken($c-Lightest, 5%);
+  &:before {
+    color: $c-main-pink;
+   content: "+";
+   font-size:1.5em;
+   line-height: 1em;
+   float:right;
+   transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    background-color:darken($c-Lightest, 10%);
+  }
+}
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+   background-color:darken($c-Lightest, 10%);
+    &:before {
+      transform:rotate(-225deg);
+    }
+}
+.accordionItem {
+    height:auto;
+    overflow:hidden;
+    //SHAME: magic number to allow the accordion to animate
+
+     max-height:50em;
+    transition:max-height 1s;
+
+
+    @media screen and (min-width:48em) {
+         max-height:15em;
+        transition:max-height 0.5s
+
+    }
+
+
+}
+.accordionItemCollapsed,
+.accordionItem.is-collapsed {
+    max-height:0;
+}
+.animateIn {
+     animation: accordionIn 0.65s normal ease-in-out both 1;
+}
+.animateOut {
+     animation: accordionOut 0.75s alternate ease-in-out both 1;
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform:scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes accordionOut {
+    0% {
+       opacity: 1;
+       transform:scale(1);
+     }
+     100% {
+          opacity:0;
+           transform:scale(0.9) rotateX(-60deg);
+       }
+}

@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -5,31 +6,177 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="shortcut icon" href="img/favicon.ico"/>
-<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
-<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,600,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/foundation.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 </head>
 <body>
+  <header>
+      <div class="wrap">
+        <div class="logo"><a href="index.html">ROOOF</a></div>
+        <nav>
+          <ul class="left">
+                    <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
+          <li><a href="lista-eventos.html">Busca un evento</a></li>
+          <li><a href="crea.html">Crea tu evento</a></li>
+          </ul>
+                    <ul class="right">
+                    <button class="btn btn-link log-in">Inicia sesión</button>
 
-	<header>
-            <div class="wrap">
-                <div class="logo"><a href="index.html">ROOOF</a></div>
-                <nav>
-                    <ul class="left">
-                    <li><a href="somos.html">¿Qué es ROOOF?</a></li>
-                    <li><a href="lista_eventos.html">Busca un evento</a></li>
-                    <li><a href="crea.html">Crea tu evento</a></li>
-                    </ul>
+                    <div class="pop-log">
+                      <span>✖</span>
+                      <div class="container">
+                      <div class="titulo">
+                      <h1 class="h3-complementary">Inicia sesión</h1>
+                      </div>
+                      <div class="form-divider__wrap clearfix">
+                        <div class="reg-facebook">
 
-                    <div class="nav-right-user-name">
-                        <a href="">Mi Perfil</a>
+                        <img src="img/social-facebook.png">
+                        <a href="">Inicia sesión con facebook</a>
+                        </div>
+                      <div class="reg-twitter">
+                        <img src="img/social-twitter.png">
+                        <a href="">Inicia sesión con twitter</a>
+                    </div>
+                    </div>
+                    <div class=" form-divider__wrap clearfix">
+                        <div class="reg-line-left"></div>
+                        <div class="zero">o</div>
+                        <div class="reg-line-right"></div>
                     </div>
 
-                </nav>
-            <div class="nav-hamburger">
+                      <h2 class="h5-complementary">Inicia sesión con tu cuenta de correo</h2>
+                      <form>
+                        <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                        </div>
+
+                        <div class="field">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password">
+                        </div>
+                      </form>
+
+                      <p class="p-complementary">¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
+
+                      <div class="button__wrap">
+                        <button href="sindex.html" id="send" class="btn" type="submit">Iniciar sesión</button>
+                        </div>
+                    </div>
+
+                      <div class="inicia-sesion1">
+                        <div class="footer-reg titulo">
+                          <p class="p-complementary">¿Todavía no tienes tu cuenta en ROOOF? <a href="">Regístrate</a></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <script type="text/javascript">
+                         $(document).ready(function () {
+                             $("button.log-in").click(function () {
+                                 $(".pop-log").fadeIn(300);
+                                 positionPopup();
+                             });
+
+                             $(".pop-log > span").click(function () {
+                                 $(".pop-log").fadeOut(300);
+                             });
+                         });
+                    </script>
+                    <button class="btn btn-link registro">Regístrate</button>
+
+                    <div class="pop">
+                      <span>✖</span>
+
+                      <div class="container">
+                        <div class="titulo">
+                          <h1 class="h3-complementary">Regístrate</h1>
+                        </div>
+
+                      <div class="form-divider__wrap clearfix">
+
+                        <div class="reg-facebook">
+                          <img src="img/social-facebook.png">
+                          <a href="">Regístrate con facebook</a>
+                        </div>
+
+                        <div class="reg-twitter">
+                          <img src="img/social-twitter.png">
+                          <a href="">Regístrate con twitter</a>
+                        </div>
+                      </div>
+                      <div class=" form-divider__wrap clearfix">
+                        <div class="reg-line-left"></div>
+                        <div class="zero">o</div>
+                        <div class="reg-line-right"></div>
+                      </div>
+                      <h2 class="h5-complementary">Regístrate con tu cuenta de correo</h2>
+
+                      <form class="reg">
+                        <div class="field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="palabra">
+                        </div>
+
+                        <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                        </div>
+                        <div class="field">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password">
+                        </div>
+                      </form>
+                      <p class="p-complementary">Al registrarte aceptas las <a href="">condiciones legales</a>.</p>
+                      <div class="button__wrap">
+                        <button id="send" class="btn registrarse" type="submit">Registrarse</button>
+                      </div>
+
+                      </div>
+                      <div class="inicia-sesion">
+                        <div class="footer-reg titulo">
+                        <p class="p-complementary">¿Ya tienes una cuenta en ROOOF? <a href="">Inicia sesión</a></p></div>
+                    </div>
+                    </div>
+                    <script type="text/javascript">
+                         $(document).ready(function () {
+                             $("button.registro").click(function () {
+                                 $(".pop").fadeIn(300);
+                                 positionPopup();
+                             });
+
+                             $(".pop > span").click(function () {
+                                 $(".pop").fadeOut(300);
+                             });
+                         });
+                    </script>
+                    </ul>
+        </nav>
+
+        <div class="nav-hamburger">
           <button class="hamburger">&#9776;</button>
           <button class="cross">&#735;</button>
         </div>
@@ -38,7 +185,7 @@
         <div class="menu">
           <ul>
             <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
-            <a href="lista_eventos.html"><li>Busca un evento</li></a>
+            <a href="lista-eventos.html"><li>Busca un evento</li></a>
             <a href="crea.html"><li>Crea tu evento</li></a>
             <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
             <a href="inicio-sesion.html"><li>Regístrate</li></a>
@@ -62,116 +209,244 @@
           });
           });
         </script>
-    </header>
+  </header>
 
-
-    <div class="push"></div>
-
-    <div class="blanco">
-    </div>
-
+  <section class="crea-form">
     <div class="atras">
-        <div class="wrap-wider">
-            <p><a href="crea.html"> < Atrás</a> Creando tu evento</p>
-        </div>
+      <div class="wrap-wider">
+        <p><a href="crea.html"> < Atrás</a> Creando tu evento</p>
+      </div>
     </div>
-
     <div class="wrap">
+      <!-- <div id="container">
+        <div class="tab-container">
 
-    <div id="container">
-<div class="tab-container">
-    <div id="c1">
-        <a href="#c1" title="Fecha/hora">Fecha/hora</a>
+          <div id="c1">
+            <a href="#c1" title="Fecha/hora">Fecha/hora</a>
             <div class="tab-content">
-                <form>
-                    <input type="date" name="date"><br>
-                    <input type="time" name="time"><br>
-                    <div class="tab-button">
-                        <a href="#c2">GUARDAR</a>
-                    </div>
-                </form>
+              <form>
+                <input type="date" name="date"><br>
+                <input type="time" name="time"><br>
+                <div class="tab-button">
+                  <a href="#c2">GUARDAR</a>
+                </div>
+              </form>
             </div>
-    </div>
+          </div>
 
-    <div id="c2">
-        <a href="#c2" title="Precio">Precio</a>
+          <div id="c2">
+            <a href="#c2" title="Precio">Precio</a>
             <div class="tab-content">
-            <form>
+              <form>
                 <h2>Precio</h2>
                 <input type="number" min="0" max="9999999" name="price"> <h1> €</h1>
                 <div class="tab-button">
-                    <a href="#c3">GUARDAR</a>
+                  <a href="#c3">GUARDAR</a>
                 </div>
                 <p>*Las entradas se cobrarán en el lugar del evento</p>
-            </form>
+              </form>
             </div>
-    </div>
+          </div>
 
-    <div id="c3">
-        <a href="#c3" title="Descripción">Descripción</a>
+          <div id="c3">
+            <a href="#c3" title="Descripción">Descripción</a>
             <div class="tab-content">
-                <h2>Describe de que va tu evento</h2>
-            <textarea type="text" placeholder="Escribe un resumen con un máximo de 250 carácteres" name="text" maxlength="250"></textarea>
-            <p>Quedan 250 carácteres</p>
-            <div class="space"></div>
-            <div class="tab-button">
-                    <a href="#c4">GUARDAR</a>
-                </div>
+              <h2>Describe de que va tu evento</h2>
+              <textarea type="text" placeholder="Escribe un resumen con un máximo de 250 carácteres" name="text" maxlength="250"></textarea>
+              <p>Quedan 250 carácteres</p>
+              <div class="space"></div>
+              <div class="tab-button">
+                <a href="#c4">GUARDAR</a>
+              </div>
             </div>
-    </div>
+          </div>
 
-    <div id="c4">
-        <a href="#c4" title="Fotos">Fotos</a>
+          <div id="c4">
+            <a href="#c4" title="Fotos">Fotos</a>
             <div class="tab-content">
-                <h2>¡Añade un par de fotos!</h2>
-                <p>O todas las que quieras.<br>Tu público agradeceran las fotos que muestren claramente que es lo que quieres ofrecerles.</p>
-                <input type="file" name="photo">
-                <div class="tab-button">
-                    <a href="#c5">GUARDAR</a>
-                </div>
+              <h2>¡Añade un par de fotos!</h2>
+              <p>O todas las que quieras.<br>Tu público agradeceran las fotos que muestren claramente que es lo que quieres ofrecerles.</p>
+              <input type="file" name="photo">
+              <div class="tab-button">
+                <a href="#c5">GUARDAR</a>
+              </div>
             </div>
-    </div>
+          </div>
 
-    <div id="c5">
-        <a href="#c5" title="Ubicación">Ubicación</a>
+          <div id="c5">
+            <a href="#c5" title="Ubicación">Ubicación</a>
             <div class="tab-content">
-            <h2>Dirección</h2>
-                <p>Tu dirección exacta es privada y sólo la compartiremos<br>con los usuarios que dispongan de una reserva confirmada</p>
-                <textarea type="text" name="text"></textarea>
-                <div class="space"></div>
-                <div class="tab-button">
-                    <a href="#c6">AÑADIR LUGAR</a>
-                </div>
+              <h2>Dirección</h2>
+              <p>Tu dirección exacta es privada y sólo la compartiremos<br>con los usuarios que dispongan de una reserva confirmada</p>
+              <textarea type="text" name="text"></textarea>
+              <div class="space"></div>
+              <div class="tab-button">
+                <a href="#c6">AÑADIR LUGAR</a>
+              </div>
             </div>
-    </div>
+          </div>
 
-    <div id="c6">
+          <div id="c6">
+            <a href="#c6" title="Publicar">Publicar</a>
+            <div class="tab-content">
+              <h2>Ya está casi listo</h2>
+              <p>Ya tenemos todos los datos necesarios<br>para publicar tu anuncio. Pulsa el botón de <span>publicar</span><br>y tu evento aparecerá en la lista de eventos de ROOOF</p>
+              <div class="space"></div>
+              <div class="tab-button">
+                <a href="#c7">PUBLICAR</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="c7">
             <p>Completa <span>4 pasos</span> para publicar<br>tu anuncio</p>
             <div class="tab-content">
-                <h2>¡ENHORABUENA!</h2>
-                <p>Ya tenemos todos los datos necesarios<br>para publicar tu anuncio. Pulsa el botón de <span>publicar</span><br>y tu evento aparecerá en la lista de eventos de ROOOF</p>
-                <div class="tab-button">
-                    <a href="#">PUBLICAR</a>
-                </div>
+              <h2>¡ENHORABUENA!</h2>
+              <p>Tu evento ha sido publicado con éxito. Recuerda completar tu perfil para que tus invitados sepan más sobre ti y se animen a compartir esta experiencia contigo.</p>
+              <div class="tab-button">
+                <a href="sevento.html">CONTINUAR EN ROOOF</a>
+              </div>
             </div>
-    </div>
+          </div>
 
-</div>
-</div>
-</div>
-
-    <div class="push"></div>
-
-    <footer>
-        <div class="wrap">
-            <div class="logo-down">ROOOF</div>
-            <div class="link-down"><a href="mailto:hellorooof@gmail.com">contacta con nosotros</a></div>
-            <div class="social-network">
-                <a href="https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
-                <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
-            </div>
         </div>
-    </footer>
+      </div> -->
+
+      <dl class="accordion">
+        <dt>
+          <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Fecha / Hora</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+          <div class="tab-content">
+            <form>
+              <input type="date" name="date"><br>
+              <input type="time" name="time"><br>
+              <div class="tab-button">
+                <a href="#c2">GUARDAR</a>
+              </div>
+            </form>
+          </div>
+        </dd>
+        <dt>
+          <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+            Precio</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
+        </dd>
+        <dt>
+          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+            Descripción
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
+        </dd>
+        <dt>
+          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+            Fotos
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
+        </dd>
+        <dt>
+          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+            Ubicación
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
+        </dd>
+        <dt>
+          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+            Publicar
+          </a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum dolor.</p>
+        </dd>
+      </dl>
+
+      <script>
+        (function(){
+          var d = document,
+          accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+          setAria,
+          setAccordionAria,
+          switchAccordion,
+          touchSupported = ('ontouchstart' in window),
+          pointerSupported = ('pointerdown' in window);
+
+          skipClickDelay = function(e){
+            e.preventDefault();
+            e.target.click();
+          }
+
+            setAriaAttr = function(el, ariaType, newProperty){
+            el.setAttribute(ariaType, newProperty);
+          };
+          setAccordionAria = function(el1, el2, expanded){
+            switch(expanded) {
+              case "true":
+                setAriaAttr(el1, 'aria-expanded', 'true');
+                setAriaAttr(el2, 'aria-hidden', 'false');
+                break;
+              case "false":
+                setAriaAttr(el1, 'aria-expanded', 'false');
+                setAriaAttr(el2, 'aria-hidden', 'true');
+                break;
+              default:
+                break;
+            }
+          };
+        //function
+        switchAccordion = function(e) {
+          e.preventDefault();
+          var thisAnswer = e.target.parentNode.nextElementSibling;
+          var thisQuestion = e.target;
+          if(thisAnswer.classList.contains('is-collapsed')) {
+            setAccordionAria(thisQuestion, thisAnswer, 'true');
+          } else {
+            setAccordionAria(thisQuestion, thisAnswer, 'false');
+          }
+            thisQuestion.classList.toggle('is-collapsed');
+            thisQuestion.classList.toggle('is-expanded');
+            thisAnswer.classList.toggle('is-collapsed');
+            thisAnswer.classList.toggle('is-expanded');
+
+            thisAnswer.classList.toggle('animateIn');
+          };
+          for (var i=0,len=accordionToggles.length; i<len; i++) {
+            if(touchSupported) {
+              accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+            }
+            if(pointerSupported){
+              accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+            }
+            accordionToggles[i].addEventListener('click', switchAccordion, false);
+          }
+        })();
+      </script>
+
+    </div>
+  </section>
+
+<footer>
+    <div class="wrap">
+        <div class="logo-down">ROOOF</div>
+        <div class="link-down">
+
+          <a href="mailto:hellorooof@gmail.com">contacta con nosotros</a>
+
+        </div>
+        <div class="social-network">
+            <a href="https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
+            <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
+        </div>
+    </div>
+</footer>
+
 </body>
 
 </html>
