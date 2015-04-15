@@ -34,15 +34,15 @@ $(function() {
 <body>
   <header>
       <div class="wrap">
-        <div class="logo"><a href="index.html">ROOOF</a></div>
+        <div class="logo"><a href="index-logueado.html">ROOOF</a></div>
         <nav>
           <ul class="left">
-                    <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
-          <li><a href="lista-eventos.html">Busca un evento</a></li>
-          <li><a href="crea.html">Crea tu evento</a></li>
+                    <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+          <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+          <li><a href="crea-logueado.html">Crea tu evento</a></li>
           </ul>
-                    <ul class="right">
-                    <button class="btn btn-link log-in">Inicia sesión</button>
+                <ul class="right">
+                  <!--  <button class="btn btn-link log-in">Inicia sesión</button>
 
                     <div class="pop-log">
                       <span>✖</span>
@@ -172,8 +172,10 @@ $(function() {
                                  $(".pop").fadeOut(300);
                              });
                          });
-                    </script>
+                    </script> -->
                     </ul>
+
+                      <button class="sregistro">Mi Perfil</button>
         </nav>
 
         <div class="nav-hamburger">
@@ -184,9 +186,9 @@ $(function() {
       </div>
         <div class="menu">
           <ul>
-            <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
-            <a href="lista-eventos.html"><li>Busca un evento</li></a>
-            <a href="crea.html"><li>Crea tu evento</li></a>
+            <a href="somos-logueado.html"><li>¿Qu&eacute; es ROOOF?</li></a>
+            <a href="lista-eventos-logueado.html"><li>Busca un evento</li></a>
+            <a href="crea-logueado.html"><li>Crea tu evento</li></a>
             <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
             <a href="inicio-sesion.html"><li>Regístrate</li></a>
           </ul>
@@ -214,104 +216,10 @@ $(function() {
   <section class="crea-form">
     <div class="atras">
       <div class="wrap-wider">
-        <p><a href="crea.html"> < Atrás</a> Creando tu evento</p>
+        <p><a href="crea-logueado.html"> < Atrás</a> Creando tu evento</p>
       </div>
     </div>
     <div class="wrap">
-      <!-- <div id="container">
-        <div class="tab-container">
-
-          <div id="c1">
-            <a href="#c1" title="Fecha/hora">Fecha/hora</a>
-            <div class="tab-content">
-              <form>
-                <input type="date" name="date"><br>
-                <input type="time" name="time"><br>
-                <div class="tab-button">
-                  <a href="#c2">GUARDAR</a>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div id="c2">
-            <a href="#c2" title="Precio">Precio</a>
-            <div class="tab-content">
-              <form>
-                <h2>Precio</h2>
-                <input type="number" min="0" max="9999999" name="price"> <h1> €</h1>
-                <div class="tab-button">
-                  <a href="#c3">GUARDAR</a>
-                </div>
-                <p>*Las entradas se cobrarán en el lugar del evento</p>
-              </form>
-            </div>
-          </div>
-
-          <div id="c3">
-            <a href="#c3" title="Descripción">Descripción</a>
-            <div class="tab-content">
-              <h2>Describe de que va tu evento</h2>
-              <textarea type="text" placeholder="Escribe un resumen con un máximo de 250 carácteres" name="text" maxlength="250"></textarea>
-              <p>Quedan 250 carácteres</p>
-              <div class="space"></div>
-              <div class="tab-button">
-                <a href="#c4">GUARDAR</a>
-              </div>
-            </div>
-          </div>
-
-          <div id="c4">
-            <a href="#c4" title="Fotos">Fotos</a>
-            <div class="tab-content">
-              <h2>¡Añade un par de fotos!</h2>
-              <p>O todas las que quieras.<br>Tu público agradeceran las fotos que muestren claramente que es lo que quieres ofrecerles.</p>
-              <input type="file" name="photo">
-              <div class="tab-button">
-                <a href="#c5">GUARDAR</a>
-              </div>
-            </div>
-          </div>
-
-          <div id="c5">
-            <a href="#c5" title="Ubicación">Ubicación</a>
-            <div class="tab-content">
-              <h2>Dirección</h2>
-              <p>Tu dirección exacta es privada y sólo la compartiremos<br>con los usuarios que dispongan de una reserva confirmada</p>
-              <textarea type="text" name="text"></textarea>
-              <div class="space"></div>
-              <div class="tab-button">
-                <a href="#c6">AÑADIR LUGAR</a>
-              </div>
-            </div>
-          </div>
-
-          <div id="c6">
-            <a href="#c6" title="Publicar">Publicar</a>
-            <div class="tab-content">
-              <h2>Ya está casi listo</h2>
-              <p>Ya tenemos todos los datos necesarios<br>para publicar tu anuncio. Pulsa el botón de <span>publicar</span><br>y tu evento aparecerá en la lista de eventos de ROOOF</p>
-              <div class="space"></div>
-              <div class="tab-button">
-                <a href="#c7">PUBLICAR</a>
-              </div>
-            </div>
-          </div>
-
-          <div id="c7">
-            <p>Completa <span>4 pasos</span> para publicar<br>tu anuncio</p>
-            <div class="tab-content">
-              <h2>¡ENHORABUENA!</h2>
-              <p>Tu evento ha sido publicado con éxito. Recuerda completar tu perfil para que tus invitados sepan más sobre ti y se animen a compartir esta experiencia contigo.</p>
-              <div class="tab-button">
-                <a href="sevento.html">CONTINUAR EN ROOOF</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div> -->
-
       <dl class="accordion">
         <dt>
           <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Título</a>
