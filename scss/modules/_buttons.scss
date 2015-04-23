@@ -18,6 +18,9 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
 
   &:hover,
   &:focus {
@@ -43,6 +46,9 @@
   background-color: $c-main-pink;
   border-color: $c-main-pink;
   color: #fff;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
 
   &:hover,
   &:focus {
@@ -62,6 +68,9 @@
   background: $c-Lightest;
   border-color: $c-main-pink;
   color: $c-main-pink;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
 
   &:hover,
   &:focus {
@@ -96,6 +105,9 @@
   color: $c-main-pink;
   text-shadow: none;
   text-transform: none;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
 
   &:hover,
   &:focus {

@@ -43,6 +43,9 @@ background-color: $bg-color;
         top: 50%;
         transform: translateY(-50%);
     width: 100%;
+    -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
 }
 
 .precio {

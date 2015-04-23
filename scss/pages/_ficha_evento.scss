@@ -12,14 +12,14 @@
     padding: 30px 50px;
 
     .divider{
-    margin: 30px -50px;
+        margin: 30px 0px;
         }
     }
 
   @media screen and (max-width: 900px) {
-  .main-container {
-    padding: 30px;
-  }
+    .main-container {
+      padding: 30px;
+    }
   }
 
 .map{
@@ -44,39 +44,71 @@
     h2{
         line-height: 1.5rem;
     }
+
+    .right {
+      float: right;
+    }
+}
+
+@media screen and (max-width: (700px)) {
+  .sobre-host__wrap {
+    .title {
+      width: 100%;
+      padding-bottom: 10px;
+    }
+
+    .right {
+      float: left;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .aside{
     padding:0px 20px;
-        h5.fecha{
-            &:before{
-                content: url("../img/calendar.png");
-                height:26px;
-                width:26px;
-                overflow:hidden;
-                margin-right: 2px;
-                }
-            }
 
-         h5.lugar{
-            &:before{
-                content: url("../img/place.png");
-                height:26px;
-                width:26px;
-                overflow:hidden;
-                margin-right: 2px;
-                }
+    h5.fecha{
+        &:before{
+            background: url("../img/calendar.png") no-repeat center;
+            content: '';
+            display: inline-block;
+            height: 26px;
+            width: 26px;
+            overflow: hidden;
+            opacity: .3;
+            margin: 0 10px -7px 0;
             }
+        }
 
-            h5.aforo{
-            &:before{
-                content: url("../img/user.png");
-                height:26px;
-                width:26px;
-                overflow:hidden;
-                margin-right: 2px;
-                }
+     h5.lugar{
+        &:before{
+            content: '';
+            background: url("../img/place.png") no-repeat center;
+            display: inline-block;
+            height: 26px;
+            width: 26px;
+            overflow: hidden;
+            opacity: .3;
+            margin: 0 10px -7px 0;
             }
+        }
+
+    h5.aforo{
+        &:before{
+            content: '';
+            background: url("../img/user.png") no-repeat center;
+            display: inline-block;
+            height:26px;
+            width:26px;
+            overflow:hidden;
+            opacity: .3;
+            margin: 0 10px -5px 0;
+        }
+    }
+
+    .tag-musica,.tag-gastronomia,.tag-teatro, .tag-humor, .tag-arte {
+          margin-bottom: 2rem;
+    }
 }
 
 .info{
@@ -84,7 +116,7 @@
         margin: 0px;
     }
     p{
-        padding: 0px 0px 15px 20px;
+        padding: 0px 0px 15px 36px;
     }
 }
 
@@ -92,7 +124,7 @@
   background: url("../img/etiqueta-white.png");
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 10px 0px;
+  margin: 20px 0px;
   height: 30px;
   width: 120px;
   padding: 2px 0px 2px 15px;
@@ -138,11 +170,17 @@
 
 .compartir__wrap{
   float: left;
-  border-top: solid 8px #ff3766;
+  border-top: solid 4px #ff3766;
   margin-top: 20px;
+  width: 80px;
     img{
-    height: 20px;
+    height: 35px;
+    margin: .3rem .1rem 0 0;
+    opacity: .3;
     width: auto;
+    }
+    img:hover {
+      opacity: .2;
     }
 }
 .more-info {

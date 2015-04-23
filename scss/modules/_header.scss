@@ -27,9 +27,10 @@ header {
             font-family: $font-primary;
             font-size: 30px;
             font-weight: $weight-extra-bold;
-              &:hover{
-                    text-decoration: none;
-                      }
+
+            &:hover{
+              text-decoration: none;
+            }
         }
 
         nav {
@@ -42,8 +43,8 @@ header {
                  &:hover{
                     color: $c-light-gray;
                     text-decoration: none;
-                      }
-                }
+                  }
+              }
            }
 
         .nav-hamburger {
@@ -56,7 +57,7 @@ header {
               position:absolute;
               top:0;
               right:0;
-              line-height:50px;
+              line-height:55px;
               padding:0px 15px 0px 15px;
               color:#333;
               border:0;
@@ -99,42 +100,13 @@ header {
       margin:0 auto;
     }
 }
-        // nav ul.sright {
-        //     float: right;
-        //     list-style: none;
-        //     text-decoration: none;
-        // }
-
-        // nav ul.right li {
-
-        //     float: left;
-        //     margin-left: 30px;
-        //     margin-top: -14px;
-        // }
-        // nav ul.sright li {
-        //     float: left;
-        //     margin-left: 30px;
-        //     margin-top: -14px;
-        // }
-
-        // nav ul.right li a {
-        //     color: $c-main-pink;
-        //     text-decoration: underline;
-        // }
-
-        // nav ul.sright li a {
-        //     color: $c-main-pink;
-        //     text-decoration: underline;
-        // }
-
-
 
 @media screen and (min-width: (960px)) {
     header {
         .wrap {
 
           .logo {
-            margin-left: 0;
+            margin-left: 1.5rem;
           }
 
             .nav-hamburger {
@@ -174,7 +146,6 @@ header {
             nav ul.right {
                 display: inline-block;
                 margin: 8px 0px;
-
                 float: right;
                 list-style: none;
                 text-decoration: none;
@@ -187,30 +158,8 @@ header {
                     cursor: pointer;
                     display: block;
                     float: right;
-
                     text-decoration: underline;
                 }
-
-
-                // .sregistro{
-                //     color: $c-main-pink;
-                //     cursor: pointer;
-                //     border: none;
-                //     background: none;
-                //     display: block;
-                //     float: none;
-                //     font-size: 13px;
-                //     text-decoration: underline;
-                //     position: absolute;
-                // }
-
-                // .sregistro:before{
-                //   content:url('../img/avatar_perfil_user.png'); /* with class ModalCarrot ??*/
-                //   padding-right: 10px;
-                //   position: absolute;
-                //   top: -14px;
-                //   left: -50px;
-                // }
 
                 .pop, .pop-log {
                   background: $c-Lightest;

@@ -25,10 +25,47 @@ section.testimonios, {
         width: 100%;
     }
 }
-img.unete{
-    width: 100%;
-    padding-bottom: 30px;
+
+.crea-main-img {
+    background: url("../img/behost.jpg") no-repeat center;
+    height: 380px;
+    margin: 0 0 0 2rem;
+    width: 60%;
+    float: left;
 }
+
+.crea-main-text {
+    float: left;
+    padding: 0 1.5rem;
+    width: 35%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 780px) {
+    .crea-main-img {
+        width: 50%;
+    }
+
+    .crea-main-text {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .crea-main-img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .crea-main-text {
+        margin: 2rem auto 0;
+        width: 100%;
+    }
+}
+
+// .unete-img{
+//     width: 100%;
+//     padding-bottom: 30px;
+// }
 
 .como-crea {
     background-color: $grey;

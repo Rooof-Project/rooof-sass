@@ -45,15 +45,20 @@ html, body {
     margin: 0px;
 }
 
+// * {
+//   outline: solid 1px lime;
+// }
+
 a {
     text-decoration:none;
     -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
 }
 
 
 // containers
+
 
 section, .section{
   padding: 30px 0px;
@@ -93,7 +98,7 @@ padding:0px 1rem;
 .divider{
     height: 2px;
     background-color: $grey;
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
 .creador-item{

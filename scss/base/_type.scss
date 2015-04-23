@@ -93,12 +93,12 @@ h3,.h3{
   border-bottom: solid 3px lighten($c-main-gray, 50);
   color: lighten($c-main-gray, 30);
   text-transform: uppercase;
-  @include font-size(15px);
+  @include font-size(21px);
 }
 .h5-complementary{
   color: $c-main-pink;
   text-transform: none;
-  @include font-size(17px);
+  @include font-size(20px);
 }
 .h6-complementary{
   color: $c-main-gray;
@@ -227,9 +227,9 @@ hr{
 // @include responsive($big-break) {
 // }
 @include responsive($small-break) {
-  body {
-    font-size: 14px;
-  }
+  // body {
+  //   font-size: 14px;
+  // }
 
   h1,
   h2,
@@ -253,25 +253,25 @@ hr{
     line-height: 1.6rem;
   }
 
-  h3,
-  .h3,
-  .h3-complementary {
-  }
+  // h3,
+  // .h3,
+  // .h3-complementary {
+  // }
 
-  h4,
-  .h4,
-  .h4-complementary,
-  h5,
-  .h5,
-  .h5-complementary,
-  h6,
-  .h6,
-  .h6-complementary,
-  p,
-  .p-complementary,
-  ul,
-  ol {
-    font-size: 16px;
-  }
+  // h4,
+  // .h4,
+  // .h4-complementary,
+  // h5,
+  // .h5,
+  // .h5-complementary,
+  // h6,
+  // .h6,
+  // .h6-complementary,
+  // p,
+  // .p-complementary,
+  // ul,
+  // ol {
+  //   font-size: 16px;
+  // }
 }
 
