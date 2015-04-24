@@ -162,12 +162,12 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            border: solid 5px #a4a1a1;
+            border: solid 5px $c-grayLighter;
             line-height: 0em;
             margin: 2rem auto 1rem;
 
             p {
-                color: #a4a1a1;
+                color: $c-grayLighter;
                 font-family: $font-primary;
                 font-size: 50px;
                 font-weight: 700;
@@ -192,8 +192,8 @@
     .icon-text p {
         font-size: 16px;
         font-family: 'PT Serif', serif;
-        color: #333;
-        line-height: 1.8em;
+        color: $c-main-gray;
+        line-height: 1.5em;
     }
 }
 

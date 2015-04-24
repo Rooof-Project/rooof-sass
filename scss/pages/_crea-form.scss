@@ -559,8 +559,12 @@
    float:right;
    transition: transform 0.3s ease-in-out;
   }
+  &.close:before {
+    transform: rotate(45deg);
+  }
   &:hover {
     background-color:darken($c-Lightest, 10%);
+    color: $c-main-pink;
   }
 }
 .accordionTitleActive,
@@ -573,6 +577,7 @@
 .accordionItem {
     height:auto;
     overflow:hidden;
+    display: none;
     //SHAME: magic number to allow the accordion to animate
 
      // max-height:50em;
@@ -589,7 +594,7 @@
 }
 .accordionItemCollapsed,
 .accordionItem.is-collapsed {
-    max-height:0;
+    // max-height:0;
 }
 .animateIn {
      animation: accordionIn 0.65s normal ease-in-out both 1;

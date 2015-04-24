@@ -113,7 +113,7 @@ h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
 p, blockquote, .p {
   color: #333;
   font-family: "PT Serif", serif;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
   margin-bottom: 10px; }
 
 .p-complementary {
@@ -2680,7 +2680,9 @@ form {
   margin-bottom: 40px;
   padding: 10px 50px;
   border: solid 4px #8e8e8e;
-  text-align: center; }
+  text-align: center;
+  width: 98%;
+  margin: 0 auto; }
   .alert:before, .alert:after {
     content: "\0020";
     display: block;
@@ -3215,7 +3217,7 @@ table {
     font-size: 16px;
     font-family: 'PT Serif', serif;
     color: #333;
-    line-height: 1.8em; }
+    line-height: 1.5em; }
 
 @media screen and (max-width: 800px) {
   .top-heading_text p, .top-heading_text blockquote {
@@ -3340,6 +3342,11 @@ section.lista-eventos {
 .map {
   margin-top: 40px;
   overflow: hidden; }
+
+.map-responsive {
+  margin: 2.5rem auto 2rem;
+  height: 0px;
+  width: 90%; }
 
 .sobre-host__wrap {
   padding: 10px 0px; }
@@ -3466,7 +3473,7 @@ section.lista-eventos {
   .aside {
     margin: 3rem 0 0; }
 
-  .map {
+  .map-responsive {
     height: 200px; } }
 .testimonios-img {
   margin: 10px auto; }
@@ -3502,7 +3509,7 @@ section.testimonios span {
     width: 50%; }
 
   .crea-main-text {
-    width: 45%; } }
+    width: 44%; } }
 @media screen and (max-width: 600px) {
   .crea-main-img {
     margin: 0;
@@ -3804,8 +3811,11 @@ a.control_next {
     line-height: 1em;
     float: right;
     transition: transform 0.3s ease-in-out; }
+  .accordionTitle.close:before {
+    transform: rotate(45deg); }
   .accordionTitle:hover {
-    background-color: #e6e6e6; }
+    background-color: #e6e6e6;
+    color: #ff3766; }
 
 .accordionTitleActive,
 .accordionTitle.is-expanded {
@@ -3817,14 +3827,11 @@ a.control_next {
 .accordionItem {
   height: auto;
   overflow: hidden;
+  display: none;
   transition: max-height 1s; }
   @media screen and (min-width: 48em) {
     .accordionItem {
       transition: max-height 0.5s; } }
-
-.accordionItemCollapsed,
-.accordionItem.is-collapsed {
-  max-height: 0; }
 
 .animateIn {
   animation: accordionIn 0.65s normal ease-in-out both 1; }

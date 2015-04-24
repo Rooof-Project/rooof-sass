@@ -13,22 +13,6 @@
 <link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/foundation.min.js"></script>
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
 
 </head>
 <body>
@@ -366,103 +350,25 @@ $(function() {
       </dl>
 
       <script>
-        (function(){
-          var d = document,
-          accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
-          temporarySaveButtons = d.querySelectorAll('.js-temporarySaveButton'),
-          setAria,
-          setAccordionAria,
-          switchAccordion,
-          touchSupported = ('ontouchstart' in window),
-          pointerSupported = ('pointerdown' in window);
-
-          skipClickDelay = function(e){
-            e.preventDefault();
-            e.target.click();
-          }
-
-            setAriaAttr = function(el, ariaType, newProperty){
-            el.setAttribute(ariaType, newProperty);
-          };
-          setAccordionAria = function(el1, el2, expanded){
-            switch(expanded) {
-              case "true":
-                setAriaAttr(el1, 'aria-expanded', 'true');
-                setAriaAttr(el2, 'aria-hidden', 'false');
-                break;
-              case "false":
-                setAriaAttr(el1, 'aria-expanded', 'false');
-                setAriaAttr(el2, 'aria-hidden', 'true');
-                break;
-              default:
-                break;
-            }
-          };
-          //function
-          switchAccordion = function(e) {
-            e.preventDefault();
-            var thisAnswer = e.target.parentNode.nextElementSibling;
-            var thisQuestion = e.target;
-            if(thisAnswer.classList.contains('is-collapsed')) {
-              setAccordionAria(thisQuestion, thisAnswer, 'true');
-            } else {
-              setAccordionAria(thisQuestion, thisAnswer, 'false');
-            }
-            thisQuestion.classList.toggle('is-collapsed');
-            thisQuestion.classList.toggle('is-expanded');
-            thisAnswer.classList.toggle('is-collapsed');
-            thisAnswer.classList.toggle('is-expanded');
-
-            thisAnswer.classList.toggle('animateIn');
-          };
-          openNextAccordionItem = function(e) {
-            e.preventDefault();
-            var thisHeading = e.target.parentNode.parentNode.parentNode.previousSibling.previousSibling.childNodes[0].nextSibling,
-                thisContainer = e.target.parentNode.parentNode.parentNode,
-                nextHeading = thisContainer.nextElementSibling.childNodes[0].nextSibling,
-                nextContainer = thisContainer.nextElementSibling.nextElementSibling;
-
-            if(thisContainer.classList.contains('is-collapsed')) {
-              setAccordionAria(thisHeading, thisContainer, 'true');
-            } else {
-              setAccordionAria(thisHeading, thisContainer, 'false');
-            }
-            thisHeading.classList.toggle('is-collapsed');
-            thisHeading.classList.toggle('is-expanded');
-            thisContainer.classList.toggle('is-collapsed');
-            thisContainer.classList.toggle('is-expanded');
-            thisContainer.classList.toggle('animateIn');
-
-            if(nextContainer.classList.contains('is-collapsed')) {
-              setAccordionAria(nextHeading, nextContainer, 'true');
-            } else {
-              setAccordionAria(nextHeading, nextContainer, 'false');
-            }
-            nextHeading.classList.toggle('is-collapsed');
-            nextHeading.classList.toggle('is-expanded');
-            nextContainer.classList.toggle('is-collapsed');
-            nextContainer.classList.toggle('is-expanded');
-            nextContainer.classList.toggle('animateIn');
-          };
-          for (var i=0,len=accordionToggles.length; i<len; i++) {
-            if(touchSupported) {
-              accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
-            }
-            if(pointerSupported){
-              accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
-            }
-            accordionToggles[i].addEventListener('click', switchAccordion, false);
-          }
-          for (var i=0,len=temporarySaveButtons.length; i<len; i++) {
-            if(touchSupported) {
-              temporarySaveButtons[i].addEventListener('touchstart', skipClickDelay, false);
-            }
-            if(pointerSupported){
-              temporarySaveButtons[i].addEventListener('pointerdown', skipClickDelay, false);
-            }
-            temporarySaveButtons[i].addEventListener('click', openNextAccordionItem, false);
-          }
-        })();
+      $('.js-temporarySaveButton').click(function(event) {
+        event.preventDefault();
+        var parentDD = $(this).parent().parent().parent();
+        parentDD.slideUp();
+        parentDD.prev().children().removeClass('close');
+        parentDD.next().next().slideDown();
+        parentDD.next().children().addClass('close');
+      });
+      $('dt a').click(function(event) {
+        event.preventDefault();
+        $('dd:visible').prev().children().removeClass('close');
+        $('dd:visible').slideUp();
+        $(this).addClass('close');
+        if($(this).parent().next().is(':hidden')) {
+          $(this).parent().next().slideDown();
+        } else {
+          $(this).removeClass('close');
+        }
+      });
       </script>
 
     </div>
