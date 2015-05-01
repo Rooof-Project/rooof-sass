@@ -255,6 +255,17 @@ h4.sg-ptserif {
 .space {
   margin-bottom: 40px; }
 
+.color-box {
+  margin: 0px 20px 20px 0px;
+  height: 200px;
+  width: 200px; }
+  .color-box.color-1 {
+    background-color: #ff3766; }
+  .color-box.color-2 {
+    background-color: #333; }
+  .color-box.color-3 {
+    background-color: #eaeaea; }
+
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -2627,7 +2638,7 @@ form {
     font-style: italic; }
   form .has-error .error-description {
     font-family: "PT Sans", sans-serif;
-    color: #ff3766;
+    color: #ff4136;
     margin-top: 5px; }
   form .has-error input[type=text],
   form .has-error input[type=email],
@@ -2636,7 +2647,7 @@ form {
   form .has-error input[type=number],
   form .has-error input[type=search],
   form .has-error textarea {
-    border-color: #ff3766; }
+    border-color: #ff4136; }
 
 .banner {
   padding: 50px 0px; }
@@ -2679,10 +2690,10 @@ form {
   zoom: 1;
   margin-bottom: 40px;
   padding: 10px 50px;
-  border: solid 4px #8e8e8e;
   text-align: center;
-  width: 98%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 6px auto;
+  color: white; }
   .alert:before, .alert:after {
     content: "\0020";
     display: block;
@@ -2691,13 +2702,20 @@ form {
   .alert:after {
     clear: both; }
   .alert.alert-success {
-    background: transparent;
-    border-color: #ff6a8d;
-    color: #666666; }
+    background: #66cccc; }
+    .alert.alert-success p, .alert.alert-success blockquote,
+    .alert.alert-success h3,
+    .alert.alert-success .tag-musica,
+    .alert.alert-success .tag-gastronomia,
+    .alert.alert-success .tag-teatro,
+    .alert.alert-success .tag-humor,
+    .alert.alert-success .tag-arte,
+    .alert.alert-success .h3 {
+      color: white; }
+  .alert.alert-error {
+    background: #ff4136; }
   .alert.alert-info {
-    background: white;
-    border-color: #666666;
-    color: black; }
+    border: solid 3px #b3b3b3; }
   .alert p, .alert blockquote, .alert h1, .alert h2, .alert h3, .alert .tag-musica, .alert .tag-gastronomia, .alert .tag-teatro, .alert .tag-humor, .alert .tag-arte, .alert h4, .alert h5, .alert h5, .alert .h1, .alert .h2, .alert .h3, .alert .h4, .alert .h5, .alert .h6, .alert .p {
     font-family: "PT Sans", sans-serif; }
   .alert p:last-child, .alert blockquote:last-child {

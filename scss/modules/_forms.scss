@@ -61,7 +61,7 @@ form {
     // Validation reason
     .error-description {
       font-family: $font-complementary;
-      color: $c-main-pink;
+      color: $error;
       margin-top: 5px;
     }
 
@@ -72,7 +72,7 @@ form {
     input[type=number],
     input[type=search],
     textarea {
-      border-color: $c-main-pink;
+      border-color: $error;
     }
   }
 }

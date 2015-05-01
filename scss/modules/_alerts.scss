@@ -6,10 +6,10 @@
   @include clearfix;
   margin-bottom: $padding;
   padding: 10px 50px;
-  border: solid 4px $c-light-gray;
   text-align: center;
-  width: 98%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 6px auto;
+  color: white;
 
   //&.alert-danger {
   //  background: lighten($danger-color, 35);
@@ -18,22 +18,22 @@
   //}
 
   &.alert-success {
-    background: transparent;
-    border-color: lighten($c-main-pink,10);
-    color: lighten($c-main-gray, 20);
-
+    background: $success;
+    p,
+    h3,
+    .h3{
+      color: white;
+    }
   }
 
-  //&.alert-warning {
-  //  background: lighten($warning-color, 40);
-  //  border-color: #333;
-  //  color: darken($c-main-pink, 10);
-  //}
+    &.alert-error{
+    background: $error;
+  }
+
 
   &.alert-info {
-    background: lighten($c-light-gray, 50);
-    border-color: lighten($c-main-gray,20);
-    color: darken(#333, 30);
+    border: solid 3px lighten($c-main-gray,50);
+
   }
 
   p,h1,h2,h3,h4,h5,h5,.h1,.h2,.h3,.h4,.h5,.h6,.p{
