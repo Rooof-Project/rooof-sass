@@ -3745,6 +3745,19 @@ section.perfil-user {
 section.perfil-eventos {
   background-color: #eaeaea; }
 
+.perfil-user-container {
+  padding-bottom: 30px; }
+
+.perfil-info-item {
+  margin-left: 20px;
+  text-align: center; }
+
+.perfil-info-item-border {
+  border-right: solid 1px #bbbaba;
+  border-left: solid 1px #bbbaba;
+  margin-left: 20px;
+  text-align: center; }
+
 .perfil-eventos ul {
   padding-left: 0; }
 .perfil-eventos .lista-evento-item {
@@ -3763,6 +3776,23 @@ section.perfil-eventos {
 @media screen and (max-width: 1024px) {
   .perfil-eventos li:last-child {
     display: none !important; } }
+@media screen and (max-width: 640px) {
+  .perfil-info-item {
+    margin-left: 10px;
+    text-align: center; }
+
+  .perfil-info-item-border {
+    border-right: solid 1px #bbbaba;
+    border-left: solid 1px #bbbaba;
+    margin-left: 20px;
+    text-align: center; }
+
+  .perfil-description {
+    padding: 20px 20px 0px 20px; }
+    .perfil-description h1 {
+      text-align: center; }
+    .perfil-description p, .perfil-description blockquote {
+      text-align: left; } }
 /* crea-evento-form */
 .wrap-wider {
   margin: 0px auto;

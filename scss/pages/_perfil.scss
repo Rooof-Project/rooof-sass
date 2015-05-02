@@ -26,9 +26,29 @@ section.perfil-user{
     }
 }
 
+
 section.perfil-eventos{
     background-color: $bg-color;
 }
+.perfil-user-container{
+    padding-bottom: 30px;
+}
+
+
+.perfil-info-item {
+    margin-left: 20px;
+    text-align: center;
+
+}
+
+.perfil-info-item-border {
+    border-right: solid 1px $c-dark-gray;
+    border-left: solid 1px $c-dark-gray;
+    margin-left: 20px;
+    text-align: center;
+
+    }
+
 
 // grid eventos perfil
 .perfil-eventos{
@@ -60,8 +80,32 @@ section.perfil-eventos{
 
     li:last-child {
         display: none !important;
+        }
     }
 }
+
+@media screen and (max-width: 640px) {
+    .perfil-info-item {
+    margin-left: 10px;
+    text-align: center;
+    }
+
+ .perfil-info-item-border {
+    border-right: solid 1px $c-dark-gray;
+    border-left: solid 1px $c-dark-gray;
+    margin-left: 20px;
+    text-align: center;
+
+    }
+.perfil-description{
+    padding: 20px 20px 0px 20px;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: left;
+        }
+    }
 }
 
 
