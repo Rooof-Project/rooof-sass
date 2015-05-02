@@ -1,0 +1,67 @@
+section.perfil-user{
+    padding-top: 120px;
+    }
+
+.perfil-user-img{
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+    img{
+      border-radius: 50%;
+        }
+    }
+.contact-user{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+}
+.perfil-rrss{
+    img{
+    height: 25px;
+    opacity: .3;
+    width: auto;
+    }
+    img:hover {
+      opacity: .2;
+    }
+}
+
+section.perfil-eventos{
+    background-color: $bg-color;
+}
+
+// grid eventos perfil
+.perfil-eventos{
+    ul{
+    padding-left: 0;
+  }
+
+
+.lista-evento-item{
+    background-color: $c-Lightest;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+        .evento-info{
+        padding: 0px 15px 5px 15px;
+        height: 80px;
+        overflow: hidden;
+        }
+    }
+}
+
+.eventos-creados{
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1024px) {
+ .perfil-eventos{
+
+    li:last-child {
+        display: none !important;
+    }
+}
+}
+
+
