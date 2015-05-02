@@ -68,6 +68,7 @@ h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
   font-size: 1.25rem; }
 
 .h2-complementary,
+.h2-secondary,
 .h3-complementary,
 .h4-complementary,
 .h5-complementary,
@@ -81,6 +82,14 @@ h3, .tag-musica, .tag-gastronomia, .tag-teatro, .tag-humor, .tag-arte, .h3 {
   color: #ff3766;
   line-height: 1.8rem;
   padding-bottom: 10px;
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+.h2-secondary {
+  color: #333;
+  line-height: 1.8rem;
+  padding-bottom: 10px;
+  text-transform: none;
   font-size: 24px;
   font-size: 1.5rem; }
 
@@ -254,6 +263,17 @@ h4.sg-ptserif {
 
 .space {
   margin-bottom: 40px; }
+
+.color-box {
+  margin: 0px 20px 20px 0px;
+  height: 200px;
+  width: 200px; }
+  .color-box.color-1 {
+    background-color: #ff3766; }
+  .color-box.color-2 {
+    background-color: #333; }
+  .color-box.color-3 {
+    background-color: #eaeaea; }
 
 meta.foundation-version {
   font-family: "/5.5.1/"; }
@@ -2627,7 +2647,7 @@ form {
     font-style: italic; }
   form .has-error .error-description {
     font-family: "PT Sans", sans-serif;
-    color: #ff3766;
+    color: #ff4136;
     margin-top: 5px; }
   form .has-error input[type=text],
   form .has-error input[type=email],
@@ -2636,7 +2656,7 @@ form {
   form .has-error input[type=number],
   form .has-error input[type=search],
   form .has-error textarea {
-    border-color: #ff3766; }
+    border-color: #ff4136; }
 
 .banner {
   padding: 50px 0px; }
@@ -2679,10 +2699,10 @@ form {
   zoom: 1;
   margin-bottom: 40px;
   padding: 10px 50px;
-  border: solid 4px #8e8e8e;
   text-align: center;
-  width: 98%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 6px auto;
+  color: white; }
   .alert:before, .alert:after {
     content: "\0020";
     display: block;
@@ -2691,13 +2711,20 @@ form {
   .alert:after {
     clear: both; }
   .alert.alert-success {
-    background: transparent;
-    border-color: #ff6a8d;
-    color: #666666; }
+    background: #66cccc; }
+    .alert.alert-success p, .alert.alert-success blockquote,
+    .alert.alert-success h3,
+    .alert.alert-success .tag-musica,
+    .alert.alert-success .tag-gastronomia,
+    .alert.alert-success .tag-teatro,
+    .alert.alert-success .tag-humor,
+    .alert.alert-success .tag-arte,
+    .alert.alert-success .h3 {
+      color: white; }
+  .alert.alert-error {
+    background: #ff4136; }
   .alert.alert-info {
-    background: white;
-    border-color: #666666;
-    color: black; }
+    border: solid 3px #b3b3b3; }
   .alert p, .alert blockquote, .alert h1, .alert h2, .alert h3, .alert .tag-musica, .alert .tag-gastronomia, .alert .tag-teatro, .alert .tag-humor, .alert .tag-arte, .alert h4, .alert h5, .alert h5, .alert .h1, .alert .h2, .alert .h3, .alert .h4, .alert .h5, .alert .h6, .alert .p {
     font-family: "PT Sans", sans-serif; }
   .alert p:last-child, .alert blockquote:last-child {
@@ -3693,6 +3720,79 @@ a.control_next {
 
   a.control_prev, a.control_next {
     font-size: 40px; } }
+section.perfil-user {
+  padding-top: 120px; }
+
+.perfil-user-img {
+  margin: 0 auto;
+  height: 150px;
+  width: 150px; }
+  .perfil-user-img img {
+    border-radius: 50%; }
+
+.contact-user {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px; }
+
+.perfil-rrss img {
+  height: 25px;
+  opacity: .3;
+  width: auto; }
+.perfil-rrss img:hover {
+  opacity: .2; }
+
+section.perfil-eventos {
+  background-color: #eaeaea; }
+
+.perfil-user-container {
+  padding-bottom: 30px; }
+
+.perfil-info-item {
+  margin-left: 20px;
+  text-align: center; }
+
+.perfil-info-item-border {
+  border-right: solid 1px #bbbaba;
+  border-left: solid 1px #bbbaba;
+  margin-left: 20px;
+  text-align: center; }
+
+.perfil-eventos ul {
+  padding-left: 0; }
+.perfil-eventos .lista-evento-item {
+  background-color: #fff;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden; }
+  .perfil-eventos .lista-evento-item .evento-info {
+    padding: 0px 15px 5px 15px;
+    height: 80px;
+    overflow: hidden; }
+
+.eventos-creados {
+  margin-top: 50px; }
+
+@media screen and (max-width: 1024px) {
+  .perfil-eventos li:last-child {
+    display: none !important; } }
+@media screen and (max-width: 640px) {
+  .perfil-info-item {
+    margin-left: 10px;
+    text-align: center; }
+
+  .perfil-info-item-border {
+    border-right: solid 1px #bbbaba;
+    border-left: solid 1px #bbbaba;
+    margin-left: 20px;
+    text-align: center; }
+
+  .perfil-description {
+    padding: 20px 20px 0px 20px; }
+    .perfil-description h1 {
+      text-align: center; }
+    .perfil-description p, .perfil-description blockquote {
+      text-align: left; } }
 /* crea-evento-form */
 .wrap-wider {
   margin: 0px auto;
@@ -3878,6 +3978,11 @@ section, .section {
     .wrap {
       padding: 0px 0px; } }
 
+.titulo {
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0 6%; }
+
 .secondary-title__wrap {
   padding: 0px 0px 10px 5px; }
 
@@ -3896,6 +4001,11 @@ section, .section {
 .divider {
   height: 2px;
   background-color: #eaeaea;
+  margin: 20px 0; }
+
+.divider-dark {
+  height: 1px;
+  background-color: #bbbaba;
   margin: 20px 0; }
 
 .creador-item {

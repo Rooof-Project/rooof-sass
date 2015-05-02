@@ -45,9 +45,6 @@ html, body {
     margin: 0px;
 }
 
-// * {
-//   outline: solid 1px lime;
-// }
 
 a {
     text-decoration:none;
@@ -76,6 +73,11 @@ section, .section{
       padding: 0px 0px;
     }
 }
+.titulo{
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0 6%;
+}
 .secondary-title__wrap{
   padding: 0px 0px 10px 5px;
 }
@@ -101,7 +103,12 @@ padding:0px 1rem;
     margin: 20px 0;
 }
 
+.divider-dark{
+    height: 1px;
+    background-color: $c-dark-gray;
+    margin: 20px 0;
+}
+
 .creador-item{
   margin-bottom: 30px;
-
 }

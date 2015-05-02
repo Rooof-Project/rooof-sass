@@ -66,6 +66,7 @@ h3,.h3{
 //Complementary headers
 
 .h2-complementary,
+.h2-secondary,
 .h3-complementary,
 .h4-complementary,
 .h5-complementary,
@@ -83,12 +84,23 @@ h3,.h3{
   @include font-size(24px);
 }
 
+.h2-secondary{
+  color: $c-main-gray;
+  line-height: 1.8rem;
+  padding-bottom: 10px;
+  text-transform: none;
+  @include font-size(24px);
+
+}
+
 .h3-complementary{
   color: $c-main-pink;
   line-height: 1.3rem;
   text-transform: none;
   @include font-size(20px);
 }
+
+
 .h4-complementary{
   border-bottom: solid 3px lighten($c-main-gray, 50);
   color: lighten($c-main-gray, 30);

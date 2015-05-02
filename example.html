@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,35 +9,59 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
 </head>
 <body>
 
-	<div class="wrap">
-
-		<div class="guide-container">
+<div class="wrap">
+	<div class="guide-container">
+<!--Colors-->
 		<div class="space">
+			<h2 class="sg">Colors</h2>
+			<hr>
+			<div class="row">
+				<div class="columns small-24  medium-8 large-8">
+					<div class="color-box color-1"></div>
+					<p class="p-complementary">Primary color</p>
+					<p class="p-complementary">$c-main-pink: #ff3766</p>
+				</div>
 
-		<h2 class="sg">Family Fonts</h2>
-		<hr>
+				<div class="columns small-24  medium-8 large-8">
+					<div class="color-box color-2"></div>
+					<p class="p-complementary">Secondary color</p>
+					<p class="p-complementary">$c-main-gray: #333</p>
+				</div>
 
-		<h4 class="sg-dosis">$font-family-primary: "Dosis", sans-serif; </h4>
-		<h4 class="sg-ptsans">$font-family-complementary: "PT Sans", sans-serif; </h4>
-		<h4 class="sg-ptserif">$font-family-serif: "PT Serif", serif; </h4>
+				<div class="columns small-24  medium-8 large-8">
+					<div class="color-box color-3"></div>
+					<p class="p-complementary">Background color</p>
+					<p class="p-complementary">$bg-color: $grey</p>
+				</div>
+
+			</div>
+
+		</div>
+<!--Family fonts-->
+		<div class="space">
+			<h2 class="sg">Family Fonts</h2>
+			<hr>
+			<h4 class="sg-dosis">$font-family-primary: "Dosis", sans-serif; </h4>
+			<h4 class="sg-ptsans">$font-family-complementary: "PT Sans", sans-serif; </h4>
+			<h4 class="sg-ptserif">$font-family-serif: "PT Serif", serif; </h4>
 		</div>
 		<div class="space">
+			<h2 class="sg">Primary headings</h2>
+			<hr>
 
-		<h2 class="sg">Primary headings</h2>
-		<hr>
-
-		<h1>Look at me, I'm the heading </h1>
-		<h2>Hey you, I'm a heading two</h2>
-		<h3>I'm pretty important too</h3>
+			<h1>Look at me, I'm the heading </h1>
+			<h2>Hey you, I'm a heading two</h2>
+			<h3>I'm pretty important too</h3>
 
 		<pre>&lt;h1&gt;Look at me, I'm the heading&lt;/h1&gt;
 &lt;h2&gt;Hey you, I'm a heading two&lt;/h2&gt;
 &lt;h3&gt;I'm pretty important too&lt;/h3&gt;</pre>
-</div>
+
+		</div>
 
 		<div class="space">
 			<h2 class="sg">Complementary headings</h2>
@@ -58,7 +79,7 @@
 &lt;h6 class="h6-complementary"&gt;Heading 6&lt;/h6&gt;</pre>
 		</div>
 
-
+<!--Paragraphs-->
 	<div class="space">
 
 		<h2 class="sg">Paragraph & link text</h2>
@@ -76,6 +97,7 @@
 
 		<pre>&lt;p class="p-complementary"&gt;Hello I'm a &lt;a href=""&gt;Paragraph.&lt;/a&gt; Maybe I seem not important but I actually am.It just that nobody reads me, but I look great between titles. The longer I am the less I got read. That's my sad true.&lt;/p&gt;</pre>
 	</div>
+
 	<div class="space">
 		<h2 class="sg">Blockquote</h2>
 		<hr>
@@ -84,7 +106,7 @@
 
 		<pre>&lt;blockquote&gt;&lt;p&gt;Go fun yourself!&lt;/p&gt;&lt;/blockquote&gt;</pre>
 	</div>
-
+<!--Tags-->
 	<div class="space">
 		<h2 class="sg">Tags</h2>
 		<hr>
@@ -100,14 +122,16 @@
 &lt;p class="tag-teatro"&gt;&lt;/p&gt;
 &lt;p class="tag-gastronomia"&gt;&lt;/p&gt;
 &lt;p class="tag-humor"&gt;&lt;/p&gt;
-</pre>
+		</pre>
 	</div>
+
+<!--buttons-->
 
 	<div class="space">
 		<h2 class="sg">Buttons</h2>
 		<hr>
 
-		<p><a href="#" class="btn btn-primary">Primary button</a>
+		<p> <a href="#" class="btn btn-primary">Primary button</a>
 			<a href="#" class="btn btn-secondary">Secondary button</a>
 			<a href="#" class="btn btn-link">Link button</a>
 		</p>
@@ -118,9 +142,9 @@
 
 		<pre>
 &lt;p&gt;
- &lt;a href="#" class="btn btn-primary"&gt;Primary button&lt;/a&gt;
- &lt;a  href="#" class="btn btn-secondary"&gt;Secondary button&lt;/a&gt;
- &lt;a  href="#" class="btn btn-link"&gt;Link button&lt;/a&gt;
+&lt;a href="#" class="btn btn-primary"&gt;Primary button&lt;/a&gt;
+&lt;a  href="#" class="btn btn-secondary"&gt;Secondary button&lt;/a&gt;
+&lt;a  href="#" class="btn btn-link"&gt;Link button&lt;/a&gt;
 &lt;/p&gt;
 
 &lt;a href="#" class="btn btn-lg"&gt;Large button&lt;/a&gt;
@@ -128,6 +152,7 @@
 		</pre>
 	</div>
 
+<!--Navigation-->
 	<div class="space">
 		<h2 class="sg">Navigation</h2>
 		<hr>
@@ -147,8 +172,7 @@
     		</ul>
 		</nav>
 	</div>
-
-
+<!--Forms-->
 		<h2 class="sg">Forms</h2>
 		<hr>
 		<form>
@@ -194,8 +218,9 @@
 			</div>
 			<button>Submit</button>
 		</form>
-		<input type="text"> <button class="btn btn-primary">Submit</button>
 
+		<input type="text"> <button class="btn btn-primary">Submit</button>
+<!--grid-->
 		<h2 class="sg">Responsive Grid</h2>
 		<hr>
 
@@ -311,10 +336,10 @@
 		</div>
 		<a href="http://foundation.zurb.com/docs/components/grid.html">More info</a>
 
-
+<!--images-->
 		<h2 class="sg">Images</h2>
 		<hr>
-		<!-- Example using picture element -->
+
 		<div class="margin-container">
 		<picture>
 			<source media="(min-width: 1000px)" srcset="img/rooof_header.jpg">
@@ -323,7 +348,7 @@
 		</picture>
 		</div>
 
-		<!-- Examples using srcset -->
+
 		<div class="row">
 
 			<div class="columns medium-12 large-12 small-24">
@@ -342,38 +367,45 @@
 			</div>
 			</div>
 		</div>
-
+<!--Alerts-->
 		<h2 class="sg">Alerts</h2>
 		<hr>
-			<div class="alert alert-success">
-        		Hey, something happened.
+			<div class="space">
+				<div class="alert alert-success">
+	        		Hey, something good happened.
+	    		</div>
     		</div>
 
-    		<div class="alert alert-info">
-        		Hey, something happened.
+			<div class="space">
+    			<div class="alert alert-error">
+        			Hey, something bad happened.
+    			</div>
     		</div>
 
-    		<div class="alert alert-success">
-        		<h3 class="h3-complementary">Hi there</h3>
-        		<p>Something has happened. You better follow the details of this message. It's easy-peasy-lemon-squeezy. No worries, I'm responsive.</p>
+			<div class="space">
+    			<div class="alert alert-info">
+        			<h3 class="h3-complementary">Hi there</h3>
+        			<p>Something has happened. You better follow the details of this message. It's easy-peasy-lemon-squeezy. No worries, I'm responsive.</p>
+    			</div>
     		</div>
-        				<pre>
+
+ 		<pre>
 &lt;div class="alert alert-success"&gt;
+Hey, something happened.
+&lt;/div&gt;
+
+&lt;div class="alert alert-error"&gt;
 Hey, something happened.
 &lt;/div&gt;
 
 &lt;div class="alert alert-info"&gt;
-Hey, something happened.
-&lt;/div&gt;
-
-&lt;div class="alert alert-success"&gt;
 &lt;h3&gt;Hi there&lt;/h3&gt;
 &lt;p&gt;Something has happened. You better follow the details of this message. It's easy-peasy-lemon-squeezy. No worries, I'm responsive.&lt;/p&gt;
 &lt;/div&gt;
-		</pre>
-
-	</div>
-	</div>
+			</pre>
+<!-- End-->
+	</div> <!--close guide-container-->
+</div> <!--close wrap-->
 
 </body>
 </html>
