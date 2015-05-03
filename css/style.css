@@ -3796,15 +3796,23 @@ section.perfil-eventos {
 section.perfil-editar {
   background-color: #eaeaea; }
   section.perfil-editar .perfil-user-img {
+    height: 150px;
+    float: none;
     margin: 0 auto;
-    text-align: center;
-    float: none; }
+    width: 150px; }
   section.perfil-editar img {
-    margin-bottom: 30px; }
+    border-radius: 50%; }
 
-div.form {
+.form__wrap {
   background-color: white;
-  padding: 20px; }
+  margin: 0 auto;
+  padding: 60px; }
+
+.titulo_form__wrap {
+  padding: 40px 0px 20px 0px; }
+
+.titulo_form__wrap_first {
+  padding: 10px 0px 20px 0px; }
 
 /* crea-evento-form */
 .wrap-wider {

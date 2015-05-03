@@ -3,16 +3,27 @@
 section.perfil-editar{
     background-color:  $bg-color;
     .perfil-user-img{
-        margin: 0 auto;
-        text-align: center;
+        height: 150px;
         float: none;
+        margin: 0 auto;
+        width: 150px;
     }
     img{
-        margin-bottom: 30px;
+        border-radius: 50%;
+
     }
 }
 
-div.form{
+.form__wrap{
     background-color: white;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 60px;
 }
+
+.titulo_form__wrap{
+    padding: 40px 0px 20px 0px;
+}
+.titulo_form__wrap_first{
+    padding: 10px 0px 20px 0px;
+}
+
