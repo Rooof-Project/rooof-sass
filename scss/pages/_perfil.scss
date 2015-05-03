@@ -25,38 +25,29 @@ section.perfil-user{
       opacity: .2;
     }
 }
-
-
 section.perfil-eventos{
     background-color: $bg-color;
 }
 .perfil-user-container{
     padding-bottom: 30px;
 }
-
-
 .perfil-info-item {
     margin-left: 20px;
     text-align: center;
 
 }
-
 .perfil-info-item-border {
     border-right: solid 1px $c-dark-gray;
     border-left: solid 1px $c-dark-gray;
     margin-left: 20px;
     text-align: center;
-
     }
-
 
 // grid eventos perfil
 .perfil-eventos{
     ul{
     padding-left: 0;
   }
-
-
 .lista-evento-item{
     background-color: $c-Lightest;
     margin-bottom: 25px;
@@ -73,7 +64,6 @@ section.perfil-eventos{
 .eventos-creados{
     margin-top: 50px;
 }
-
 
 @media screen and (max-width: 1024px) {
  .perfil-eventos{
@@ -107,5 +97,3 @@ section.perfil-eventos{
         }
     }
 }
-
-

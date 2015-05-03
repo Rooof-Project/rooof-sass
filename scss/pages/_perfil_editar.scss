@@ -1,0 +1,18 @@
+// perfil-editar
+
+section.perfil-editar{
+    background-color:  $bg-color;
+    .perfil-user-img{
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+    img{
+        margin-bottom: 30px;
+    }
+}
+
+div.form{
+    background-color: white;
+    padding: 20px;
+}
