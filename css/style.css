@@ -125,7 +125,9 @@ p, blockquote, .p {
   line-height: 1.5rem;
   margin-bottom: 10px; }
 
-.p-complementary {
+.p-complementary, form .hint,
+form .prefilled, form input[placeholder],
+form textarea[placeholder] {
   color: #333;
   font-family: "PT Sans", sans-serif;
   line-height: 1.4rem;
@@ -2437,7 +2439,11 @@ a la simulacion de user de Slay*/ }
       header .wrap nav ul.right .footer-reg {
         padding: 20px;
         margin-bottom: 0px; }
-        header .wrap nav ul.right .footer-reg p.p-complementary, header .wrap nav ul.right .footer-reg blockquote.p-complementary {
+        header .wrap nav ul.right .footer-reg p.p-complementary, header .wrap nav ul.right .footer-reg blockquote.p-complementary, header .wrap nav ul.right .footer-reg form blockquote.hint, form header .wrap nav ul.right .footer-reg blockquote.hint,
+        header .wrap nav ul.right .footer-reg form blockquote.prefilled,
+        form header .wrap nav ul.right .footer-reg blockquote.prefilled, header .wrap nav ul.right .footer-reg form p.hint, form header .wrap nav ul.right .footer-reg p.hint,
+        header .wrap nav ul.right .footer-reg form p.prefilled,
+        form header .wrap nav ul.right .footer-reg p.prefilled {
           font-size: 14px; }
         header .wrap nav ul.right .footer-reg a {
           font-family: "PT Sans", sans-serif;
@@ -2639,12 +2645,23 @@ form {
   margin-bottom: 20px; }
   form .field {
     margin-bottom: 20px; }
-  form .hint {
-    font-family: "PT Sans", sans-serif;
+  form .hint,
+  form .prefilled {
+    -webkit-font-smoothing: antialiased;
     color: #8e8e8e;
     margin-top: 5px; }
+  form .prefilled {
+    position: absolute;
+    top: 36px;
+    left: 20px; }
   form .is-required {
     font-style: italic; }
+  form #facebook,
+  form #twitter {
+    padding-left: 7.30em; }
+  form input[placeholder],
+  form textarea[placeholder] {
+    -webkit-font-smoothing: antialiased; }
   form .has-error .error-description {
     font-family: "PT Sans", sans-serif;
     color: #ff4136;
@@ -3793,7 +3810,11 @@ section.perfil-eventos {
       text-align: center; }
     .perfil-description p, .perfil-description blockquote {
       text-align: left; } }
+.perfil-user-vacio {
+  padding-bottom: 40px; }
+
 section.perfil-editar {
+  background: url(../img/pattern-backg.png) repeat;
   background-color: #eaeaea; }
   section.perfil-editar .perfil-user-img {
     height: 150px;
@@ -3810,6 +3831,15 @@ section.perfil-editar {
 
 .titulo_form__wrap {
   padding: 40px 0px 20px 0px; }
+
+.triangulo {
+  width: 0;
+  height: 0;
+  border-right: 30px solid transparent;
+  border-top: 0px solid transparent;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid white;
+  margin: 0 auto; }
 
 .titulo_form__wrap_first {
   padding: 10px 0px 20px 0px; }

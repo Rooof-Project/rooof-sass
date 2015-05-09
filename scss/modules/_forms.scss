@@ -44,21 +44,41 @@ form {
     margin-bottom: $padding/2;
   }
 
-  // Notes go under the input fields
-  .hint {
-    font-family: $font-complementary;
+  // .hint notes go under the input fields
+  .hint,
+  .prefilled {
+    @extend .p-complementary;
+    -webkit-font-smoothing: antialiased;
     color: $c-light-gray;
     margin-top: 5px;
   }
+    // text fixed before placeholder
+  .prefilled {
+  position: absolute;
+  top: 36px;
+  left: 20px;
+}
 
   // Required label
   .is-required {
     font-style: italic;
   }
 
+  #facebook,
+  #twitter {
+  padding-left: 7.30em;
+}
+
+ // Placeholder styles
+  input[placeholder],
+  textarea[placeholder] {
+    @extend .p-complementary;
+    -webkit-font-smoothing: antialiased;
+
+    }
+
   // Validation, add error class to the item div
   .has-error {
-
     // Validation reason
     .error-description {
       font-family: $font-complementary;
@@ -77,3 +97,5 @@ form {
     }
   }
 }
+
+

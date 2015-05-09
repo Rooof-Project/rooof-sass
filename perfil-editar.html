@@ -2,215 +2,83 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>ROOOF</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="shortcut icon" href="img/favicon.ico"/>
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Dosis:400,600,800' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-  <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-  <link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/foundation.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
+<title>ROOOF</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,600,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/pop-up.css" rel="stylesheet" type="text/css" media="all">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/foundation.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <div class="logo"><a href="index.html">ROOOF</a></div>
-      <nav>
-        <ul class="left">
-          <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
-          <li><a href="lista-eventos.html">Busca un evento</a></li>
-          <li><a href="crea.html">Crea tu evento</a></li>
-        </ul>
-        <ul class="right">
-          <button class="btn btn-link log-in">Inicia sesión</button>
+    <header>
+            <div class="wrap">
+                <div class="logo"><a href="index-logueado.html">ROOOF</a></div>
+                <nav>
+                    <ul class="left">
+                    <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+                    <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+                    <li><a href="crea-logueado.html">Crea tu evento</a></li>
+                    </ul>
 
-          <div class="pop-log">
-            <span>✖</span>
-            <div class="container">
-              <div class="titulo">
-                <h1 class="h3-complementary">Inicia sesión</h1>
-              </div>
-              <div class="form-divider__wrap clearfix">
-                <div class="reg-facebook">
+                    <button class="sregistro">Mi Perfil</button>
+                </nav>
 
-                  <img src="img/social-facebook.png">
-                  <a href="">Inicia sesión con facebook</a>
-                </div>
-                <div class="reg-twitter">
-                  <img src="img/social-twitter.png">
-                  <a href="">Inicia sesión con twitter</a>
-                </div>
-              </div>
-              <div class=" form-divider__wrap clearfix">
-                <div class="reg-line-left"></div>
-                <div class="zero">o</div>
-                <div class="reg-line-right"></div>
-              </div>
+        <div class="nav-hamburger">
+          <button class="hamburger">&#9776;</button>
+          <button class="cross">&#735;</button>
+        </div>
 
-              <h2 class="h5-complementary">Inicia sesión con tu cuenta de correo</h2>
-              <form>
-                <div class="field">
-                  <label for="email">Email</label>
-                  <input type="email" name="email">
-                </div>
+      </div>
+        <div class="menu">
+          <ul>
+            <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
+            <a href="lista-eventos.html"><li>Busca un evento</li></a>
+            <a href="crea.html"><li>Crea tu evento</li></a>
+            <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
+            <a href="inicio-sesion.html"><li>Regístrate</li></a>
+          </ul>
+        </div>
 
-                <div class="field">
-                  <label for="password">Contraseña</label>
-                  <input type="password" name="password">
-                </div>
-              </form>
+        <script>
+          $( ".cross" ).hide();
+          $( ".menu" ).hide();
+          $( ".hamburger" ).click(function() {
+          $( ".menu" ).slideToggle( "slow", function() {
+          $( ".hamburger" ).hide();
+          $( ".cross" ).show();
+          });
+          });
 
-              <p class="p-complementary">¿No recuerdas tu contraseña? <a href="">Recupérala</a></p>
-
-              <div class="button__wrap">
-                <button href="sindex.html" id="send" class="btn" type="submit">Iniciar sesión</button>
-              </div>
-            </div>
-
-            <div class="inicia-sesion1">
-              <div class="footer-reg titulo">
-                <p class="p-complementary">¿Todavía no tienes tu cuenta en ROOOF? <a href="">Regístrate</a></p>
-              </div>
-            </div>
-          </div>
-
-          <script type="text/javascript">
-           $(document).ready(function () {
-             $("button.log-in").click(function () {
-               $(".pop-log").fadeIn(300);
-               positionPopup();
-             });
-
-             $(".pop-log > span").click(function () {
-               $(".pop-log").fadeOut(300);
-             });
-           });
-         </script>
-         <button class="btn btn-link registro">Regístrate</button>
-
-         <div class="pop">
-          <span>✖</span>
-
-          <div class="container">
-            <div class="titulo">
-              <h1 class="h3-complementary">Regístrate</h1>
-            </div>
-
-            <div class="form-divider__wrap clearfix">
-
-              <div class="reg-facebook">
-                <img src="img/social-facebook.png">
-                <a href="">Regístrate con facebook</a>
-              </div>
-
-              <div class="reg-twitter">
-                <img src="img/social-twitter.png">
-                <a href="">Regístrate con twitter</a>
-              </div>
-            </div>
-            <div class=" form-divider__wrap clearfix">
-              <div class="reg-line-left"></div>
-              <div class="zero">o</div>
-              <div class="reg-line-right"></div>
-            </div>
-            <h2 class="h5-complementary">Regístrate con tu cuenta de correo</h2>
-
-            <form class="reg">
-              <div class="field">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="palabra">
-              </div>
-
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="email" name="email">
-              </div>
-              <div class="field">
-                <label for="password">Contraseña</label>
-                <input type="password" name="password">
-              </div>
-            </form>
-            <p class="p-complementary">Al registrarte aceptas las <a href="">condiciones legales</a>.</p>
-            <div class="button__wrap">
-              <a id="send" href="milky-reserva.html" class="btn registrarse" type="submit">Registrarse</a>
-            </div>
-
-          </div>
-          <div class="inicia-sesion">
-            <div class="footer-reg titulo">
-              <p class="p-complementary">¿Ya tienes una cuenta en ROOOF? <a href="">Inicia sesión</a></p></div>
-            </div>
-          </div>
-          <script type="text/javascript">
-           $(document).ready(function () {
-             $("button.registro").click(function () {
-               $(".pop").fadeIn(300);
-               positionPopup();
-             });
-
-             $(".pop > span").click(function () {
-               $(".pop").fadeOut(300);
-             });
-           });
-         </script>
-       </ul>
-     </nav>
-
-     <div class="nav-hamburger">
-      <button class="hamburger">&#9776;</button>
-      <button class="cross">&#735;</button>
-    </div>
-
-  </div>
-  <div class="menu">
-    <ul>
-      <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
-      <a href="lista-eventos.html"><li>Busca un evento</li></a>
-      <a href="crea.html"><li>Crea tu evento</li></a>
-      <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
-      <a href="inicio-sesion.html"><li>Regístrate</li></a>
-    </ul>
-  </div>
-
-  <script>
-    $( ".cross" ).hide();
-    $( ".menu" ).hide();
-    $( ".hamburger" ).click(function() {
-      $( ".menu" ).slideToggle( "slow", function() {
-        $( ".hamburger" ).hide();
-        $( ".cross" ).show();
-      });
-    });
-
-    $( ".cross" ).click(function() {
-      $( ".menu" ).slideToggle( "slow", function() {
-        $( ".cross" ).hide();
-        $( ".hamburger" ).show();
-      });
-    });
-  </script>
-</header>
+          $( ".cross" ).click(function() {
+          $( ".menu" ).slideToggle( "slow", function() {
+          $( ".cross" ).hide();
+          $( ".hamburger" ).show();
+          });
+          });
+        </script>
+    </header>
 
 
 <section class="perfil-editar section-intro">
@@ -221,7 +89,7 @@
       <div class="titulo">
         <h1>Tutu</h1>
       </div>
-
+<div class="triangulo text-centre"></div>
 <div class="row">
   <div class="columns large-16 large-centered">
 
@@ -232,23 +100,22 @@
             </div>
             <div class="field">
             <label for="textarea">Escribe un poco sobre ti</label>
-            <textarea class="full-width"></textarea>
+            <textarea  placeholder="Cuéntanos quien eres, qué haces y cuales son tus intereses." class="full-width"></textarea>
           </div>
       <div class="row">
         <div class="columns large-11">
             <div class="field">
               <label for="">Escoge al menos un área que te guste</label>
-              <input type="text" class="full-width">
+              <input placeholder="Quiero asistir a eventos de"type="text" class="full-width">
             </div>
           </div>
         <div class="columns large-11">
           <div class="field">
-            <label for="">Añade tu sitio web personal</label>
+            <label for="">Añade tu sitio web personal </label>
             <input type="text" class="full-width">
          </div>
         </div>
       </div>
-
          <div class="titulo_form__wrap">
             <h3 class=" h3-complementary">Datos de contacto</h3>
          </div>
@@ -256,25 +123,29 @@
          <div class="field">
            <label for="">Correo electrónico</label>
            <input type="email" class="full-width">
+           <p class="hint">Sólo será visible una vez hecha la reserva</p>
          </div>
 
          <div class="row">
         <div class="columns large-11">
             <div class="field">
               <label for="">Twitter</label>
-              <input type="text" class="full-width">
+              <span class="prefilled">Twitter.com/</span>
+              <input id="twitter"placeholder=""type="text" class="full-width">
             </div>
           </div>
         <div class="columns large-11">
           <div class="field">
             <label for="">Facebook</label>
-            <input type="text" class="full-width">
+            <span class="prefilled">Facebook.com/</span>
+            <input id="facebook"placeholder="" type="text" class="full-width">
          </div>
         </div>
       </div>
-
-
-        </form>
+    </form>
+      <div class="button__wrap">
+        <a href="perfil.html" class="btn btn-primary"> Guardar</a>
+      </div>
     </div>
 
   </div>

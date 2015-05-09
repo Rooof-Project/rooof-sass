@@ -40,7 +40,6 @@
     border: lighten($c-main-gray, 30);
     color: darken(white,20)
   }
-
 // Primary action button
 .btn-primary {
   background-color: $c-main-pink;
@@ -56,6 +55,7 @@
     border-color: $c-main-pink;
     color: $c-main-pink;
   }
+
 
   &:active {
     background: $c-Lightest;
@@ -85,6 +85,7 @@
     color: #fff;
   }
 }
+
 
 // Larger button
 .btn-lg {
