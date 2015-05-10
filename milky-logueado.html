@@ -33,14 +33,14 @@ $(function() {
 <body>
   <header>
       <div class="wrap">
-        <div class="logo"><a href="index.html">ROOOF</a></div>
+        <div class="logo"><a href="index-logueado.html">ROOOF</a></div>
         <nav>
           <ul class="left">
-                    <li><a href="somos.html">¿Qu&eacute; es ROOOF?</a></li>
-          <li><a href="lista-eventos.html">Busca un evento</a></li>
-          <li><a href="crea.html">Crea tu evento</a></li>
+                    <li><a href="somos-logueado.html">¿Qu&eacute; es ROOOF?</a></li>
+          <li><a href="lista-eventos-logueado.html">Busca un evento</a></li>
+          <li><a href="crea-logueado.html">Crea tu evento</a></li>
           </ul>
-                    <ul class="right">
+                    <!-- <ul class="right">
                     <button class="btn btn-link log-in">Inicia sesión</button>
 
                     <div class="pop-log">
@@ -172,7 +172,9 @@ $(function() {
                              });
                          });
                     </script>
-                    </ul>
+                    </ul> -->
+
+                    <button class="sregistro">Mi Perfil</button>
         </nav>
 
         <div class="nav-hamburger">
@@ -183,12 +185,12 @@ $(function() {
       </div>
         <div class="menu">
           <ul>
-            <a href="somos.html"><li>¿Qu&eacute; es ROOOF?</li></a>
-            <a href="lista-eventos.html"><li>Busca un evento</li></a>
-            <a href="crea.html"><li>Crea tu evento</li></a>
-            <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
-            <a href="inicio-sesion.html"><li>Regístrate</li></a>
-          </ul>
+      <a href="somos-logueado.html"><li>¿Qu&eacute; es ROOOF?</li></a>
+      <a href="lista-eventos-logueado.html"><li>Busca un evento</li></a>
+      <a href="crea-logueado.html"><li>Crea tu evento</li></a>
+      <a href="inicio-sesion-2.html"><li>Inicia sesión</li></a>
+      <a href="inicio-sesion.html"><li>Regístrate</li></a>
+    </ul>
         </div>
 
         <script>
@@ -211,47 +213,142 @@ $(function() {
   </header>
 
 
-<section class="lista-eventos section-intro">
-   <div class="wrap">
-
+<section class="ficha-evento section-intro">
+  <div class="wrap">
     <div class="titulo">
-        <h2 class="h1">ENCUENTRA LOS MEJORES PLANES</h2>
-        <p class="h2-complementary">en las casas de Barcelona</p>
+      <h2 class="h1">THE MILKY WAY EXPRESS</h2>
+      <p class="h2-complementary">Rock sureño a la Parrilla en nuestro terrado</p>
+    </div>
+    <div class="row">
+      <div class="large-18 medium-16 columns">
+        <img class="img-main" src="img/foto_ficha_evento_2.jpg">
+        <div class="main-container">
+
+          <h2>Sobre el evento</h2>
+          <p>The Milkyway Express es un banda de rocanrol. Nuestro peculiar estilo mezcla southern rock y blues lisérgico.</p>
+          <p>Te invitamos a un concierto muy especial en la terraza de nuestro guitarra, Pedro. Disponemos de una enorme barbacoa además de mucha dosis de música en directo. Tráete comida y bebida para compartir, nosotros ponemos la música.</p>
+          <p>Te esperamos :)</p>
+
+          <div class="map map-full"></div>
+
+
+          <div class="divider"></div>
+
+          <div class="sobre-host__wrap">
+            <div class="clearfix">
+              <div class="title">
+                <img class="host-img"src="img/host01.jpg">
+                <h2>Sobre Milky Way</h2>
+                <h3 class="h6-complementary">Creador del evento</h3>
+              </div>
+
+              <div class="right">
+                <a href="perfil.html" class="btn btn.primary btn-sm">Ver perfil</a>
+              </div>
+            </div>
+
+            <p>Haciendo barbacoas juntos desde 1995. Tocando juntos desde 2004. Somos una Banda de Rock. Blues con ramalazos psicodélicos y folkcountry. Puedes vernos en algunos festivales nacionales como Extremusika o Monkey Week, y ahora en el tejado!</p>
+            <p class="more-info">Más info<a href="http://themilkywayexpress.bandcamp.com/"> www.themilkywayexpress.bandcamp.com/</p></a>
+
+
+          </div>
+        </div>
+
+      </div>
+      <aside class=" aside large-6 medium-8 columns">
+        <h4 class="h4-complementary">DETALLES DEL EVENTO</h4>
+
+        <div class="">
+          <p class="tag-musica"></p>
+          <p class="tag-gastronomia"></p>
+        </div>
+
+        <div class="info">
+
+          <h5 class=" fecha h5-complementary">Fecha</h5>
+          <p class="p-complementary">Sábado 28 Febrero, 18:00-24:00h</p>
+
+          <h5 class="lugar h5-complementary">Lugar</h5>
+          <p class="p-complementary">Poblenou</p>
+
+          <h5 class="aforo h5-complementary">Aforo</h5>
+          <p class="p-complementary">30 personas</p>
+
+        </div>
+
+        <div class="main-precio"><p class="p-complementary">6€ / persona</p></div>
+        <div class="ticket__warp">
+          <div class="border-ticket">
+            <div class="ticket">
+              <h4>Escoge tu entrada</h4>
+              <ul>
+                <li><input type="radio" name="radio-btn"/>  Voy solo</li>
+                <li><input type="radio" name="radio-btn"/> +1 Voy con un amigo</li>
+              </ul>
+
+            </div>
+          </div>
+          <button class="btn btn-full registro">RESERVAR ENTRADA</button>
+        </div>
+
+
+        <div class="clearfix">
+          <div class="compartir__wrap">
+            <a href=""><img src="img/social-twitter-333.png"></a>
+            <a href=""><img src="img/social-facebook-333.png"></a>
+          </div>
+        </div>
+
+
+
+      </aside>
     </div>
 
-    <ul class="row">
-      <div class="container">
 
-            <li class=" columns small-22 small-centered medium-12 medium-uncentered large-8">
-            <div class="lista-evento-item">
+  </section>
 
-                <a class="event-list_container" href="cocodrila.html">
-                  <div class="precio"><p class="p-complementary">6€/persona</p></div>
-                  <img alt=""src="img/destacado_evento_1.jpg">
-                </a>
+  <section class="lista-eventos">
+    <div class="wrap">
+      <div class="secondary-title__wrap row">
+          <div class="map map-responsive">
+          <h2 class="h3-complementary">Ver en el mapa</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11971.307311189796!2d2.20226760000001!3d41.39956699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3154b13aea1%3A0x7a6055adf5edd733!2sEl+Poblenou%2C+Barcelona!5e0!3m2!1ses!2ses!4v1427888282111" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+          </div>
 
-                <div class="evento-info">
-                    <a href="cocodrila.html">
-                      <h3 class="h3-complementary">Cocodrila</h3>
-                    </a>
-                    <p class="p-complementary">Picoteo y Street Art en nuestra casa.</p>
-                    <div class="tags">
-                        <p class="tag-arte"></p>
-                        <p class="tag-gastronomia"href=""></p>
-                    </div>
+        <h2 class="h3-complementary columns small-push-1 small-20 medium-push-0">Eventos relacionados</h2>
+      </div>
+
+      <ul class="row">
+        <li class=" columns small-22 small-centered medium-12 medium-uncentered large-6">
+          <div class="lista-evento-item">
+
+            <a class="event-list_container" href="cocodrila.html">
+              <div class="precio"><p class="p-complementary">6€/persona</p></div>
+              <img alt=""src="img/destacado_evento_1.jpg">
+            </a>
+
+            <div class="evento-info four-columns">
+              <a href="cocodrila.html">
+                <h3 class="h3-complementary">Cocodrila</h3>
+              </a>
+              <p class="p-complementary">Picoteo y Street Art en nuestra casa.</p>
+              <div class="tags">
+                <p class="tag-arte"></p>
+                <p class="tag-gastronomia"href=""></p>
+              </div>
+            </div>
+
+            <div class="evento-footer row">
+
+              <div class="host-info">
+                <div class="host-img">
+                  <img class="host-img"src="img/host02.png">
                 </div>
 
-                <div class="evento-footer row">
-
-                <div class="host-info">
-                  <div class="host-img">
-                    <img class="host-img"src="img/host02.png">
-                  </div>
-
-                  <div class="host-name">
-                    <p><a class="host-link" href="perfil.html">Ugly Heroes</a></p>
-                  </div>
+                <div class="host-name">
+                  <p><a class="host-link" href="perfil.html">Ugly Heroes</a></p>
                 </div>
+              </div>
 
 
               <div class="btn-lista-evento">
@@ -259,76 +356,38 @@ $(function() {
               </div>
 
             </div>
-            </li> <!--fin .span4-->
+          </div>
+        </li> <!--fin .span4-->
 
-            <li class="columns small-22 small-centered medium-12 medium-uncentered large-8">
-            <div class="lista-evento-item">
+        <li class=" columns small-22 small-centered medium-12 medium-uncentered large-6">
+          <div class="lista-evento-item">
+            <a class="event-list_container" href="solose.html">
+              <div class="precio"><p class="p-complementary">12€/persona</p></div>
 
-                <a class="event-list_container" href="milky.html">
-                   <div class="precio"><p class="p-complementary">6€/persona</p></div>
-                  <img alt=""src="img/destacado_evento_2.jpg">
-                </a>
+              <img alt=""src="img/destacado_evento_3.jpg">
+            </a>
 
-                <div class="evento-info">
-                    <a href="milky.html">
-                      <h3 class="h3-complementary">The Milky Way Express</h3>
-                    </a>
-                    <p class="p-complementary">Rock sueño a la parrilla en nuestro terrado.</p>
-                    <div class="tags">
-                        <p class="tag-musica"></p>
-                        <p class="tag-gastronomia"href=""></p>
-                    </div>
-                </div>
-
-                <div class="evento-footer row">
-
-                <div class="host-info">
-                  <div class="host-img">
-                    <img class="host-img"src="img/host01.jpg">
-                  </div>
-
-                  <div class="host-name">
-                    <p><a class="host-link" href="perfil.html">Por Milky way</a></p>
-                  </div>
-                </div>
-
-
-              <div class="btn-lista-evento">
-                <a class="btn btn-sm btn-secondary" href="milky.html">ver más</a>
+            <div class="evento-info four-columns">
+              <a href="solose.html">
+                <h3 class="h3-complementary">Sólo sé que no se nada</h3>
+              </a>
+              <p class="p-complementary">Una obra nada clásica en mi patio.</p>
+              <div class="tags">
+                <p class="tag-teatro"></p>
               </div>
-
             </div>
-            </li>
 
-            <li class=" columns small-22 small-centered medium-12 medium-uncentered large-8">
-            <div class="lista-evento-item">
-                <a class="event-list_container" href="solose.html">
-                <div class="precio"><p class="p-complementary">12€/persona</p></div>
+            <div class="evento-footer row">
 
-                  <img alt=""src="img/destacado_evento_3.jpg">
-                </a>
-
-                <div class="evento-info">
-                    <a href="solose.html">
-                      <h3 class="h3-complementary">Sólo sé que no se nada</h3>
-                    </a>
-                    <p class="p-complementary">Una obra nada clásica en mi patio.</p>
-                    <div class="tags">
-                        <p class="tag-teatro"></p>
-                    </div>
+              <div class="host-info">
+                <div class="host-img">
+                  <img class="host-img"src="img/host03.jpg">
                 </div>
 
-                <div class="evento-footer row">
-
-                <div class="host-info">
-                  <div class="host-img">
-                    <img class="host-img"src="img/host03.jpg">
-                  </div>
-
-                  <div class="host-name">
-                    <p><a class="" href="perfil.html">Por Carmen</a></p>
-                  </div>
+                <div class="host-name">
+                  <p><a class="" href="perfil.html">Por Carmen</a></p>
                 </div>
+              </div>
 
 
               <div class="btn-lista-evento">
@@ -336,37 +395,38 @@ $(function() {
               </div>
 
             </div>
-            </li>
+          </div>
+        </li>
 
-            <li class=" columns small-22 small-centered medium-12 medium-uncentered large-8">
-            <div class="lista-evento-item">
-                <a class="event-list_container" href="vietnamita.html">
-                  <div class="precio"><p class="p-complementary">12€/persona</p></div>
-                  <img alt=""src="img/destacado_evento_4.jpg">
-                </a>
+        <li class=" columns small-22 small-centered medium-12 medium-uncentered large-6">
+          <div class="lista-evento-item">
+            <a class="event-list_container" href="vietnamita.html">
+              <div class="precio"><p class="p-complementary">12€/persona</p></div>
+              <img alt=""src="img/destacado_evento_4.jpg">
+            </a>
 
-                <div class="evento-info">
-                    <a href="vietnamita.html">
-                      <h3 class="h3-complementary">Vietnamese food experience</h3>
-                    </a>
-                    <p class="p-complementary">Descubre la auténtica comida de Vietnam en una casa acogedora.</p>
-                    <div class="tags">
+            <div class="evento-info four-columns">
+              <a href="vietnamita.html">
+                <h3 class="h3-complementary">Vietnamese food experience</h3>
+              </a>
+              <p class="p-complementary">Descubre la auténtica comida de Vietnam en una casa acogedora.</p>
+              <div class="tags">
 
-                        <p class="tag-gastronomia"href=""></p>
-                    </div>
+                <p class="tag-gastronomia"href=""></p>
+              </div>
+            </div>
+
+            <div class="evento-footer row">
+
+              <div class="host-info">
+                <div class="host-img">
+                  <img class="host-img"src="img/host04.jpg">
                 </div>
 
-                <div class="evento-footer row">
-
-                <div class="host-info">
-                  <div class="host-img">
-                    <img class="host-img"src="img/host04.jpg">
-                  </div>
-
-                  <div class="host-name">
-                    <p><a class="" href="perfil-vietnamita.html">Por Tutu</a></p>
-                  </div>
+                <div class="host-name">
+                  <p><a class="" href="perfil.html">Por Tutu</a></p>
                 </div>
+              </div>
 
 
               <div class="btn-lista-evento">
@@ -374,16 +434,17 @@ $(function() {
               </div>
 
             </div>
-            </li>
+          </div>
+        </li>
 
-            <li class=" columns small-22 small-centered medium-12 medium-uncentered large-8">
+        <li class=" columns small-22 small-centered medium-12 medium-uncentered large-6">
             <div class="lista-evento-item">
                 <a class="event-list_container" href="band.html">
                   <div class="precio"><p class="p-complementary">12€/persona</p></div>
                   <img alt=""src="img/destacado_evento_5.jpg">
                 </a>
 
-                <div class="evento-info">
+                <div class="evento-info four-columns">
                     <a href="band.html">
                       <h3 class="h3-complementary">A Band Apart</h3>
                     </a>
@@ -402,7 +463,7 @@ $(function() {
                   </div>
 
                   <div class="host-name">
-                    <p><a class="" href="perfil.html">Por locos del maíz</a></p>
+                    <p><a class="" href="perfil.html">Por locos</a></p>
                   </div>
                 </div>
 
@@ -413,81 +474,42 @@ $(function() {
 
             </div>
             </li>
-
-            <li class=" columns small-22 small-centered medium-12 medium-uncentered large-8">
-            <div class="lista-evento-item">
-                <a class="event-list_container" href="picnic.html">
-                  <div class="precio"><p class="p-complementary">Gratis</p></div>
-                  <img alt=""src="img/destacado_evento_6.jpg">
-                </a>
-
-                <div class="evento-info">
-                    <a href="picnic.html">
-                      <h3 class="h3-complementary">Picnic!</h3>
-                    </a>
-                    <p class="p-complementary">Exposición multidisciplinar del colectivo fantasma en nuestro atelier.</p>
-                    <div class="tags">
-                        <p class="tag-musica"></p>
-                        <p class="tag-gastronomia"href=""></p>
-                    </div>
-                </div>
-
-                <div class="evento-footer row">
-
-                <div class="host-info">
-                  <div class="host-img">
-                    <img class="host-img"src="img/host06.jpg">
-                  </div>
-
-                  <div class="host-name">
-                    <p><a class="" href="perfil.html">Por Fantasma</a></p>
-                  </div>
-                </div>
-
-
-              <div class="btn-lista-evento">
-                <a class="btn btn-sm btn-secondary" href="picnic.html">ver más</a>
-              </div>
-
-            </div>
-            </li>
-            </div>
     </ul>
-      <div class="button__wrap">
-
-          <a href="" class="btn btn-secondary">
-               ver más eventos</a>
-        </div>
   </div>
 </section>
-
-<section class="banner banner-crear">
-    <div class="wrap">
-        <div class=" text ">
-                <h1>hazte creador</h1>
-
-                <p>¿Tienes algo que mostrar? Con Rooof es muy fácil: tu pones el talento, nosotros te llevamos el público a casa.</p>
-
-            </div>
-            <div class="text-center button__wrap">
-                  <a href="" class="btn btn.primary btn-lg">crea tu evento</a>
-          </div>
-    </div>
-</section>
-
-
 <footer>
-    <div class="wrap">
-        <div class="logo-down">ROOOF</div>
-        <div class="link-down"><a href="mailto:hellorooof@gmail.com">contacta con nosotros</a></div>
-        <div class="social-network">
-            <a href="#
-            https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
-            <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
-        </div>
+  <div class="wrap">
+    <div class="logo-down">ROOOF</div>
+    <div class="link-down"><a href="mailto:hellorooof@gmail.com">contacta con nosotros</a></div>
+    <div class="social-network">
+      <a href="https://twitter.com/hellorooof"><img src="img/social-twitter.png"></a>
+      <a href="http://instagram.com/hellorooof"><img src="img/social-ins.png"></a>
     </div>
+  </div>
 </footer>
+<script>
+  $(document).ready(function(){
 
+    var windowWidth = $(window).width();
+
+    var mapDesktopContainer = $( ".map-full" );
+    var mapMobileContainer = $( ".map-responsive" );
+    var map = mapMobileContainer.find("iframe");
+    if(windowWidth > 642) {
+      mapDesktopContainer.append(map);
+    }
+
+    $(window).resize(function() {
+      windowWidth = $(window).width();
+      if(windowWidth <= 642) {
+        mapMobileContainer.append(map);
+      } else {
+        mapDesktopContainer.append(map);
+      }
+
+    })
+  })
+</script>
 </body>
 
 </html>

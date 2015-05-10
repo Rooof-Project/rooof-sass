@@ -34,7 +34,7 @@ body {
 * {
   margin: 0; }
 
-h1, .h1,
+h1, span.mas, .h1,
 h2, .h2,
 h3,
 .tag-musica,
@@ -47,7 +47,7 @@ h3,
   margin-bottom: 0.5rem;
   text-transform: uppercase; }
 
-h1, .h1 {
+h1, span.mas, .h1 {
   color: #333;
   font-weight: 400;
   line-height: 2.4rem;
@@ -203,7 +203,7 @@ hr {
   margin-bottom: 20px; }
 
 @media screen and (max-width: 480px) {
-  h1,
+  h1, span.mas,
   h2,
   h3,
   .tag-musica,
@@ -215,7 +215,7 @@ hr {
   h5 {
     margin-bottom: 10px; }
 
-  h1,
+  h1, span.mas,
   .h1 {
     font-size: 26px;
     line-height: 2rem; }
@@ -2590,6 +2590,7 @@ footer a {
   background: transparent;
   border: 0;
   color: #ff3766;
+  text-decoration: underline !important;
   text-shadow: none;
   text-transform: none;
   -webkit-transition: all 0.3s ease-in;
@@ -2597,6 +2598,23 @@ footer a {
   -o-transition: all 0.3s ease-in; }
   .btn-link:hover, .btn-link:focus {
     background: transparent;
+    text-decoration: underline; }
+
+.btn-tertiary {
+  background: rgba(142, 142, 142, 0.3);
+  padding: 3px 15px;
+  border-radius: 15px;
+  border: 0;
+  color: #ff3766;
+  text-decoration: underline !important;
+  text-shadow: none;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in; }
+  .btn-tertiary:hover, .btn-tertiary:focus {
+    background: #ff3766;
+    color: white;
     text-decoration: underline; }
 
 @media screen and (max-width: 480px) {
@@ -2681,7 +2699,7 @@ form {
     max-width: 700px;
     text-align: center;
     margin: 0 auto; }
-    .banner .text h1 {
+    .banner .text h1, .banner .text span.mas {
       font-size: 40px;
       font-size: 2.5rem;
       color: #fff;
@@ -2742,7 +2760,7 @@ form {
     background: #ff4136; }
   .alert.alert-info {
     border: solid 3px #b3b3b3; }
-  .alert p, .alert blockquote, .alert h1, .alert h2, .alert h3, .alert .tag-musica, .alert .tag-gastronomia, .alert .tag-teatro, .alert .tag-humor, .alert .tag-arte, .alert h4, .alert h5, .alert h5, .alert .h1, .alert .h2, .alert .h3, .alert .h4, .alert .h5, .alert .h6, .alert .p {
+  .alert p, .alert blockquote, .alert h1, .alert span.mas, .alert h2, .alert h3, .alert .tag-musica, .alert .tag-gastronomia, .alert .tag-teatro, .alert .tag-humor, .alert .tag-arte, .alert h4, .alert h5, .alert h5, .alert .h1, .alert .h2, .alert .h3, .alert .h4, .alert .h5, .alert .h6, .alert .p {
     font-family: "PT Sans", sans-serif; }
   .alert p:last-child, .alert blockquote:last-child {
     margin-bottom: 0; }
@@ -2856,7 +2874,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-h1 {
+h1, span.mas {
   font-size: 2em; }
 
 /**
@@ -3117,7 +3135,7 @@ table {
   right: 0;
   transform: translateY(-50%); }
 
-.top-heading h1 {
+.top-heading h1, .top-heading span.mas {
   color: white;
   line-height: 2.3rem;
   font-size: 70px;
@@ -3632,7 +3650,7 @@ section.testimonios span {
     font-size: 48px;
     color: white;
     text-shadow: 1px 1px 2px black; }
-  .slider-text h1 {
+  .slider-text h1, .slider-text span.mas {
     font-size: 70px;
     color: white;
     margin-bottom: 2rem;
@@ -3685,7 +3703,7 @@ a.control_next {
 
   .slider-text h2 {
     font-size: 35px; }
-  .slider-text h1 {
+  .slider-text h1, .slider-text span.mas {
     font-size: 50px; }
   .slider-text p, .slider-text blockquote {
     width: 425px; }
@@ -3701,7 +3719,7 @@ a.control_next {
 
   .slider-text h2 {
     font-size: 30px; }
-  .slider-text h1 {
+  .slider-text h1, .slider-text span.mas {
     margin-bottom: 1rem;
     font-size: 40px; }
   .slider-text p, .slider-text blockquote {
@@ -3719,7 +3737,7 @@ a.control_next {
 
   .slider-text h2 {
     font-size: 25px; }
-  .slider-text h1 {
+  .slider-text h1, .slider-text span.mas {
     margin-bottom: 1rem;
     font-size: 30px; }
   .slider-text p, .slider-text blockquote {
@@ -3806,13 +3824,47 @@ section.perfil-eventos {
 
   .perfil-description {
     padding: 20px 20px 0px 20px; }
-    .perfil-description h1 {
+    .perfil-description h1, .perfil-description span.mas {
       text-align: center; }
     .perfil-description p, .perfil-description blockquote {
       text-align: left; } }
 .perfil-user-vacio {
   padding-bottom: 40px; }
 
+.btn-editar {
+  position: absolute;
+  right: 0;
+  z-index: 999; }
+
+.btn-box {
+  background-color: transparent;
+  border: solid 6px #ff3766;
+  height: 320px;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden; }
+
+#btn-box {
+  text-decoration: none; }
+
+span.mas {
+  font-size: 90px;
+  text-align: center; }
+  span.mas h1, span.mas span.mas {
+    margin-top: 100px;
+    color: #ff3766; }
+    span.mas h1:hover, span.mas span.mas:hover {
+      text-decoration: none;
+      color: white; }
+
+@media screen and (max-width: 640px) {
+  section.perfil-user {
+    padding-top: 80px; }
+
+  .btn-editar {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px; } }
 section.perfil-editar {
   background: url(../img/pattern-backg.png) repeat;
   background-color: #eaeaea; }

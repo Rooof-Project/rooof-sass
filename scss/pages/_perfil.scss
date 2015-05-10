@@ -102,3 +102,50 @@ section.perfil-eventos{
     padding-bottom: 40px;
 }
 
+// perfil login self view
+
+.btn-editar{
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    }
+
+.btn-box{
+    background-color: transparent;
+    border: solid 6px $c-main-pink;
+    height: 320px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+
+    }
+#btn-box{
+    text-decoration: none;
+
+}
+span.mas{
+    @extend h1;
+    font-size: 90px;
+
+    text-align: center;
+    h1{
+        margin-top: 100px;
+        color: $c-main-pink;
+        &:hover{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@include responsive($medium-break) {
+
+    section.perfil-user{
+        padding-top: 80px;
+        }
+    .btn-editar{
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }

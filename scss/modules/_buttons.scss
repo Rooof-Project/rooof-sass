@@ -35,11 +35,13 @@
     border-color: darken($c-main-pink, 10);
   }
 }
+
 .disabled{
     background: lighten($c-main-gray, 30);
     border: lighten($c-main-gray, 30);
     color: darken(white,20)
   }
+
 // Primary action button
 .btn-primary {
   background-color: $c-main-pink;
@@ -86,7 +88,6 @@
   }
 }
 
-
 // Larger button
 .btn-lg {
   font-size: 1.4em;
@@ -104,6 +105,7 @@
   background: transparent;
   border: 0;
   color: $c-main-pink;
+  text-decoration: underline !important;
   text-shadow: none;
   text-transform: none;
   -webkit-transition: all 0.3s ease-in;
@@ -113,6 +115,28 @@
   &:hover,
   &:focus {
     background: transparent;
+    text-decoration: underline;
+  }
+}
+
+.btn-tertiary {
+
+  background: rgba($c-light-gray,0.3);
+  padding: 3px 15px;
+  border-radius: 15px;
+  border: 0;
+  color: $c-main-pink;
+  text-decoration: underline !important;
+  text-shadow: none;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    background: $c-main-pink;
+    color: white;
     text-decoration: underline;
   }
 }
