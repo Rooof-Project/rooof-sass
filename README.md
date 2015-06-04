@@ -1,7 +1,9 @@
-###[View Live Demo &rarr;](http://rooof-project.github.io/memoria)
-###[View Live Style Guide &rarr;](http://rooof-project.github.io/memoria)
+###[Tercera release]
 
 Este repositorio pertenece a la tercera release, en el que hemos incluído el uso de sass y hemos convertido la plataforma en responsive. También hemos desarrollado una guía de estilo en la que seguimos trabajando.
+
+###[View Live Demo &rarr;](http://rooof-project.github.io/rooof-sass/)
+###[View Live Style Guide &rarr;](http://rooof-project.github.io/rooof-sass/example.html)
 
 - -/* Estructura del proyecto/ - -
 
