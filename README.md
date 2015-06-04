@@ -6,7 +6,7 @@ Este repositorio pertenece a la tercera release, en el que hemos incluído el us
 ###[View Live Style Guide &rarr;](http://rooof-project.github.io/rooof-sass/example.html)
 
 - -/* Estructura del proyecto/ - -
-#
+
 # CSS
   - Style.css
 
