@@ -7,28 +7,28 @@ Este repositorio pertenece a la tercera release, en el que hemos incluído el us
 
 - -/* Estructura del proyecto/ - -
 
-# CSS
-  - Style.css
+## CSS
+  * Style.css
 
 **sCSS**
-  - Style.scss
+  * Style.scss
 
-  # Base
-    - _normalize.scss
-    - _grid.scss
-    - _typo.scss
-    - _mixins.scss
-    - _variables.scss
-    - _style-guide.scss
+  ## Base
+    * _normalize.scss
+    *_grid.scss
+    *_typo.scss
+    *_mixins.scss
+    *_variables.scss
+    *_style-guide.scss
 
     /* En base van todos los .scss que definen estilos o layout generales, también mixins, helpers, normalize, etc */
 
-  # Modules
-    _buttons.scss
-    _footer.scss
-    _header.scss
-    _media.scss
-    _forms.scss
+  ## Modules
+    *_buttons.scss
+    *_footer.scss
+    *_header.scss
+    *_media.scss
+    *_forms.scss
 
     /* .scss que definen modulos reutilizables*/
 
