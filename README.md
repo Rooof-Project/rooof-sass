@@ -1,4 +1,4 @@
-###[Tercera release]
+###ROOOF / Tercera release
 
 Este repositorio pertenece a la tercera release, en el que hemos incluído el uso de sass y hemos convertido la plataforma en responsive. También hemos desarrollado una guía de estilo en la que seguimos trabajando.
 
