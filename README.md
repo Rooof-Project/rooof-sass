@@ -10,16 +10,16 @@ Este repositorio pertenece a la tercera release, en el que hemos incluído el us
 # CSS
   - Style.css
 
-# sCSS
+**sCSS**
   - Style.scss
 
   # Base
-    _normalize.scss
-    _grid.scss
-    _typo.scss
-    _mixins.scss
-    _variables.scss
-    _style-guide.scss
+    - _normalize.scss
+    - _grid.scss
+    - _typo.scss
+    - _mixins.scss
+    - _variables.scss
+    - _style-guide.scss
 
     /* En base van todos los .scss que definen estilos o layout generales, también mixins, helpers, normalize, etc */
 
